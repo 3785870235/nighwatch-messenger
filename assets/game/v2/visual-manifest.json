@@ -1,0 +1,76 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-12",
+  "usage": "original Midnight Academy characters; v1 identity reference for Fu and Glimmer; original Luo",
+  "assets": [
+    {
+      "file": "characters/fu-poses.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "220716c40c68d869710c178d4ee4bdd5803cc13e2f485223e7213c076c3eb071",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center_column_alpha_max": 1
+    },
+    {
+      "file": "characters/glimmer-poses.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "4194689bebb3b1a187b4602091f06f181766096369604ed8c92647bd7913ca0f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center_column_alpha_max": 1
+    },
+    {
+      "file": "characters/luo-poses.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "e797a8d0d8809c3535b5edb6e21bc7b297bee640dfb8d6d7c32e39db44443755",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center_column_alpha_max": 1
+    },
+    {
+      "file": "scenes/moonlit-alcove.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "583678b88dd6cb5074b5ef2b069b2f93663f96a183167fb1c167d7739869c83f"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "File": "archive-closed.png",
+    "Width": 1672,
+    "Height": 941,
+    "SHA256": "E10D33C714712157F0033AB39A44C1F24AA4931622F50BAD6400BBD0CD1E5DAE"
+  },
+  {
+    "File": "archive-interior.png",
+    "Width": 1672,
+    "Height": 941,
+    "SHA256": "B86B55E53A172D266C9E44662EBDA8DB6024EFB45AD415CDB4E2F9A583CEE24B"
+  },
+  {
+    "File": "archive-open.png",
+    "Width": 1672,
+    "Height": 941,
+    "SHA256": "5CD60A39EC43A4048C87FF30BE83ED486D1AB6B804AEFD5697BF17CE1731B378"
+  },
+  {
+    "File": "characters/fu-messenger.png",
+    "Width": 1024,
+    "Height": 1536,
+    "SHA256": "0826B89510BD285827898FA28EACF79812F5AF7A51752D8C6E7355070B9D50C5"
+  },
+  {
+    "File": "characters/glimmer-spirit.png",
+    "Width": 1312,
+    "Height": 1199,
+    "SHA256": "292B429515E65F601C1E725DD251592CF2CC683B9B421C9CD7AAF80B014EA410"
+  },
+  {
+    "File": "menu-background.png",
+    "Width": 1672,
+    "Height": 941,
+    "SHA256": "AE3D98C6693823D53C9D45ACCD5F875A3D3A133C4C9E2E44E8F70D1B4ABA07E1"
+  }
+]

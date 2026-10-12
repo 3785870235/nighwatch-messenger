@@ -1,0 +1,164 @@
+temp: <local-path>
+ok   the chapter is a lamp chapter at the star tower
+ok   three candidate pages
+ok   four prediction chips, one for every way the two lamps can answer
+ok   the doubt dialogue opens on its first page
+芙 · 巡夜信使：这是校准塔。两个岗位的报告最后都送到这里，由两盏星灯数出来：今夜到底几个人在岗。
+洛 · 守档人：塔楼日志零点那一格：「亮了一盏，记 一人在岗」。哪一盏亮了，日志没写。
+芙 · 巡夜信使：可我们在档案门前已经证实，零点那一刻 A、B 都持有钥印。两个人……怎么只记了一个？
+微光 · 档案精灵：一盏灯记几个人，要看星灯怎么数。没有亲眼看过，「一人在岗」也只是一种说法。
+洛 · 守档人：《塔规》也残了，我只找到三张说法不同的残页。封盒里的旧术式也裂了，天亮前得照真规矩，给两盏星灯各刻一道新的。
+微光 · 档案精灵：老规矩：一页一页看，再去塔前求证。两盏灯都要看清——亮的是哪一盏，暗的是哪一盏。
+
+ok   doubt dialogue uses no forbidden word
+ok   the dialogue asks which lamp lit, not only whether one did
+ok   the dialogue ends on the casebook
+塔前记录 0 / 4 组 · 预测 0 次
+翻到：残页甲 · 几人几盏
+一页一页看完，选出你认为说对的那张。选了，我才把证据念给你听。
+ok   empty casebook uses no forbidden word
+ok   no evidence before a choice
+ok   repair locked without evidence
+ok   the casebook opens on page one of three
+ok   choosing is unsaved state
+ok   back returns to the tower
+ok   both lamps start unobserved
+ok   00: both lamps stay dark and no page is named
+ok   01: only the low lamp lights
+ok   the state line names the lit lamp
+ok   10: the other post alone lights the low lamp too
+ok   tower line uses no forbidden word
+ok   tower feedback uses no forbidden word
+ok   tower state uses no forbidden word
+ok   the last report needs a prediction
+ok   both keys: only the high lamp lights and the wrong guess is a new clue
+ok   the tower does not judge the pages itself
+ok   tower line after the prediction uses no forbidden word
+ok   tower feedback after the prediction uses no forbidden word
+岗位 A 未持钥印 · 岗位 B 未持钥印 · 都没亮
+岗位 A 未持钥印 · 岗位 B 持钥印 · 只亮低灯
+岗位 A 持钥印 · 岗位 B 未持钥印 · 只亮低灯
+岗位 A 持钥印 · 岗位 B 持钥印 · 猜两盏都亮 · 只亮高灯 ×
+四组都已记下 · 先猜一次，没猜中
+四组钥印报告都已如实记录 √
+点击右下角「进入修复」，用你在笔记里发现的规律，修好新星灯。
+这次观察给了我们新线索：你猜「我猜两盏都亮」，但只有高星灯亮起（高星灯 = 1 · 低星灯 = 0）。已如实记入工作记录，对照记录再想想规律。
+拿这组回应对照残页的说法：哪张和灯说得不一样？想好了，就在「三张残页」里做出判断。
+
+ok   ledger uses no forbidden word
+ok   the ledger keeps the guess and the answer apart
+ok   complete records with a refuted choice lead to the pages, not the repair
+塔前记录 4 / 4 组 · 预测 1 次
+翻到：残页甲 · 几人几盏
+判断：残页甲 · 几人几盏 · 已被证据推翻
+反例 岗位 A 持钥印 · 岗位 B 持钥印时，星灯只亮了高的那盏，它却说星灯两盏都会亮
+「残页甲 · 几人几盏」已被你的记录反驳：岗位 A 持钥印 · 岗位 B 持钥印时，星灯只亮了高的那盏，它却说星灯两盏都会亮。
+四组报告都已亲眼记录，只有一张残页经得起全部证据。
+ok   casebook with a refuted choice uses no forbidden word
+ok   the log's page is refuted by a concrete record
+ok   repair stays locked on a refuted page
+塔前记录 4 / 4 组 · 预测 1 次
+翻到：残页乙 · 一岗一灯
+判断：残页乙 · 一岗一灯 · 已被证据推翻
+反例 岗位 A 未持钥印 · 岗位 B 持钥印时，星灯只亮了低的那盏，它却说星灯只亮高的那盏
+「残页乙 · 一岗一灯」已被你的记录反驳：岗位 A 未持钥印 · 岗位 B 持钥印时，星灯只亮了低的那盏，它却说星灯只亮高的那盏。
+四组报告都已亲眼记录，只有一张残页经得起全部证据。
+ok   casebook on one lamp per post uses no forbidden word
+ok   one lamp per post is refuted as well
+塔前记录 4 / 4 组 · 预测 1 次
+翻到：残页丙 · 低星让位
+判断：残页丙 · 低星让位 · 未被推翻 · 与 4 组真实记录一致
+证据支持你的判断：「残页丙 · 低星让位」经得起全部四组真实记录。
+四组报告都已亲眼记录，只有一张残页经得起全部证据。
+两盏星灯各有一枚符文：两条讯线说法不同时，单席符文点亮低星灯；两条都是「是」，双印符文点亮高星灯，单席符文不放行，低星灯就让位。高星灯一盏，记两个人。照它给两盏星灯各重刻一道术式。
+ok   casebook on the yielding low lamp uses no forbidden word
+ok   the inscription survives and unlocks both runes
+ok   nothing was autosaved
+ok   the repair opens after the discovery
+ok   no clue before a validation
+→ 1. 点「放置双印符文」和「放置单席符文」，各在画布空白处单击放下一个
+○ 2. 从 A 发讯端分别连到每个符文的一个接收端
+○ 3. 从 B 发讯端分别连到每个符文的另一个接收端
+○ 4. 从双印符文发讯端连到「高星灯」许可印的接收端
+○ 5. 从单席符文发讯端连到「低星灯」许可印的接收端
+○ 6. 点「观察机关」，改变两份报告试一试
+○ 7. 点「检验我的术式」检查全部报告
+
+连线：单击端点开始，移动鼠标（不用按住），在目标端点上单击结束；在空白处单击会拐弯。Esc 取消。
+四组钥印报告都已如实记录 √
+点击右下角「进入修复」，用你在笔记里发现的规律，修好新星灯。
+ok   repair step uses no forbidden word
+ok   the repair asks for one rune per lamp
+ok   the save stores the choice and the repair
+ok   the saved repair and the four-way prediction are restored
+ok   one rune per lamp passes
+检验通过
+事由：星灯的术式
+值夜学徒：
+你的术式送到了。我们没有动你的原稿，照它另刻了一份副本，把四种岗位情形逐一送进去试讯，副本的回应都抄在试讯单上。
+四种情形，副本的回应全部合乎塔规。这道术式可以刻进星灯了——封盒里的旧术式失效之前，两道新的已经刻好了。
+试讯单：
+岗位 A 未持钥印 · 岗位 B 未持钥印 → 塔规：高星灯 不亮 · 副本：高星灯 不亮 ✓
+岗位 A 未持钥印 · 岗位 B 未持钥印 → 塔规：低星灯 不亮 · 副本：低星灯 不亮 ✓
+岗位 A 未持钥印 · 岗位 B 持钥印 → 塔规：高星灯 不亮 · 副本：高星灯 不亮 ✓
+岗位 A 未持钥印 · 岗位 B 持钥印 → 塔规：低星灯 亮 · 副本：低星灯 亮 ✓
+岗位 A 持钥印 · 岗位 B 未持钥印 → 塔规：高星灯 不亮 · 副本：高星灯 不亮 ✓
+岗位 A 持钥印 · 岗位 B 未持钥印 → 塔规：低星灯 亮 · 副本：低星灯 亮 ✓
+岗位 A 持钥印 · 岗位 B 持钥印 → 塔规：高星灯 亮 · 副本：高星灯 亮 ✓
+岗位 A 持钥印 · 岗位 B 持钥印 → 塔规：低星灯 不亮 · 副本：低星灯 不亮 ✓
+午夜光术学院 · 检验处
+〔火漆封印〕
+ok   result letter of the pass uses no forbidden word
+ok   the letter reads both lamps of every case
+ok   the pass opens the clue
+ok   the clue opens
+微光 · 档案精灵：我们刚亲眼证实：恰好一个岗位持钥印，只亮低星灯；两个都持钥印，低星灯让位，只亮高星灯。
+洛 · 守档人：所以「亮了一盏」可能是一个人，也可能是两个人——得看亮的是哪一盏。日志偏偏没写。
+微光 · 档案精灵：日志里「亮了一盏」是看见的，「一人在岗」是推出来的。推的那一步，把「一盏」直接当成了「一个人」。
+芙 · 巡夜信使：那就把三处放在一起：登记台盖了「未受理」，是没人来，或者两个人一起来；星灯亮了一盏，是一个人，或者两个人。
+微光 · 档案精灵：两处能同时说通的，只有「两个人」。档案门的光痕也是这么说的——三处记录，各凭各的规矩，指向同一个答案。
+洛 · 守档人：我把这一夜从头排一遍。已知：零点 A、B 都持钥印；档案门开过一次；登记台没有受理；星灯亮的是高的那盏。
+芙 · 巡夜信使：还有：值房的报告灯、我那儿的提醒灯，零点以后一盏都没亮。A、B 既然都持钥印，那只能是讯线没把报告送到——记录台那边也一样。
+微光 · 档案精灵：未知：讯线为什么暗；谁把「尚未收到」改成「否」、谁撕下校准页、谁并了登记那一行、谁补的「已停用」；日志为什么只写了一半。没有证据的，就留在未知那一栏。
+洛 · 守档人：记录完整，不等于事实完整。这一回，我把「不知道」也写进记录里。
+芙 · 巡夜信使：B 的手书说「零点整，在岗，钥印在手」——现在不只是一封信这么说了。天亮了，我把这一夜的记录送回档案馆。
+
+ok   clue uses no forbidden word
+ok   the clue tells one lamp is not one person
+ok   the clue keeps the unknown unknown
+ok   the clue returns to the result
+ok   pass and clue write nothing
+ok   an either-key rune on the low lamp does not pass
+退回重刻
+事由：星灯的术式
+值夜学徒：
+你的术式送到了。我们没有动你的原稿，照它另刻了一份副本，把四种岗位情形逐一送进去试讯，副本的回应都抄在试讯单上。
+有一种情形，副本的回应不合塔规，试讯单上已用红笔圈出。塔规没有错，是术式还差一点：对照那一行改一改，再送来。
+试讯单：
+岗位 A 未持钥印 · 岗位 B 未持钥印 → 塔规：高星灯 不亮 · 副本：高星灯 不亮 ✓
+岗位 A 未持钥印 · 岗位 B 未持钥印 → 塔规：低星灯 不亮 · 副本：低星灯 不亮 ✓
+岗位 A 未持钥印 · 岗位 B 持钥印 → 塔规：高星灯 不亮 · 副本：高星灯 不亮 ✓
+岗位 A 未持钥印 · 岗位 B 持钥印 → 塔规：低星灯 亮 · 副本：低星灯 亮 ✓
+岗位 A 持钥印 · 岗位 B 未持钥印 → 塔规：高星灯 不亮 · 副本：高星灯 不亮 ✓
+岗位 A 持钥印 · 岗位 B 未持钥印 → 塔规：低星灯 亮 · 副本：低星灯 亮 ✓
+岗位 A 持钥印 · 岗位 B 持钥印 → 塔规：高星灯 亮 · 副本：高星灯 亮 ✓
+岗位 A 持钥印 · 岗位 B 持钥印 → 塔规：低星灯 不亮 · 副本：低星灯 亮 ✗
+午夜光术学院 · 检验处
+〔退回重刻〕
+ok   result letter of the either-key rune uses no forbidden word
+ok   the letter names the low lamp that did not yield
+ok   unconnected seals do not pass
+退回重刻
+事由：星灯的术式
+值夜学徒：
+你的术式送到了。我们没有动你的原稿，照它另刻了一份副本——可副本立不起来：有一枚许可印还没有接上讯线，一种情形也没能试。
+无讯不作否：没接上的地方，我们不会把它当成星灯不亮。接上之后再送来。
+午夜光术学院 · 检验处
+〔退回重刻〕
+ok   result letter of the loose seals uses no forbidden word
+ok   silence is not told as dark
+ok   fixture binary_correct.dig unchanged
+ok   fixture or_wrong.dig unchanged
+ok   fixture unconnected.dig unchanged
+ok   story resource unchanged
+RESULT: 63 CHECKS PASSED

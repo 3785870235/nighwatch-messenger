@@ -1,0 +1,173 @@
+{
+  "fu": {
+    "path": "assets/game/v2/characters/fu-poses-b.png",
+    "size": [
+      1132,
+      1390
+    ],
+    "cell_size": [
+      566,
+      695
+    ],
+    "mode": "RGBA",
+    "sha256": "d049be6cd5bd53ea015d34c23c1492ffff95069a746022dce994d41dc25f3676",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "center_vertical_alpha_max": 1,
+    "center_horizontal_alpha_max": 1,
+    "cells": [
+      {
+        "index": 0,
+        "bbox_alpha_gt16": [
+          65,
+          22,
+          513,
+          680
+        ]
+      },
+      {
+        "index": 1,
+        "bbox_alpha_gt16": [
+          49,
+          27,
+          538,
+          676
+        ]
+      },
+      {
+        "index": 2,
+        "bbox_alpha_gt16": [
+          85,
+          20,
+          517,
+          667
+        ]
+      },
+      {
+        "index": 3,
+        "bbox_alpha_gt16": [
+          53,
+          19,
+          522,
+          671
+        ]
+      }
+    ]
+  },
+  "luo": {
+    "path": "assets/game/v2/characters/luo-poses-b.png",
+    "size": [
+      1132,
+      1390
+    ],
+    "cell_size": [
+      566,
+      695
+    ],
+    "mode": "RGBA",
+    "sha256": "c2b66230b782e9664e604ca1802121024428ffba55ca129e40716c8ad01ee9be",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "center_vertical_alpha_max": 1,
+    "center_horizontal_alpha_max": 1,
+    "cells": [
+      {
+        "index": 0,
+        "bbox_alpha_gt16": [
+          123,
+          80,
+          434,
+          621
+        ]
+      },
+      {
+        "index": 1,
+        "bbox_alpha_gt16": [
+          145,
+          70,
+          474,
+          627
+        ]
+      },
+      {
+        "index": 2,
+        "bbox_alpha_gt16": [
+          75,
+          68,
+          500,
+          598
+        ]
+      },
+      {
+        "index": 3,
+        "bbox_alpha_gt16": [
+          138,
+          56,
+          483,
+          607
+        ]
+      }
+    ]
+  },
+  "glimmer": {
+    "path": "assets/game/v2/characters/glimmer-poses-b.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "cell_size": [
+      627,
+      627
+    ],
+    "mode": "RGBA",
+    "sha256": "d967fe4afe53c7990af1c3db1457d1f7bd6e7df5d9b724b527b6f063e399ddda",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "center_vertical_alpha_max": 1,
+    "center_horizontal_alpha_max": 1,
+    "cells": [
+      {
+        "index": 0,
+        "bbox_alpha_gt16": [
+          70,
+          188,
+          568,
+          540
+        ]
+      },
+      {
+        "index": 1,
+        "bbox_alpha_gt16": [
+          140,
+          121,
+          518,
+          546
+        ]
+      },
+      {
+        "index": 2,
+        "bbox_alpha_gt16": [
+          141,
+          177,
+          473,
+          530
+        ]
+      },
+      {
+        "index": 3,
+        "bbox_alpha_gt16": [
+          139,
+          121,
+          510,
+          510
+        ]
+      }
+    ]
+  }
+}

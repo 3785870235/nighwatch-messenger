@@ -1,0 +1,25 @@
+ok   fresh progress opens only chapter one
+ok   the chapter really passes
+ok   passing alone writes no progress file
+ok   closing the level window opens chapter two
+ok   chapter three stays closed
+ok   closing still wrote no progress file
+ok   an explicit save writes the progress file
+ok   the saved pass opens chapter two after a restart
+ok   card titles match the chapter files
+ok   a pass from an earlier session offers no next chapter
+ok   the current pass offers the next chapter
+ok   the unread clue is read on the way
+ok   the passed chapter window is closed
+ok   the next chapter opens directly
+ok   the home window stays hidden
+ok   going on wrote no progress for chapter two
+ok   chapter two offers chapter three only after its own pass
+ok   chapter four offers chapter five
+ok   passing chapter four opens chapter five
+ok   the last chapter offers the way home, not a sixth chapter
+ok   the last clue is read on the way home
+ok   the last chapter window is closed
+ok   no chapter opens after the last one
+ok   the home window is shown again
+RESULT: 24 CHECKS PASSED

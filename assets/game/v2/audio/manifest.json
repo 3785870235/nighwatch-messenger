@@ -1,0 +1,136 @@
+{
+  "authoring": "Original deterministic procedural sound design; seeded filtered noise, physical-style resonances, envelopes and short echoes; not field recordings.",
+  "sample_rate": 44100,
+  "channels": 2,
+  "bit_depth": 16,
+  "sounds": [
+    {
+      "name": "wind",
+      "seconds": 12.0,
+      "peak": 0.055,
+      "rms": 0.010634713037540728,
+      "loop": true,
+      "sha256": "8a82df09e34f6a3bb1e58623cd942717717efd6e0ea8cf12b2566170c3c49ece"
+    },
+    {
+      "name": "embers",
+      "seconds": 8.0,
+      "peak": 0.045,
+      "rms": 0.004197871325474643,
+      "loop": true,
+      "sha256": "00a16924fccc3c9233f5437c5ab852f41fd5d8b0792a059de7576486eed4e5ee"
+    },
+    {
+      "name": "paper",
+      "seconds": 0.9,
+      "peak": 0.095,
+      "rms": 0.01177814960442108,
+      "loop": false,
+      "sha256": "cd52ae8b64e7bdd2cda0e0cc5a3a96949da6b9ba5c79ce82a449d6919243a4f0"
+    },
+    {
+      "name": "page",
+      "seconds": 0.55,
+      "peak": 0.095,
+      "rms": 0.013572018784034664,
+      "loop": false,
+      "sha256": "02bb5aea3c231c04df8b8b253c1a0cf1d501f26c162e5d55e42abdf438dd28dd"
+    },
+    {
+      "name": "step",
+      "seconds": 0.42,
+      "peak": 0.095,
+      "rms": 0.010683689802421983,
+      "loop": false,
+      "sha256": "56cc9e324605cc9b401b51e61c6240d147256ed564d98185e1859ecceaa655c4"
+    },
+    {
+      "name": "seal",
+      "seconds": 0.65,
+      "peak": 0.09500000000000001,
+      "rms": 0.01662051029520767,
+      "loop": false,
+      "sha256": "060921d3223e44e9fef0df9719d116feb5acf911ab128a04e6ff4083383aa273"
+    },
+    {
+      "name": "click",
+      "seconds": 0.18,
+      "peak": 0.09500000000000001,
+      "rms": 0.02358537202843468,
+      "loop": false,
+      "sha256": "e37f05e07f9c5a52bf47b89887a994dd06bc259eb0298432608a76e052604785"
+    },
+    {
+      "name": "bell",
+      "seconds": 3.8,
+      "peak": 0.14,
+      "rms": 0.023213453413209267,
+      "loop": false,
+      "sha256": "853932f98c7c1c3468020f929a5faccf6d5ffed1b5678d084f5c407ac945ed83"
+    },
+    {
+      "name": "spirit",
+      "seconds": 1.1,
+      "peak": 0.09499999999999999,
+      "rms": 0.01914947003957987,
+      "loop": false,
+      "sha256": "c4f82bf761d418c50e28ba9d98141ac281490d76026231f8769971c9006bd9dc"
+    },
+    {
+      "name": "wonder",
+      "seconds": 2.4,
+      "peak": 0.095,
+      "rms": 0.018589862630207125,
+      "loop": false,
+      "sha256": "184085b0ccd8513de98637600ebd38ce076b2a7c37df6d9cf8b35af53cd59342"
+    },
+    {
+      "name": "rune",
+      "seconds": 1.3999773242630384,
+      "peak": 0.095,
+      "rms": 0.01749556702964394,
+      "loop": false,
+      "sha256": "05e43e4ce132b55036595593f215988f749f5328744ce8fb4b71de5919f6ca50"
+    },
+    {
+      "name": "open",
+      "seconds": 2.2,
+      "peak": 0.14,
+      "rms": 0.029906123019404564,
+      "loop": false,
+      "sha256": "8a183238b6ccbce4aff60587e58b2be3d399314e79367c4e759ff34245b00d45"
+    },
+    {
+      "name": "close",
+      "seconds": 1.2,
+      "peak": 0.14,
+      "rms": 0.03148952806117071,
+      "loop": false,
+      "sha256": "050c4b22f8b0b043f49ad151a3f866bd609b2a9f7094cca1452c7ec634589858"
+    },
+    {
+      "name": "success",
+      "seconds": 3.1,
+      "peak": 0.14,
+      "rms": 0.021423503650440608,
+      "loop": false,
+      "sha256": "82871f3d40ed1a53313c2f1d3b4725e19f973eb82a7c5d991e9486224017a937"
+    },
+    {
+      "name": "question",
+      "seconds": 0.9,
+      "peak": 0.095,
+      "rms": 0.021449174813108828,
+      "loop": false,
+      "sha256": "630670b35482388efb7172d00335089a563adea730280c04ae424a1560acfd14"
+    },
+    {
+      "name": "transition",
+      "seconds": 0.85,
+      "peak": 0.095,
+      "rms": 0.014784512025589731,
+      "loop": false,
+      "sha256": "c03948311f2be2057fe80e790cbb230f865965aeb20e7dd624f09b92c8961930"
+    }
+  ]
+}
