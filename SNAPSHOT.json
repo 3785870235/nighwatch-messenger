@@ -1,0 +1,10 @@
+{
+  "version": "competition-final-2026-10-13",
+  "verified_software_commit": "a7bc91e788126c2b661b73dd26867c4af70c89e8",
+  "team_video_commit": "8889287a7ac859aacdf3eccaccd70487fb409e54",
+  "jar_sha256": "aebf594f60e83e9480e0e58326c949b4f3ec4fec7bd12e7fc8cb4aaa04bce45a",
+  "video_sha256": "8840d0737a8e2531e270211162a2b0b492e375b2ccfc1bc2ad19b32d2f667766",
+  "chapters": 5,
+  "all_chapters_open": true,
+  "autosave": false
+}

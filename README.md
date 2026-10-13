@@ -2,12 +2,18 @@
 
 **一款通过实验发现数字逻辑规则的原创调查游戏。** 玩家作为值夜学徒，和信使芙、档案精灵微光、守档人洛核对互相矛盾的记录：改变钥印报告、预测机关回应、用反例排除解释，再亲手修复术式。
 
-参赛选题：[The Midnight Academy](https://ai.bnbuacm.xyz/)。当前交付为 **2026-10-13 五章与角色动态更新版**，Windows 桌面优先，基于 Digital Java/Swing；游戏运行不调用 AI，也不需要联网。
+参赛选题：[The Midnight Academy](https://ai.bnbuacm.xyz/)。当前交付为 **2026-10-13 最终参赛版（含团队演示视频）**，Windows 桌面优先，基于 Digital Java/Swing；游戏运行不调用 AI，也不需要联网。
+
+## 最终交付入口
+
+- **[观看团队演示（2分58.55秒）](demo演示.mp4)** · [原始MP4直链](https://raw.githubusercontent.com/3785870235/nighwatch-messenger/main/demo%E6%BC%94%E7%A4%BA.mp4)
+- **[下载一个完整压缩包](https://github.com/3785870235/nighwatch-messenger/releases/download/competition-final-2026-10-13/MidnightLogicAcademy-Final-Submission.zip)**：游戏、Java运行环境、源码、视频、7张截图、AI记录、许可证及参赛说明全部在内。
+- [交付清单与需求核对](docs/FINAL_DELIVERY.md) · [验证记录](docs/VALIDATION.md)
 
 ## 下载与启动
 
-1. 到 [本次版本 Release](https://github.com/3785870235/nighwatch-messenger/releases/tag/competition-2026-10-13-motion) 下载 **MidnightLogicAcademy-Competition-Windows-x64.zip**。
-2. 完整解压到可写目录，双击 **Run-Academy.cmd**。已包含 Java 运行环境，无需安装 Java、Maven 或另下源码。
+1. 到 [本次版本 Release](https://github.com/3785870235/nighwatch-messenger/releases/tag/competition-final-2026-10-13) 下载 **MidnightLogicAcademy-Final-Submission.zip**。
+2. 完整解压到可写目录，双击 **Run-Academy.cmd**。完整包已包含 Java、全部源码、演示视频、截图和参赛文档，无需另外下载文件或安装 Java/Maven 才能试玩。
 3. 首页「开始探索」后五章全部可直接选择；已通过章节有标记。仍可在通关回信进入下一章，也可进入自由工坊。
 4. **手动保存**：使用菜单中的保存或修复时 Ctrl+S。观察、预测、通关不自动存档；退出可保存、放弃或取消。个人数据位于解压目录的 `work/`。
 
@@ -30,7 +36,7 @@
 | 首页灯光/星光/流星、精灵纸翼与鼠标注视 | 已实现 | [首页动态](digital-source/src/main/java/de/neemann/digital/academy/AcademyHomeMotion.java)、[角色](digital-source/src/main/java/de/neemann/digital/academy/AcademyCharacters.java) |
 | 芙/洛第二组姿态 | 已接入部分章节台词 | [姿态检查](digital-source/src/test/java/de/neemann/digital/academy/StoryPoseTest.java) |
 | 微光八姿态、芙/洛走入场景与说话口型 | 已实现程序动画 | 原画程序形变，非逐帧手绘或语音对口型；微光偷看/困惑姿态不跟鼠标 |
-| 演示视频 | **待团队录制补充** | [3分钟录制指南](docs/DEMO_RECORDING_GUIDE.md)；指南不是已完成视频 |
+| 演示视频 | **已由团队录制并提交，2分58.55秒** | [观看 / 下载视频](demo演示.mp4)；[视频核验](docs/VIDEO_AUDIT.md) |
 
 五章剧情有阶段性结尾，保留“谁改记录、为何改动”等未知，不虚构已经找到责任人。已知限制包括第三章部分姿态仍按默认选择、信封封口美术存在差异、尚无完整人工逐关试玩与高DPI全覆盖验证。
 
