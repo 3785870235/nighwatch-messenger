@@ -65,9 +65,9 @@ public final class AcademyHome extends JFrame {
     private int openModes;
     private AcademyPanel activeLevel;
     /**
-     * Chapters passed since the window opened. The chapter cards are gated on it, so finishing a
-     * chapter opens the next one right away — waiting for the progress file alone would only
-     * unlock it after the player saved and restarted the game.
+     * Chapters passed since the window opened. Every chapter is open from the start; this only marks
+     * a passed chapter on its card right away — the progress file alone would show it only after the
+     * player saved and restarted the game.
      */
     private final Set<String> passedNow = new HashSet<>();
     /** The chapter to open as soon as the closing level window is gone, or null to show the home. */
@@ -162,10 +162,10 @@ public final class AcademyHome extends JFrame {
         levels.add(top, BorderLayout.NORTH);
 
         JPanel grid = AcademyTheme.clear(new GridLayout(3, 2, 24, 18));
-        // The chapters chain: a chapter opens once the one before it passed; a chapter whose files
-        // are not there yet stays a closed card.
+        // Every chapter is open from the start and can be played in any order; a passed chapter is
+        // marked on its card, and a chapter whose files are not there yet stays a closed card.
         for (int i = 0; i < CHAPTERS.length; i++)
-            grid.add(chapter(CHAPTERS[i][0], CHAPTERS[i][1], CHAPTERS[i][2], isOpen(i)));
+            grid.add(chapter(i));
         levels.add(grid, BorderLayout.CENTER);
         return levels;
     }
@@ -179,11 +179,9 @@ public final class AcademyHome extends JFrame {
             {"05_star_lamps", "第五章 · 星灯归位", "把这一夜的报告，从头送一遍。"},
     };
 
-    /** @return true if the chapter at this index exists and the one before it passed */
+    /** @return true if the chapter at this index exists; no chapter waits for the one before it */
     private boolean isOpen(int index) {
-        if (readLevel(CHAPTERS[index][0]) == null)
-            return false;
-        return index == 0 || chapterPassed(CHAPTERS[index - 1][0]);
+        return readLevel(CHAPTERS[index][0]) != null;
     }
 
     /**
@@ -198,34 +196,40 @@ public final class AcademyHome extends JFrame {
     }
 
     /**
-     * One chapter card. The title, the chapter line and the blurb all come from the chapter's own
-     * level.properties, so a rewritten chapter can never disagree with the card that opens it.
+     * One chapter card. The title and the blurb come from the chapter's own level.properties, so a
+     * rewritten chapter can never disagree with the card that opens it.
      *
-     * @param id   the level id
-     * @param kicker the chapter line, e.g. 第一章 · 值房的灯
-     * @param detail the one-line summary
-     * @param open true if the chapter may be entered
+     * @param index the chapter index
      * @return the card button
      */
-    private JButton chapter(String id, String kicker, String detail, boolean open) {
-        String title = detail;
-        String blurb = detail;
-        String state = open ? " · 当前开放" : " · 尚未开放";
+    private JButton chapter(int index) {
+        String id = CHAPTERS[index][0];
         LevelDefinition level = readLevel(id);
-        if (level != null) {
-            title = level.getTitle();
-            blurb = level.getStory();
-            if (!open)
-                state = " · 尚未开启";
-        } else
-            title = kicker.substring(kicker.indexOf('·') + 1).trim();
-        BigCard card = new BigCard(title, kicker + state, blurb, open);
+        boolean open = level != null;
+        String kicker = CHAPTERS[index][1];
+        String title = open ? level.getTitle() : kicker.substring(kicker.indexOf('·') + 1).trim();
+        String blurb = open ? level.getStory() : CHAPTERS[index][2];
+        BigCard card = new BigCard(title, kicker(index), blurb, open);
         card.setPreferredSize(new Dimension(550, 150));
         if (open)
             card.addActionListener(e -> openLevel(id));
         else
-            card.setToolTipText(level == null ? "这一章还在写" : "先完成上一章");
+            card.setToolTipText("这一章还在写");
         return card;
+    }
+
+    /**
+     * The chapter line of a card: a passed chapter says so, an unplayed one carries no state, and
+     * only a chapter whose files are missing is not open yet.
+     *
+     * @param index the chapter index
+     * @return e.g. 第一章 · 值房的灯 · 已通过
+     */
+    private String kicker(int index) {
+        String id = CHAPTERS[index][0];
+        if (readLevel(id) == null)
+            return CHAPTERS[index][1] + " · 尚未开放";
+        return CHAPTERS[index][1] + (chapterPassed(id) ? " · 已通过" : "");
     }
 
     private LevelDefinition readLevel(String id) {
@@ -241,15 +245,27 @@ public final class AcademyHome extends JFrame {
 
     /**
      * The open state of the chapter cards, in chapter order, exactly as {@link #createLevels()}
-     * gates them. Only used by the automated check.
+     * builds them. Only used by the automated check.
      *
-     * @return e.g. "[true, false, false, false, false]"
+     * @return e.g. "[true, true, true, true, true]"
      */
     String chapterStates() {
         StringBuilder sb = new StringBuilder("[");
         for (int i = 0; i < CHAPTERS.length; i++)
             sb.append(i > 0 ? ", " : "").append(isOpen(i));
         return sb.append(']').toString();
+    }
+
+    /**
+     * The chapter lines of the cards, one per line, in chapter order. Only used by the automated check.
+     *
+     * @return the chapter lines
+     */
+    String cardKickers() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < CHAPTERS.length; i++)
+            sb.append(i > 0 ? "\n" : "").append(kicker(i));
+        return sb.toString();
     }
 
     /**
@@ -310,7 +326,7 @@ public final class AcademyHome extends JFrame {
 
     /**
      * Rebuilds the chapter cards from the current state. A chapter that was passed while a level
-     * window was open unlocks the next one, so the cards can not be built once and kept.
+     * window was open is marked on its card, so the cards can not be built once and kept.
      * Must be called on the EDT.
      */
     private void refreshLevels() {
@@ -558,7 +574,7 @@ public final class AcademyHome extends JFrame {
             @Override
             public void windowClosed(WindowEvent e) {
                 openModes--;
-                // The chapter just played may have opened the next one: rebuild the cards.
+                // The chapter just played may have been passed: rebuild the cards.
                 refreshLevels();
                 String next = pendingNext;
                 pendingNext = null;

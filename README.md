@@ -2,13 +2,13 @@
 
 **一款通过实验发现数字逻辑规则的原创调查游戏。** 玩家作为值夜学徒，和信使芙、档案精灵微光、守档人洛核对互相矛盾的记录：改变钥印报告、预测机关回应、用反例排除解释，再亲手修复术式。
 
-参赛选题：[The Midnight Academy](https://ai.bnbuacm.xyz/)。当前交付为 **2026-10-13 五章版本**，Windows 桌面优先，基于 Digital Java/Swing；游戏运行不调用 AI，也不需要联网。
+参赛选题：[The Midnight Academy](https://ai.bnbuacm.xyz/)。当前交付为 **2026-10-13 五章与角色动态更新版**，Windows 桌面优先，基于 Digital Java/Swing；游戏运行不调用 AI，也不需要联网。
 
 ## 下载与启动
 
-1. 到 [本次版本 Release](https://github.com/3785870235/nighwatch-messenger/releases/tag/competition-2026-10-13) 下载 **MidnightLogicAcademy-Competition-Windows-x64.zip**。
+1. 到 [本次版本 Release](https://github.com/3785870235/nighwatch-messenger/releases/tag/competition-2026-10-13-motion) 下载 **MidnightLogicAcademy-Competition-Windows-x64.zip**。
 2. 完整解压到可写目录，双击 **Run-Academy.cmd**。已包含 Java 运行环境，无需安装 Java、Maven 或另下源码。
-3. 首页「开始探索」从第一章开始；通过后可以进入下一章，也可进入自由工坊。
+3. 首页「开始探索」后五章全部可直接选择；已通过章节有标记。仍可在通关回信进入下一章，也可进入自由工坊。
 4. **手动保存**：使用菜单中的保存或修复时 Ctrl+S。观察、预测、通关不自动存档；退出可保存、放弃或取消。个人数据位于解压目录的 `work/`。
 
 不要在 ZIP 内直接运行。仓库源码附带同版 `app/Digital.jar`，但 Code ZIP 不带 Java；本机已有 Java 11+ 时可用同一启动器。
@@ -23,13 +23,13 @@
 | 第三章档案门：双印规则 | 已实现 | [第三章](levels/03_archive_gate/) |
 | 第四章受理灯：恰好一份成立 | 已实现 | [第四章](levels/04_registry_desk/) |
 | 第五章星灯：高低两灯表示数量（半加器） | 已实现；两个输出独立验证 | [第五章](levels/05_star_lamps/) |
-| 逐章解锁、通关后直达下一章、最终回到学院 | 已实现 | [首页和章节衔接](digital-source/src/main/java/de/neemann/digital/academy/AcademyHome.java) |
+| 五章直接开放、通过标记、通关直达下一章、最终回到学院 | 已实现 | [首页和章节衔接](digital-source/src/main/java/de/neemann/digital/academy/AcademyHome.java) |
 | 自由工坊、元件搭建、实际连线与运行 | 已实现，复用 Digital | [应用窗口](digital-source/src/main/java/de/neemann/digital/gui/Main.java) |
 | 手动保存、另存为、取消与失败保护 | 已实现；不自动保存 | [进度](digital-source/src/main/java/de/neemann/digital/academy/AcademyProgress.java)、[保存策略](digital-source/src/main/java/de/neemann/digital/academy/AcademySavePolicy.java) |
-| 分屏对白、可后退教程、动态序幕、音效 | 已实现；Esc跳整段，空格跳当前幕 | [过场](digital-source/src/main/java/de/neemann/digital/academy/AcademyCinematic.java)、[声音](digital-source/src/main/java/de/neemann/digital/academy/AcademySound.java) |
+| 分屏对白、可后退及跳过的小课、动态序幕、音效 | 已实现；Esc跳整段，空格跳当前幕 | [过场](digital-source/src/main/java/de/neemann/digital/academy/AcademyCinematic.java)、[声音](digital-source/src/main/java/de/neemann/digital/academy/AcademySound.java) |
 | 首页灯光/星光/流星、精灵纸翼与鼠标注视 | 已实现 | [首页动态](digital-source/src/main/java/de/neemann/digital/academy/AcademyHomeMotion.java)、[角色](digital-source/src/main/java/de/neemann/digital/academy/AcademyCharacters.java) |
 | 芙/洛第二组姿态 | 已接入部分章节台词 | [姿态检查](digital-source/src/test/java/de/neemann/digital/academy/StoryPoseTest.java) |
-| 微光第二组姿态、完整行走与口型动画 | 未接入 / 未实现 | 新图集已有，仍使用原组动画坐标 |
+| 微光八姿态、芙/洛走入场景与说话口型 | 已实现程序动画 | 原画程序形变，非逐帧手绘或语音对口型；微光偷看/困惑姿态不跟鼠标 |
 | 演示视频 | **待团队录制补充** | [3分钟录制指南](docs/DEMO_RECORDING_GUIDE.md)；指南不是已完成视频 |
 
 五章剧情有阶段性结尾，保留“谁改记录、为何改动”等未知，不虚构已经找到责任人。已知限制包括第三章部分姿态仍按默认选择、信封封口美术存在差异、尚无完整人工逐关试玩与高DPI全覆盖验证。
@@ -50,6 +50,7 @@
 ![核对残页与证据](screenshots/04-evidence.png)
 ![动手修复](screenshots/05-repair.png)
 ![真实检验与回信](screenshots/06-verification.png)
+![微光新姿态](screenshots/07-glimmer.png)
 
 ## 设计决策、实用性与相近作品
 
@@ -87,7 +88,7 @@
 
 首次构建需要下载 Maven 依赖；试玩不需要。构建成功后会更新 `app/Digital.jar`。
 
-交还源码已有 **878项单元测试通过**。本次发布重新package生成JAR，随后使用便携Java和该JAR复核第五章及章节衔接，避免测试类目录掩盖旧JAR。具体命令、通过数和验证边界见 [VALIDATION.md](docs/VALIDATION.md)。不把自动化操作描述为人工通关。
+发布前重新运行 **880项单元测试，全部通过**。本次采用09:23完整package后的JAR，用便携Java和该JAR复核五章直接开放及章节衔接，并额外重跑10组GUI检查，避免测试类目录掩盖产品JAR。具体命令、通过数和验证边界见 [VALIDATION.md](docs/VALIDATION.md)。不把自动化操作描述为人工通关。
 
 ## 开源、AI与比赛新增范围
 

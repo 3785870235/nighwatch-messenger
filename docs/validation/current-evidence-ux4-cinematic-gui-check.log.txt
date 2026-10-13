@@ -1,0 +1,22 @@
+OK four-shot intro lasts 42 seconds before final hold
+OK intro owns a live animation timer
+OK first shot is still present at 9.9s
+OK automatic timeline enters second shot after 10s
+OK space advances exactly one shot
+OK held space cannot skip several shots
+OK release and press enters one more shot
+OK escape skips whole sequence with exactly one callback
+OK skipping releases timer
+OK window clouds really change pixels
+OK candle flames really change pixels
+OK reduced motion freezes scene layers
+MEASURED foreground Swing repaint fps at 1280x720: 58.99848373896791; target timer 16ms; not a guarantee on every machine.
+OK visible scene paints continuously
+OK fu has distinct real RGBA poses
+OK glimmer has distinct real RGBA poses
+OK luo has distinct real RGBA poses
+Audio clips active before mute: 2
+OK mute cancels queued audio and closes active clips
+OK window removal releases animation timer
+OK ending holds two 9.5s shots
+RESULT: 19 CHECKS PASSED

@@ -1,0 +1,56 @@
+ok   the chapter is a lamp chapter at the registry desk
+ok   three candidate pages
+ok   the doubt dialogue opens on its first page
+ok   doubt dialogue uses no forbidden word
+ok   the dialogue asks how the desk answers two reports at once
+ok   the dialogue ends on the casebook
+ok   empty casebook uses no forbidden word
+ok   no evidence before a choice
+ok   repair locked without evidence
+ok   the casebook opens on page one of three
+ok   choosing is unsaved state
+ok   back returns to the desk
+ok   00: the lamp stays dark and no page is named
+ok   one key: the lamp lights
+ok   the other key alone lights it too
+ok   desk line uses no forbidden word
+ok   desk feedback uses no forbidden word
+ok   the last report needs a prediction
+ok   both keys: the lamp stays dark and the wrong guess is a new clue
+ok   the desk does not judge the pages itself
+ok   desk line after the prediction uses no forbidden word
+ok   desk feedback after the prediction uses no forbidden word
+ok   complete records with a refuted choice lead to the pages, not the repair
+ok   casebook with a refuted choice uses no forbidden word
+ok   the plaque's page is refuted by a concrete record
+ok   repair stays locked on a refuted page
+ok   casebook on the signed register uses no forbidden word
+ok   the signed register is refuted as well
+ok   casebook on the single seat uses no forbidden word
+ok   the struck-out page survives and unlocks the rune
+ok   nothing was autosaved
+ok   the repair opens after the discovery
+ok   no clue before a validation
+ok   repair step uses no forbidden word
+ok   the save stores the choice and the repair
+ok   the saved repair is restored
+ok   the single-seat rune passes
+ok   result letter of the pass uses no forbidden word
+ok   the pass opens the clue
+ok   the clue opens
+ok   clue uses no forbidden word
+ok   the clue tells not accepted is not a lost key
+ok   the clue keeps the unknown unknown
+ok   the clue points to the star lamps
+ok   the clue returns to the result
+ok   pass and clue write nothing
+ok   the either-key rune does not pass
+ok   result letter of the either-key rune uses no forbidden word
+ok   an unconnected seal does not pass
+ok   result letter of the loose seal uses no forbidden word
+ok   silence is not told as not accepted
+ok   fixture xor_correct.dig unchanged
+ok   fixture or_wrong.dig unchanged
+ok   fixture unconnected.dig unchanged
+ok   story resource unchanged
+RESULT: 55 CHECKS PASSED

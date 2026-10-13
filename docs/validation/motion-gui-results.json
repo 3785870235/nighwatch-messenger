@@ -1,0 +1,52 @@
+[
+  {
+    "check": "AcademyGuiCheck",
+    "exit_code": 0,
+    "missing_art_warning": false
+  },
+  {
+    "check": "AcademyP2GuiCheck",
+    "exit_code": 0,
+    "missing_art_warning": false
+  },
+  {
+    "check": "AcademyUxGuiCheck",
+    "exit_code": 0,
+    "missing_art_warning": false
+  },
+  {
+    "check": "AcademyUx3Check",
+    "exit_code": 0,
+    "missing_art_warning": false
+  },
+  {
+    "check": "AcademyUx4Check",
+    "exit_code": 0,
+    "missing_art_warning": false
+  },
+  {
+    "check": "AcademyStory1Check",
+    "exit_code": 0,
+    "missing_art_warning": false
+  },
+  {
+    "check": "AcademyChapter4Check",
+    "exit_code": 0,
+    "missing_art_warning": false
+  },
+  {
+    "check": "AcademyChapter5Check",
+    "exit_code": 0,
+    "missing_art_warning": false
+  },
+  {
+    "check": "AcademyHomeMotionCheck",
+    "exit_code": 0,
+    "missing_art_warning": false
+  },
+  {
+    "check": "AcademyPoseAnchorCheck",
+    "exit_code": 0,
+    "missing_art_warning": false
+  }
+]

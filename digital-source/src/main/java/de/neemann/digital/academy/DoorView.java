@@ -345,8 +345,9 @@ public final class DoorView extends JComponent {
         }
 
         if (h >= 260)
-            AcademyCharacters.spirit(g2, w - Math.min(100, w * 0.12), h * 0.47,
-                    Math.min(140, h * 0.30), time, valid && open, AcademyPointer.local(this));
+            // 好奇 before anything is observed, 困惑 over a reading that is no reading, 举翼 when it opens
+            AcademyCharacters.spirit(g2, w - Math.min(100, w * 0.12), h * 0.47, Math.min(140, h * 0.30), time,
+                    unobserved ? 6 : !valid ? 7 : open ? 2 : 0, AcademyPointer.local(this));
 
         boolean compact = h < 260;
         g2.setPaint(new GradientPaint(0, h * 0.45f, new Color(8, 14, 26, 0), 0, h, new Color(8, 14, 26, 235)));

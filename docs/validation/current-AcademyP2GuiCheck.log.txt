@@ -1,0 +1,35 @@
+ok   level opens from home
+ok   home after level return
+ok   partial observations restored
+ok   unobserved rows stay empty
+ok   wrong prediction restored honestly
+ok   copy opens distinct circuit window
+ok   free edits leave level circuit unchanged
+ok   discard closes copied free window
+ok   return home while source level remains open
+ok   source level remains available
+ok   reselecting level reuses existing work window
+ok   validation before restoring history
+ok   correct level passes
+ok   home after completed level closes
+ok   historic pass recorded
+ok   restored current circuit still requires validation
+ok   leaving level stops polling
+ok   leaving level discards pending validation
+ok   new free circuit empty
+ok   native SaveAs writes sandbox file
+ok   home after free save and close
+ok   native reopen preserves AND truth table
+ok   free model running
+ok   cancel return stays in free window
+ok   cancel preserves dirty circuit and running model
+ok   child window inherits save policy
+ok   save on return closes free mode
+ok   closed free model stops
+ok   protected window model running
+native save error shown
+ok   refused save prevents leaving
+ok   refused save preserves model and dirty state
+ok   protected file bytes unchanged
+ok   original fixture bytes unchanged
+RESULT: ALL CHECKS PASSED

@@ -119,9 +119,12 @@ public final class AcademyUx3Check {
         edt(() -> { first.notebookButton().doClick(); return null; });
         settle();
         check("notebook returns to same tutorial page", edt(() -> first.page().equals("lesson") && first.lesson().page() == 0));
-        // the experiment lesson has five pages now (一份报告 … 交给检验处)
-        finishLesson(first, 5);
-        check("lesson returns to investigation", edt(() -> first.page().equals("experiment")));
+        // a lesson can be left at any page but the last, where 「回到现场」 already leaves it
+        check("the lesson offers a way to skip it", edt(() -> first.lesson().skipButton().isShowing()
+                && "跳过小课".equals(first.lesson().skipButton().getText())));
+        edt(() -> { first.lesson().skipButton().doClick(); return null; });
+        settle();
+        check("skipping the lesson returns to investigation", edt(() -> first.page().equals("experiment")));
         edt(() -> { first.observeButton().doClick(); return null; });
         check("observation is unsaved state", edt(() -> first.isProgressDirty() && first.getMain().isStateChanged()));
         check("observation writes neither progress nor circuit", !dest.exists() && !progress.getFile().exists());
@@ -161,14 +164,21 @@ public final class AcademyUx3Check {
         });
         settle();
         check("first repair automatically opens its five-step lesson", edt(() -> second.page().equals("lesson") && second.lesson().page() == 0));
-        finishLesson(second, 5);
+        shot(second.getMain(), "03a-build-lesson");
+        check("the repair lesson can be skipped too", edt(() -> second.lesson().skipButton().isShowing()));
+        edt(() -> { second.lesson().skipButton().doClick(); return null; });
+        settle();
+        check("skipping the repair lesson opens the repair scene", edt(() -> second.page().equals("repair")));
         check("building page has actual canvas without embedded door", edt(() -> second.getMain().getCircuitComponent().isShowing() && !second.door().isShowing()));
         check("entering repair never autosaves progress", Arrays.equals(saved, Files.readAllBytes(progress.getFile().toPath())));
         shot(second.getMain(), "03-build-minimal");
         edt(() -> { second.lessonForTest(); return null; });
         settle();
         check("repair tutorial can be reopened", edt(() -> second.page().equals("lesson") && second.lesson().page() == 0));
-        finishLesson(second, 5);
+        finishLesson(second, 4);
+        check("the last lesson page leaves by 回到现场, without a skip", edt(() -> second.lesson().page() == 4
+                && "回到现场 →".equals(second.lesson().nextButton().getText()) && !second.lesson().skipButton().isVisible()));
+        finishLesson(second, 1);
         check("repair lesson returns to its scene", edt(() -> second.page().equals("repair")));
         edt(() -> { second.inspectForTest(); return null; });
         settle();

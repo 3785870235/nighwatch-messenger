@@ -1,0 +1,102 @@
+start: 实验阶段 · 已观察 0/4 · 已预测 0 次
+岗位 A | 岗位 B | 你的预测 | 门的回应
+0 | 0 |  | 尚未观察
+0 | 1 |  | 尚未观察
+1 | 0 |  | 尚未观察
+1 | 1 |  | 尚未观察
+
+ok   no prefilled observations
+screenshot 01-start.png
+observe 0: 已记录：岗位 A 未持钥印 · 岗位 B 未持钥印 → 门保持关闭（门开 = 0）。
+拿这组回应对照残页的说法：哪张和门说得不一样？想好了，就在「三张残页」里做出判断。
+observe 1: 已记录：岗位 A 未持钥印 · 岗位 B 持钥印 → 门保持关闭（门开 = 0）。
+拿这组回应对照残页的说法：哪张和门说得不一样？想好了，就在「三张残页」里做出判断。
+observe 2: 已记录：岗位 A 持钥印 · 岗位 B 未持钥印 → 门保持关闭（门开 = 0）。
+拿这组回应对照残页的说法：哪张和门说得不一样？想好了，就在「三张残页」里做出判断。
+ok   last combination needs prediction
+ok   prediction possible
+ok   door not opened before observing 11
+predict 11 -> 1: 猜对了！岗位 A 持钥印 · 岗位 B 持钥印 → 门打开了（门开 = 1）。你的推理和门的回应一致，已记入工作记录。
+拿这组回应对照残页的说法：哪张和门说得不一样？想好了，就在「三张残页」里做出判断。
+岗位 A | 岗位 B | 你的预测 | 门的回应
+0 | 0 |  | 0
+0 | 1 |  | 0
+1 | 0 |  | 0
+1 | 1 | 1 | 1
+
+ok   experiment complete
+ok   observed AND
+ok   old door open after 11
+ok   rebuild enabled
+screenshot 02-experiment-done.png
+ok   polling after rebuild
+ok   door not running
+ok   validation finished
+template:
+退回重刻
+事由：档案门的新术式
+值夜学徒：
+你的术式送到了。我们没有动你的原稿，照它另刻了一份副本——可副本立不起来：许可印还没有接上讯线，一种情形也没能试。
+无讯不作否：没接上的地方，我们不会把它当成档案门门不开。接上之后再送来。
+午夜光术学院 · 检验处
+〔退回重刻〕
+ok   template rejected
+ok   template letter names the loose seal and never writes a closed door
+ok   validation finished
+or_wrong:
+退回重刻
+事由：档案门的新术式
+值夜学徒：
+你的术式送到了。我们没有动你的原稿，照它另刻了一份副本，把四种岗位情形逐一送进去试讯，副本的回应都抄在试讯单上。
+有两种情形，副本的回应不合门规，试讯单上已用红笔圈出。门规没有错，是术式还差一点：对照那几行改一改，再送来。
+另外，术式本身还有不合本章规矩的地方：
+· 术式里用了本章用不上的「任一」符文。这一章只用岗位、许可印、「双印」符文。
+试讯单：
+岗位 A 未持钥印 · 岗位 B 未持钥印 → 门规：门不开 · 副本：门不开 ✓
+岗位 A 未持钥印 · 岗位 B 持钥印 → 门规：门不开 · 副本：门开 ✗
+岗位 A 持钥印 · 岗位 B 未持钥印 → 门规：门不开 · 副本：门开 ✗
+岗位 A 持钥印 · 岗位 B 持钥印 → 门规：门开 · 副本：门开 ✓
+午夜光术学院 · 检验处
+〔退回重刻〕
+ok   OR sent back with the failing row on the slip
+screenshot 03-or-rejected.png
+ok   model running
+ok   door closed at A=0 B=0
+ok   door closed at A=1 B=0
+ok   door open at A=1 B=1
+screenshot 04-and-running-door-open.png
+ok   validation finished
+and_correct:
+检验通过
+事由：档案门的新术式
+值夜学徒：
+你的术式送到了。我们没有动你的原稿，照它另刻了一份副本，把四种岗位情形逐一送进去试讯，副本的回应都抄在试讯单上。
+四种情形，副本的回应全部合乎门规。这道术式可以刻进档案门了——锁纹今夜不会熄灭。
+试讯单：
+岗位 A 未持钥印 · 岗位 B 未持钥印 → 门规：门不开 · 副本：门不开 ✓
+岗位 A 未持钥印 · 岗位 B 持钥印 → 门规：门不开 · 副本：门不开 ✓
+岗位 A 持钥印 · 岗位 B 未持钥印 → 门规：门不开 · 副本：门不开 ✓
+岗位 A 持钥印 · 岗位 B 持钥印 → 门规：门开 · 副本：门开 ✓
+午夜光术学院 · 检验处
+〔火漆封印〕
+ok   AND passed
+ok   AND letter carries the wax seal
+ok   same running model after validation
+ok   player inputs unchanged
+ok   door still open after validation
+ok   stage shows completion
+screenshot 05-and-validated.png
+ok   door idle after stop
+ok   edit clears passed result
+ok   edit clears completion stage
+ok   validation finished
+ok   broken circuit rejected after edit
+ok   replaced circuit discards old snapshot result
+ok   replacement asks for revalidation
+ok   validation enabled after replacement
+ok   validation finished
+ok   replacement OR rejected
+ok   timer stopped after close
+ok   pending validation discarded
+ok   level template untouched
+RESULT: ALL CHECKS PASSED

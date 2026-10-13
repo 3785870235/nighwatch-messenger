@@ -29,7 +29,8 @@ public final class AcademyShots {
     }
 
     /**
-     * @param args project root, scratch output folder, then any of: spirit, cinema, letter, case, result, ledger, story
+     * @param args project root, scratch output folder, then any of: spirit, cinema, letter, case, result, ledger,
+     *             story, entrance, motion
      * @throws Exception on render failure
      */
     public static void main(String[] args) throws Exception {
@@ -61,6 +62,12 @@ public final class AcademyShots {
                     case "story":
                         story(args[0]);
                         break;
+                    case "entrance":
+                        entrances(args[0]);
+                        break;
+                    case "motion":
+                        motion();
+                        break;
                     default:
                         System.out.println("unknown shot set " + args[i]);
                 }
@@ -76,11 +83,15 @@ public final class AcademyShots {
         System.exit(0);
     }
 
-    /** Each pose at both flap extremes and at rest, large enough that a seam would be obvious. */
+    /**
+     * Each pose at both flap extremes and at rest, large enough that a seam would be obvious, and with its
+     * eyes closed in a blink where the pose has painted eyes.
+     */
     private static void spirit() throws Exception {
-        for (int pose = 0; pose < 4; pose++) {
-            double flutter = pose == 3 ? 4.6 : 3.1;
-            double[] times = {0, Math.PI / 2 / flutter, 3 * Math.PI / 2 / flutter};
+        double[] flutters = {3.1, 3.1, 3.1, 4.6, 2.6, 3.1, 3.6, 4.2};
+        for (int pose = 0; pose < 8; pose++) {
+            double flutter = flutters[pose];
+            double[] times = {0, Math.PI / 2 / flutter, 3 * Math.PI / 2 / flutter, 5.0};
             BufferedImage sheet = new BufferedImage(640 * times.length, 660, BufferedImage.TYPE_INT_RGB);
             Graphics2D g = sheet.createGraphics();
             g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
@@ -98,6 +109,135 @@ public final class AcademyShots {
             g.dispose();
             ImageIO.write(sheet, "png", new File(output, "spirit-pose" + pose + ".png"));
         }
+        // the second sheet has to paint Glimmer as large as the first, or it shrinks when the pose changes
+        BufferedImage pairs = new BufferedImage(640 * 4, 660, BufferedImage.TYPE_INT_RGB);
+        Graphics2D g = pairs.createGraphics();
+        g.setColor(new Color(0x1B2233));
+        g.fillRect(0, 0, pairs.getWidth(), pairs.getHeight());
+        int[] order = {0, 4, 2, 6};
+        for (int i = 0; i < order.length; i++) {
+            final int frame = order[i];
+            final int cx = 320 + 640 * i;
+            edt(() -> {
+                AcademyCharacters.spiritPose(g, cx, 330, 600, 0, frame, null);
+                return null;
+            });
+        }
+        g.setColor(new Color(255, 80, 80, 150));
+        for (int y = 30; y < 660; y += 60)
+            g.drawLine(0, y, pairs.getWidth(), y);
+        g.dispose();
+        ImageIO.write(pairs, "png", new File(output, "spirit-sizes.png"));
+    }
+
+    /**
+     * Walking and speaking as the runtime draws them: eight moments of one stride pair for Fu and Luo,
+     * with the legs enlarged below; every mouth closed, half and fully open; and how long a bent frame
+     * takes to draw.
+     */
+    private static void motion() throws Exception {
+        AcademyAtmosphere.motion(true);
+        for (String who : new String[]{"fu", "luo"}) {
+            int frames = 8;
+            int fw = 380;
+            BufferedImage strip = new BufferedImage(fw * frames, 640, BufferedImage.TYPE_INT_RGB);
+            Graphics2D g = strip.createGraphics();
+            g.setColor(new Color(0x1B2233));
+            g.fillRect(0, 0, strip.getWidth(), strip.getHeight());
+            for (int i = 0; i < frames; i++) {
+                final AcademyCharacters.Act act = AcademyCharacters.Act.walking(i * .22 / frames, 1);
+                final int left = i * fw;
+                edt(() -> {
+                    Graphics2D c = (Graphics2D) g.create();
+                    c.clipRect(left, 0, fw, 640);
+                    person(c, who, 0, left + fw / 2.0 - 300, 20, 600, act);
+                    c.dispose();
+                    return null;
+                });
+            }
+            g.setColor(new Color(255, 80, 80, 150));
+            g.drawLine(0, 619, strip.getWidth(), 619);
+            g.dispose();
+            ImageIO.write(strip, "png", new File(output, "motion-walk-" + who + ".png"));
+            BufferedImage legs = new BufferedImage(4 * 360, 2 * 420, BufferedImage.TYPE_INT_RGB);
+            Graphics2D l = legs.createGraphics();
+            l.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+            for (int i = 0; i < frames; i++)
+                l.drawImage(strip.getSubimage(i * fw + 70, 360, 240, 280), i % 4 * 360, i / 4 * 420, 360, 420, null);
+            l.dispose();
+            ImageIO.write(legs, "png", new File(output, "motion-legs-" + who + ".png"));
+            long start = System.nanoTime();
+            BufferedImage scratch = new BufferedImage(640, 640, BufferedImage.TYPE_INT_ARGB);
+            for (int i = 0; i < 60; i++) {
+                final AcademyCharacters.Act act = AcademyCharacters.Act.walking(i * .013, 1);
+                edt(() -> {
+                    Graphics2D c = scratch.createGraphics();
+                    person(c, who, 0, 0, 20, 600, act);
+                    c.dispose();
+                    return null;
+                });
+            }
+            System.out.printf("%s walk: %.1f ms a frame%n", who, (System.nanoTime() - start) / 60e6);
+            mouths(who);
+        }
+    }
+
+    /** Every pose of one person, its mouth closed, half and fully open, cropped around the mouth. */
+    private static void mouths(String who) throws Exception {
+        int cw = 240;
+        int ch = 150;
+        BufferedImage grid = new BufferedImage(cw * 3, ch * 8, BufferedImage.TYPE_INT_RGB);
+        Graphics2D out = grid.createGraphics();
+        out.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+        for (int frame = 0; frame < 8; frame++) {
+            BufferedImage[] open = new BufferedImage[3];
+            for (int k = 0; k < 3; k++) {
+                final AcademyCharacters.Act act = AcademyCharacters.Act.speaking(k / 2.0);
+                final int f = frame;
+                open[k] = new BufferedImage(1100, 1100, BufferedImage.TYPE_INT_RGB);
+                final Graphics2D g = open[k].createGraphics();
+                g.setColor(new Color(0x1B2233));
+                g.fillRect(0, 0, 1100, 1100);
+                edt(() -> {
+                    person(g, who, f, 0, 0, 1100, act);
+                    return null;
+                });
+                g.dispose();
+            }
+            int[] box = difference(open[0], open[2]);
+            int cx = box == null ? 550 : (box[0] + box[2]) / 2;
+            int cy = box == null ? 200 : (box[1] + box[3]) / 2;
+            System.out.println(who + " mouth " + frame + (box == null ? " does not open"
+                    : " opens over " + (box[2] - box[0] + 1) + "x" + (box[3] - box[1] + 1) + " px at height 1100"));
+            int x0 = Math.max(0, Math.min(1100 - cw / 2, cx - cw / 4));
+            int y0 = Math.max(0, Math.min(1100 - ch / 2, cy - ch / 4));
+            for (int k = 0; k < 3; k++)
+                out.drawImage(open[k].getSubimage(x0, y0, cw / 2, ch / 2), k * cw, frame * ch, cw, ch, null);
+        }
+        out.dispose();
+        ImageIO.write(grid, "png", new File(output, "motion-mouth-" + who + ".png"));
+    }
+
+    private static void person(Graphics2D g, String who, int frame, double x, double y, double height,
+            AcademyCharacters.Act act) {
+        if ("fu".equals(who))
+            AcademyCharacters.messengerPose(g, x, y, height, 0, frame, act);
+        else
+            AcademyCharacters.keeper(g, x, y, height, 0, frame, act);
+    }
+
+    /** The box in which two renders differ, or null when they are the same. */
+    private static int[] difference(BufferedImage a, BufferedImage b) {
+        int[] box = {a.getWidth(), a.getHeight(), -1, -1};
+        for (int y = 0; y < a.getHeight(); y++)
+            for (int x = 0; x < a.getWidth(); x++)
+                if (a.getRGB(x, y) != b.getRGB(x, y)) {
+                    box[0] = Math.min(box[0], x);
+                    box[1] = Math.min(box[1], y);
+                    box[2] = Math.max(box[2], x);
+                    box[3] = Math.max(box[3], y);
+                }
+        return box[2] < 0 ? null : box;
     }
 
     private static void cinema() throws Exception {
@@ -314,9 +454,10 @@ public final class AcademyShots {
     }
 
     /**
-     * The lamp chapters' dialogue, one shot per line of Fu or Luo, so the pose each line names can be
-     * read against what the line says. Then the second shot of each chapter's opening cutscene: only
-     * the archive may show Fu holding the letter open.
+     * The lamp chapters' dialogue, one shot per line, so the pose each line names can be read against
+     * what the line says; then how Fu, Luo and Glimmer enter and speak. Then the second shot of each
+     * chapter's opening cutscene: only the archive may show Fu holding the letter open; and Fu walking
+     * into the first shot of it.
      */
     private static void story(String root) throws Exception {
         System.setProperty("academy.skipTransitions", "true");
@@ -339,10 +480,9 @@ public final class AcademyShots {
                     if (i > 0)
                         edt(() -> { story.nextButton().doClick(); return null; });
                     Investigation.Line line = lines.get(i);
-                    if ("微光".equals(line.getSpeaker()))
-                        continue;
                     String name = "story-" + id.substring(0, 2) + "-" + (clue ? "clue" : "brief") + (i + 1);
-                    shot(host, name, () -> { });
+                    // long after the line was shown: everyone has arrived and the mouth is shut again
+                    shot(host, name, () -> story.previewAt(30));
                     names.add(name);
                     System.out.println(name + "  " + line.getSpeaker() + " " + line.getPose() + "  page " + story.page());
                 }
@@ -350,6 +490,7 @@ public final class AcademyShots {
             edt(() -> { stage.dispose(); return null; });
             contactSheet("story-" + id.substring(0, 2), names.toArray(new String[0]));
         }
+        entrances(root);
         System.setProperty("academy.skipTransitions", "false");
         String[] chapters = {"01_report_light", "02_reminder_light", "03_archive_gate", "04_registry_desk",
                 "05_star_lamps"};
@@ -366,6 +507,119 @@ public final class AcademyShots {
         }
         contactSheet("story-cinema", "story-cinema-01", "story-cinema-02", "story-cinema-03", "story-cinema-04",
                 "story-cinema-05");
+        AcademyCinematic opening = edt(() -> new AcademyCinematic(false, () -> { }));
+        JFrame stage = edt(() -> show(opening));
+        double[] times = {.3, .8, 1.3, 1.8, 2.3, 2.8, 3.3, 4.2};
+        String[] names = new String[times.length];
+        for (int i = 0; i < times.length; i++) {
+            double t = times[i];
+            names[i] = "walk-cinema-" + (int) (t * 10);
+            ImageIO.write(edt(() -> { opening.previewAt(t); return render(opening); }), "png",
+                    new File(output, names[i] + ".png"));
+        }
+        edt(() -> { stage.dispose(); return null; });
+        contactSheet("walk-cinema", names);
+    }
+
+    /**
+     * The first lines of the first chapter's briefing as they are shown: Fu, then Luo walking in and
+     * starting to speak, Glimmer flying in. The mouth of each walker is also cropped at its real size,
+     * shut and at its widest in the first syllables.
+     */
+    private static void entrances(String root) throws Exception {
+        System.setProperty("academy.skipTransitions", "true");
+        AcademyAtmosphere.motion(true);
+        LevelDefinition level = LevelDefinition.load(new File(root, "levels/01_report_light/level.properties"));
+        List<Investigation.Line> lines = Investigation.load(level).getBriefing();
+        AcademyStory story = edt(AcademyStory::new);
+        AcademyTheme.Backdrop host = edt(() -> backdrop(story));
+        JFrame stage = edt(() -> show(host));
+        edt(() -> {
+            story.open("疑点", lines, AcademyLampScene.backdrop(level.getScene(), false), "完", false, () -> { });
+            return null;
+        });
+        String[] who = {"fu", "luo", "glimmer"};
+        int[] first = {0, 3, 5};
+        for (int k = 0; k < who.length; k++) {
+            while (edt(story::page) < first[k])
+                edt(() -> { story.nextButton().doClick(); return null; });
+            String text = lines.get(first[k]).getText();
+            // the widest the mouth opens in its first second of speaking, walk and settling done
+            double widest = 0;
+            for (double t = 0; t < 1; t += .005)
+                if (AcademyCharacters.mouth(text, t) > AcademyCharacters.mouth(text, widest))
+                    widest = t;
+            double[] times = {.25, .5, .75, 1.0, 1.25, 1.5, 1.85, 2.0 + widest};
+            String[] names = new String[times.length];
+            for (int i = 0; i < times.length; i++) {
+                double t = times[i];
+                names[i] = "entrance-" + who[k] + "-" + i;
+                shot(host, names[i], () -> story.previewAt(t));
+            }
+            contactSheet("entrance-" + who[k], names);
+            System.out.printf("entrance-%s  mouth %.2f at %.2f s%n", who[k], AcademyCharacters.mouth(text, widest),
+                    2.0 + widest);
+            if (k < 2) {
+                String person = who[k];
+                shot(host, "entrance-" + person + "-shut", () -> story.previewAt(30));
+                BufferedImage shut = ImageIO.read(new File(output, "entrance-" + person + "-shut.png"));
+                BufferedImage open = ImageIO.read(new File(output, names[times.length - 1] + ".png"));
+                Investigation.Line line = lines.get(first[k]);
+                int pose = AcademyCharacters.namedPose(line.getSpeaker(), line.getPose());
+                java.awt.Point mouth = edt(() -> mouthOnScreen(host, person, pose));
+                System.out.println("entrance-" + person + " mouth at " + mouth);
+                if (mouth != null) {
+                    BufferedImage pair = new BufferedImage(2 * 4 * 60 + 8, 4 * 40, BufferedImage.TYPE_INT_RGB);
+                    Graphics2D g = pair.createGraphics();
+                    g.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
+                            RenderingHints.VALUE_INTERPOLATION_NEAREST_NEIGHBOR);
+                    g.drawImage(shut.getSubimage(mouth.x - 30, mouth.y - 20, 60, 40), 0, 0, 240, 160, null);
+                    g.drawImage(open.getSubimage(mouth.x - 30, mouth.y - 20, 60, 40), 248, 0, 240, 160, null);
+                    g.dispose();
+                    ImageIO.write(pair, "png", new File(output, "entrance-mouth-" + who[k] + ".png"));
+                }
+            }
+        }
+        edt(() -> { stage.dispose(); return null; });
+    }
+
+    /**
+     * Where the mouth of Fu or Luo is when they stand speaking in the dialogue shown by {@code host}:
+     * the same figure is drawn apart with the mouth shut and open, at the place and size the stage
+     * uses, and the centre of what changes is mapped back onto the host.
+     */
+    private static java.awt.Point mouthOnScreen(JComponent host, String who, int pose) {
+        JComponent stage = find(host, "$Stage");
+        if (stage == null)
+            return null;
+        int w = stage.getWidth();
+        int h = stage.getHeight();
+        int ph = (int) (h * 0.92);
+        BufferedImage[] drawn = new BufferedImage[2];
+        for (int k = 0; k < 2; k++) {
+            drawn[k] = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
+            Graphics2D g = drawn[k].createGraphics();
+            person(g, who, pose, "fu".equals(who) ? w * 0.12 : w * 0.10, h - ph, ph,
+                    AcademyCharacters.Act.speaking(k));
+            g.dispose();
+        }
+        int[] box = difference(drawn[0], drawn[1]);
+        if (box == null)
+            return null;
+        return SwingUtilities.convertPoint(stage, (box[0] + box[2]) / 2, (box[1] + box[3]) / 2, host);
+    }
+
+    private static JComponent find(java.awt.Container parent, String classSuffix) {
+        for (java.awt.Component c : parent.getComponents()) {
+            if (c.getClass().getName().endsWith(classSuffix))
+                return (JComponent) c;
+            if (c instanceof java.awt.Container) {
+                JComponent found = find((java.awt.Container) c, classSuffix);
+                if (found != null)
+                    return found;
+            }
+        }
+        return null;
     }
 
     /** Puts finished shots at half size into one image, two per row, so they can be reviewed at a glance. */

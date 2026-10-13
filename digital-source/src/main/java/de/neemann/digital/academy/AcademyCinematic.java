@@ -321,12 +321,15 @@ final class AcademyCinematic extends JPanel {
         int shot = shotIndex();
         double local = localTime();
         double arrival = AcademyAtmosphere.motion() ? Math.min(1, local / 3.2) : 1;
+        // the legs keep pace with the arrival: its speed, 6u(1-u) for the eased curve below, is the stride
+        double stride = Math.min(1, 6 * arrival * (1 - arrival));
         arrival = arrival * arrival * (3 - 2 * arrival);
         if (success) {
             AcademyCharacters.keeper(p, w * .05, h * .08, h * .67, time, shot == 0 ? 0 : 3);
             AcademyCharacters.spiritPose(p, w * .71, h * .37, h * .34, time, 3, AcademyPointer.local(this));
         } else if (shot == 0) {
-            AcademyCharacters.messengerPose(p, w * (-.16 + .23 * arrival), h * .07, h * .68, time, local < 4 ? 0 : 2);
+            AcademyCharacters.messengerPose(p, w * (-.16 + .23 * arrival), h * .07, h * .68, time, local < 4 ? 0 : 2,
+                    AcademyCharacters.Act.walking(w * .23 * arrival / (h * .68), stride));
             letter(p, w * (.46 + .06 * arrival), h * .39, Math.min(110, w * .09), time, false);
         } else if (shot == 1) {
             // the letter of the lamp chapters is still sealed; it is opened in the archive only, so
@@ -341,7 +344,8 @@ final class AcademyCinematic extends JPanel {
                 AcademyCharacters.spiritPose(p, w * .30, h * .38, h * .50, time, local < 4.5 ? 1 : 2, AcademyPointer.local(this));
         } else {
             AcademyCharacters.messengerPose(p, w * .03, h * .08, h * .65, time, 3);
-            AcademyCharacters.spiritPose(p, w * .79, h * .36, h * .34, time, 0, AcademyPointer.local(this));
+            // the open question of the shot: Glimmer frowns (困惑) beside the question mark drawn below
+            AcademyCharacters.spiritPose(p, w * .79, h * .36, h * .34, time, 7, AcademyPointer.local(this));
             if (AcademyAtmosphere.magic()) {
                 AcademyAtmosphere.lamp(p, w * .5f, h * .3f, w * .10f, .35f, time);
                 p.setFont(AcademyTheme.script(42));

@@ -216,12 +216,14 @@ final class AcademyCasebook extends JPanel {
         sealKey = key;
 
         if (chosen == null) {
-            pose = 0;
+            // 好奇 while the pages are still being weighed
+            pose = 6;
             speech.say(SPEAKER, (s.getObservedCount() > 0 ? place + "已有 " + s.getObservedCount() + " 组记录。" : "") + ASK, null);
         } else {
-            pose = standing == Investigation.Standing.REFUTED ? 1
+            // 困惑 over a page the door contradicts, 举翼 for the proven one, 专注 while one still stands
+            pose = standing == Investigation.Standing.REFUTED ? 7
                     : standing == Investigation.Standing.PROVEN ? 2
-                    : standing == Investigation.Standing.STANDING ? 3 : 0;
+                    : standing == Investigation.Standing.STANDING ? 4 : 6;
             String words = investigation.choiceFeedback(s) + "\n"
                     + (s.getObservedCount() == 0 ? "去" + place + "试讯台，亲眼看看" + investigation.word("device", "门") + "怎么回应。" : investigation.verdict(s));
             Investigation.Candidate found = investigation.discovered(s);

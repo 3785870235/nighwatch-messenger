@@ -1,0 +1,33 @@
+ok   fresh progress opens every chapter
+ok   no card says a chapter is closed
+ok   a fresh player has no chapter marked passed
+ok   the last chapter's card can be clicked right away
+ok   clicking it opens the last chapter directly
+ok   entering a chapter writes neither circuit nor progress
+ok   leaving it unpassed marks nothing
+ok   the chapter really passes
+ok   passing alone writes no progress file
+ok   closing the level window marks chapter one passed
+ok   every chapter stays open
+ok   passing writes no progress for another chapter
+ok   closing still wrote no progress file
+ok   an explicit save writes the progress file
+ok   the saved pass is still marked after a restart
+ok   card titles match the chapter files
+ok   a pass from an earlier session offers no next chapter
+ok   the current pass offers the next chapter
+ok   the unread clue is read on the way
+ok   the passed chapter window is closed
+ok   the next chapter opens directly
+ok   the home window stays hidden
+ok   going on wrote no progress for chapter two
+ok   chapter two offers chapter three only after its own pass
+ok   chapter four offers chapter five
+ok   passing chapter four marks it passed
+ok   the last chapter offers the way home, not a sixth chapter
+ok   the last clue is read on the way home
+ok   the last chapter window is closed
+ok   no chapter opens after the last one
+ok   the home window is shown again
+ok   the last chapter is marked passed at home
+RESULT: 32 CHECKS PASSED

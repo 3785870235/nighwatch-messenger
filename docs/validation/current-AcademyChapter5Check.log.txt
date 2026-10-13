@@ -1,0 +1,64 @@
+ok   the chapter is a lamp chapter at the star tower
+ok   three candidate pages
+ok   four prediction chips, one for every way the two lamps can answer
+ok   the doubt dialogue opens on its first page
+ok   doubt dialogue uses no forbidden word
+ok   the dialogue asks which lamp lit, not only whether one did
+ok   the dialogue ends on the casebook
+ok   empty casebook uses no forbidden word
+ok   no evidence before a choice
+ok   repair locked without evidence
+ok   the casebook opens on page one of three
+ok   choosing is unsaved state
+ok   back returns to the tower
+ok   both lamps start unobserved
+ok   00: both lamps stay dark and no page is named
+ok   01: only the low lamp lights
+ok   the state line names the lit lamp
+ok   10: the other post alone lights the low lamp too
+ok   tower line uses no forbidden word
+ok   tower feedback uses no forbidden word
+ok   tower state uses no forbidden word
+ok   the last report needs a prediction
+ok   both keys: only the high lamp lights and the wrong guess is a new clue
+ok   the tower does not judge the pages itself
+ok   tower line after the prediction uses no forbidden word
+ok   tower feedback after the prediction uses no forbidden word
+ok   ledger uses no forbidden word
+ok   the ledger keeps the guess and the answer apart
+ok   complete records with a refuted choice lead to the pages, not the repair
+ok   casebook with a refuted choice uses no forbidden word
+ok   the log's page is refuted by a concrete record
+ok   repair stays locked on a refuted page
+ok   casebook on one lamp per post uses no forbidden word
+ok   one lamp per post is refuted as well
+ok   casebook on the yielding low lamp uses no forbidden word
+ok   the inscription survives and unlocks both runes
+ok   nothing was autosaved
+ok   the repair opens after the discovery
+ok   no clue before a validation
+ok   repair step uses no forbidden word
+ok   the repair asks for one rune per lamp
+ok   the save stores the choice and the repair
+ok   the saved repair and the four-way prediction are restored
+ok   one rune per lamp passes
+ok   result letter of the pass uses no forbidden word
+ok   the letter reads both lamps of every case
+ok   the pass opens the clue
+ok   the clue opens
+ok   clue uses no forbidden word
+ok   the clue tells one lamp is not one person
+ok   the clue keeps the unknown unknown
+ok   the clue returns to the result
+ok   pass and clue write nothing
+ok   an either-key rune on the low lamp does not pass
+ok   result letter of the either-key rune uses no forbidden word
+ok   the letter names the low lamp that did not yield
+ok   unconnected seals do not pass
+ok   result letter of the loose seals uses no forbidden word
+ok   silence is not told as dark
+ok   fixture binary_correct.dig unchanged
+ok   fixture or_wrong.dig unchanged
+ok   fixture unconnected.dig unchanged
+ok   story resource unchanged
+RESULT: 63 CHECKS PASSED

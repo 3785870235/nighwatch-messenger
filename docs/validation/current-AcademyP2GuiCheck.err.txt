@@ -1,0 +1,25 @@
+[AWT-EventQueue-0] INFO de.neemann.gui.ErrorMessage - error message: 写入文件时遇到错误
+[AWT-EventQueue-0] INFO de.neemann.gui.ErrorMessage - throwable error cause
+java.io.IOException: 这是受保护的项目资源或原版 Digital 目录，不能保存到：<local-path>
+请另存到 work\sandbox 或其他普通位置。
+	at de.neemann.digital.gui.Main.saveFile(Main.java:1788)
+	at de.neemann.digital.gui.Main.access$3100(Main.java:93)
+	at de.neemann.digital.gui.Main$18.actionPerformed(Main.java:663)
+	at de.neemann.digital.gui.Main.saveChanges(Main.java:1741)
+	at de.neemann.gui.ClosingWindowListener.checkForSave(ClosingWindowListener.java:85)
+	at de.neemann.digital.academy.AcademyHome.leave(AcademyHome.java:600)
+	at de.neemann.digital.academy.AcademyP2GuiCheck.lambda$run$40(AcademyP2GuiCheck.java:204)
+	at de.neemann.digital.academy.AcademyP2GuiCheck.lambda$edt$45(AcademyP2GuiCheck.java:310)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)

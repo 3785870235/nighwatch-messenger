@@ -1,0 +1,66 @@
+ok   story loaded with three candidates
+ok   fresh level is not briefed
+ok   doubt dialogue opens on first page
+ok   first page has a speaker and no previous
+ok   one click turns exactly one page
+ok   dialogue is reversible
+ok   dialogue has all three characters
+ok   dialogue reveals neither AND nor truth table
+ok   last page offers the candidates
+ok   dialogue ends on candidate page
+ok   no evidence before a choice
+ok   repair locked without evidence
+ok   pages are read one at a time, starting with the first
+ok   next turns exactly one page
+ok   last page cannot turn further
+ok   turning back reaches the first page
+ok   reading the dialogue writes nothing
+ok   choosing turns to the chosen page
+ok   choosing an explanation is unsaved state
+ok   choice writes nothing to disk
+ok   back returns to the door
+ok   door names what candidates say for 00
+ok   00 asks to compare and names no page
+ok   door shows that 11 separates
+ok   experiment line does not name the rule
+ok   11 lists the claims next to the response but does not judge
+ok   counterexample is concrete
+ok   refuted choice gets evidence feedback
+ok   two candidates survive
+ok   explicit save writes circuit and progress
+ok   save stores choice and briefing, not candidate states
+ok   10 lists the claims without naming the refuted page
+ok   last combination needs a prediction
+ok   wrong prediction is recorded as a new clue
+ok   complete records but refuted choice: no repair
+ok   rebuild button leads to candidates, not repair
+ok   wrong choice is told by evidence
+ok   right choice unlocks knowledge and repair
+ok   observations and choices were not autosaved
+ok   discard leaves without saving
+ok   restore keeps only saved observations and choice
+ok   candidate states rebuilt from replayed observations
+ok   01 compares without naming the refuted page
+ok   correct prediction confirms
+ok   discovery in a different order
+ok   repair opens after discovery
+ok   no clue before validation
+ok   second save stores new choice and repair
+ok   legacy progress has no story keys
+ok   legacy save restores repair without tutorial or briefing
+ok   historical pass is not a current pass
+ok   clue cannot be opened from history
+ok   legacy discovery hides evidence and knowledge until a choice
+ok   case page returns to repair
+ok   current circuit truly passes
+ok   clue unlocked only by current pass
+ok   clue dialogue opens
+ok   clue reveals not-received is not false
+ok   clue leaves an open doubt
+ok   clue returns to the result
+ok   pass and clue write nothing
+ok   changing the circuit hides the clue
+ok   clue refused after circuit change
+ok   closing during validation stops timer and drops the result
+ok   failed save keeps window, choice and dirty state
+ok   fixture and story resources unchanged

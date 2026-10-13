@@ -1,0 +1,148 @@
+ok   home offers explore card
+ok   home offers workshop card
+shot 01-home-1600
+shot 01-home-1280
+ok   first chapter open
+ok   second chapter open after the first passed
+ok   archive chapter open after the second passed
+shot 02-levels-1600
+shot 02-levels-1280
+ok   experiment hides canvas
+ok   experiment hides tool bar
+ok   experiment has no menu bar
+ok   door starts unobserved
+guide 0: 第一步：两张钥印卡现在都是「取下钥印 = 0」。
+直接点击下方「观察回应」，看看门在没有钥印时怎么回应。
+ok   first guide names the button
+shot 03-experiment-start-1600
+shot 03-experiment-start-1280
+hint 1: 提示 1/3（操作）：点钥印卡切换「放上钥印 = 1」或「取下钥印 = 0」，再点「观察回应」。每组只需观察一次，结果会记在工作记录里。
+ok   first hint is operation help
+ok   help opens separate notebook
+shot 03b-notebook-help-1600
+shot 03b-notebook-help-1280
+ok   notebook returns to experiment
+guide 1: 这组（岗位 A 未持钥印 · 岗位 B 未持钥印）已经记在笔记里了。
+下一步换一组：
+① 点击「岗位 B」卡片，换成「放上钥印 = 1」
+② 点击「观察回应」
+ok   observed combination is marked recorded
+ok   guide names a card to switch
+ok   door shows recorded valid reading
+ok   switch card shows value
+ok   new combination unobserved
+ok   prediction chip selectable
+ok   switching card clears prediction
+hint 3: 提示 3/3（观察）：门打开时，两个岗位分别处于什么状态？
+guide 3: 最后一组要先猜，再看：
+① 在「你的预测」里选「我猜会打开」或「我猜保持关闭」
+② 点击「锁定预测并观察」
+猜错也没关系，门会给你新线索。
+ok   last guide asks to predict first
+ok   plain observation blocked
+ok   door unobserved before prediction
+ok   prediction choice required
+ok   no prediction recorded without choice
+shot 04-prediction-choice-1600
+shot 04-prediction-choice-1280
+wrong prediction: 这次观察给了我们新线索：你猜「我猜保持关闭」，但门打开了（门开 = 1）。已如实记入工作记录，对照记录再想想规律。
+拿这组回应对照残页的说法：哪张和门说得不一样？想好了，就在「三张残页」里做出判断。
+ok   wrong prediction gives new clue
+ok   prediction cleared after observing
+ok   notes truthful
+ok   door open after observing 11
+ok   experiment does not name the rule
+shot 05-prediction-result-1600
+shot 05-prediction-result-1280
+ok   notes on dedicated page
+shot 05b-notebook-records-1600
+shot 05b-notebook-records-1280
+ok   repair shows canvas
+ok   repair hides tool bar
+ok   menu bar attached for shortcuts
+ok   door follows player circuit
+steps:
+→ 1. 点「放置双印符文」，在画布空白处单击放下
+○ 2. 从 A 发讯端连到符文的一个接收端
+○ 3. 从 B 发讯端连到符文的另一个接收端
+○ 4. 从符文发讯端连到许可印的接收端
+○ 5. 点「观察机关」，改变两份报告试一试
+○ 6. 点「检验我的术式」检查全部报告
+
+ok   first step current
+shot 06-repair-start-1600
+shot 06-repair-start-1280
+ok   advanced shows native tool bar
+ok   advanced shows native menu
+shot 07-repair-advanced-1600
+shot 07-repair-advanced-1280
+canvas focus: true
+ok   AND placed by mouse
+ok   only one element placed
+ok   placing does not wire
+ok   dirty title retained
+ok   an unsaved change offers the save button
+ok   saving from the button clears the dirty state
+ok   save button hides again once saved
+AND pins [(x=400, y=320), (x=400, y=360)] -> (x=460, y=340)
+ok   AND placed in a wireable spot
+wires after (x=300, y=200)->(x=400, y=320): [Wire{p1=(x=300, y=200), p2=(x=400, y=200)}, Wire{p1=(x=400, y=200), p2=(x=400, y=320)}]
+wires after (x=300, y=240)->(x=400, y=360): [Wire{p1=(x=300, y=200), p2=(x=400, y=200)}, Wire{p1=(x=300, y=360), p2=(x=400, y=360)}, Wire{p1=(x=400, y=200), p2=(x=400, y=320)}, Wire{p1=(x=300, y=240), p2=(x=300, y=360)}]
+wires after (x=460, y=340)->(x=520, y=220): [Wire{p1=(x=460, y=340), p2=(x=520, y=340)}, Wire{p1=(x=300, y=200), p2=(x=400, y=200)}, Wire{p1=(x=300, y=360), p2=(x=400, y=360)}, Wire{p1=(x=400, y=200), p2=(x=400, y=320)}, Wire{p1=(x=520, y=220), p2=(x=520, y=340)}, Wire{p1=(x=300, y=240), p2=(x=300, y=360)}]
+steps:
+√ 1. 点「放置双印符文」，在画布空白处单击放下
+√ 2. 从 A 发讯端连到符文的一个接收端
+√ 3. 从 B 发讯端连到符文的另一个接收端
+√ 4. 从符文发讯端连到许可印的接收端
+→ 5. 点「观察机关」，改变两份报告试一试
+○ 6. 点「检验我的术式」检查全部报告
+
+ok   structure detected as wired
+ok   wiring steps ticked
+ok   door closed at A=0 B=0
+ok   door opens at A=1 B=1 from player circuit
+ok   run step ticked
+shot 08-repair-running-1600
+shot 08-repair-running-1280
+ok   style toggle preserves circuit
+shot 08b-standard-circuit-1600
+shot 08b-standard-circuit-1280
+ok   style toggle preserves running output
+ok   player circuit passes
+ok   stage shows completion
+result: 检验通过
+事由：档案门的新术式
+值夜学徒：
+你的术式送到了。我们没有动你的原稿，照它另刻了一份副本，把四种岗位情形逐一送进去试讯，副本的回应都抄在试讯单上。
+四种情形，副本的回应全部合乎门规。这道术式可以刻进档案门了——锁纹今夜不会熄灭。
+试讯单：
+岗位 A 未持钥印 · 岗位 B 未持钥印 → 门规：门不开 · 副本：门不开 ✓
+岗位 A 未持钥印 · 岗位 B 持钥印 → 门规：门不开 · 副本：门不开 ✓
+岗位 A 持钥印 · 岗位 B 未持钥印 → 门规：门不开 · 副本：门不开 ✓
+岗位 A 持钥印 · 岗位 B 持钥印 → 门规：门开 · 副本：门开 ✓
+午夜光术学院 · 检验处
+〔火漆封印〕
+shot 09-repair-passed-1600
+shot 09-repair-passed-1280
+ok   level timer stopped
+ok   palette has In
+ok   palette has Out
+ok   palette has LED
+ok   palette has Not
+ok   palette has And
+ok   palette has Or
+ok   palette has XOr
+ok   palette has more
+ok   workshop shows canvas
+canvas focus: true
+ok   palette element placed
+ok   help card shown
+shot 10-free-1600
+shot 10-free-1280
+ok   more opens native element menu
+ok   more shows native tools
+shot 11-free-native-elements-1280
+ok   free mode has no pass state
+ok   level template untouched
+art: menu-background.png: ok 1672x941 <local-path> ok 1672x941 <local-path> ok 1672x941 <local-path> ok 1254x1254 <local-path> ok 1254x1254 <local-path>
+RESULT: ALL CHECKS PASSED

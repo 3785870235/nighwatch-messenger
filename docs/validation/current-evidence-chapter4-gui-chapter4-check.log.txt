@@ -1,0 +1,118 @@
+temp: <local-path>
+ok   the chapter is a lamp chapter at the registry desk
+ok   three candidate pages
+ok   the doubt dialogue opens on its first page
+芙 · 巡夜信使：这是档案馆前厅的登记台。守门席每夜只有一个，谁来值守，先在这里登记。
+洛 · 守档人：登记册零点那一行：同一个守门席，并排签着 A、B 两个名字，旁注「正常」。
+芙 · 巡夜信使：在档案门前我们已经证实，零点那一刻 A、B 都持有钥印。两个人一起来领同一个席位……
+微光 · 档案精灵：两份报告一起到，登记台会怎么回应？没有亲眼看过，「正常」两个字也只是一种说法。
+洛 · 守档人：《席规》也残了，我只找到三张说法不同的残页。受理灯底座的旧术式还裂了一道缝，天亮前得照真规矩刻一道新的。
+微光 · 档案精灵：老规矩：一页一页看，再去登记台前求证。只有亲眼看到的，才算证据。
+
+ok   doubt dialogue uses no forbidden word
+ok   the dialogue asks how the desk answers two reports at once
+ok   the dialogue ends on the casebook
+登记台前记录 0 / 4 组 · 预测 0 次
+翻到：残页甲 · 有人来领就受理
+一页一页看完，选出你认为说对的那张。选了，我才把证据念给你听。
+ok   empty casebook uses no forbidden word
+ok   no evidence before a choice
+ok   repair locked without evidence
+ok   the casebook opens on page one of three
+ok   choosing is unsaved state
+ok   back returns to the desk
+ok   00: the lamp stays dark and no page is named
+ok   one key: the lamp lights
+ok   the other key alone lights it too
+ok   desk line uses no forbidden word
+ok   desk feedback uses no forbidden word
+ok   the last report needs a prediction
+ok   both keys: the lamp stays dark and the wrong guess is a new clue
+ok   the desk does not judge the pages itself
+ok   desk line after the prediction uses no forbidden word
+ok   desk feedback after the prediction uses no forbidden word
+ok   complete records with a refuted choice lead to the pages, not the repair
+登记台前记录 4 / 4 组 · 预测 1 次
+翻到：残页甲 · 有人来领就受理
+判断：残页甲 · 有人来领就受理 · 已被证据推翻
+反例 岗位 A 持钥印 · 岗位 B 持钥印时，受理灯没有亮，它却说受理灯会亮
+「残页甲 · 有人来领就受理」已被你的记录反驳：岗位 A 持钥印 · 岗位 B 持钥印时，受理灯没有亮，它却说受理灯会亮。
+四组报告都已亲眼记录，只有一张残页经得起全部证据。
+ok   casebook with a refuted choice uses no forbidden word
+ok   the plaque's page is refuted by a concrete record
+ok   repair stays locked on a refuted page
+ok   casebook on the signed register uses no forbidden word
+ok   the signed register is refuted as well
+登记台前记录 4 / 4 组 · 预测 1 次
+翻到：残页丙 · 单席印
+判断：残页丙 · 单席印 · 未被推翻 · 与 4 组真实记录一致
+证据支持你的判断：「残页丙 · 单席印」经得起全部四组真实记录。
+四组报告都已亲眼记录，只有一张残页经得起全部证据。
+单席符文：两条讯线说法不同时，它才放行；两条都是「是」，或者都是「否」，受理灯就暗着。一个席位只能记给一个人——两个岗位一起来，不是钥印没了，是这一轮不受理。照它把受理灯的旧术式重刻一道。
+ok   casebook on the single seat uses no forbidden word
+ok   the struck-out page survives and unlocks the rune
+ok   nothing was autosaved
+ok   the repair opens after the discovery
+ok   no clue before a validation
+ok   repair step uses no forbidden word
+ok   the save stores the choice and the repair
+ok   the saved repair is restored
+ok   the single-seat rune passes
+检验通过
+事由：受理灯的术式
+值夜学徒：
+你的术式送到了。我们没有动你的原稿，照它另刻了一份副本，把四种岗位情形逐一送进去试讯，副本的回应都抄在试讯单上。
+四种情形，副本的回应全部合乎席规。这道术式可以刻进受理灯了——受理灯底座的旧术式失效之前，新的已经刻好了。
+试讯单：
+岗位 A 未持钥印 · 岗位 B 未持钥印 → 席规：不受理 · 副本：不受理 ✓
+岗位 A 未持钥印 · 岗位 B 持钥印 → 席规：受理 · 副本：受理 ✓
+岗位 A 持钥印 · 岗位 B 未持钥印 → 席规：受理 · 副本：受理 ✓
+岗位 A 持钥印 · 岗位 B 持钥印 → 席规：不受理 · 副本：不受理 ✓
+午夜光术学院 · 检验处
+〔火漆封印〕
+ok   result letter of the pass uses no forbidden word
+ok   the pass opens the clue
+ok   the clue opens
+微光 · 档案精灵：我们刚亲眼证实：恰好一个岗位持钥印，受理灯才亮；两个都持钥印，这一轮谁也不受理。
+洛 · 守档人：不受理，不是钥印没了。两枚钥印都还在——只是一个席位，不能同时记给两个人。
+芙 · 巡夜信使：那零点那一轮，受理灯应该是暗的。可登记册上两个名字都签了，还写着「正常」。
+洛 · 守档人：刻纹时，我在受理灯底座里摸到零点那一轮的存根：盖的是「未受理」。
+微光 · 档案精灵：有人把两个人的登记并成一行，把「未受理」写成了「正常」。和「尚未收到」被写成「否」一样：记录看起来完整，却不诚实。
+洛 · 守档人：是谁并的这一行、为什么要这样写——现在没有证据。我记在未知那一栏。
+芙 · 巡夜信使：还剩最后一处：校准塔的星灯，它要把每一份报告如实数出来。我们把这一夜，从头送一遍。
+
+ok   clue uses no forbidden word
+ok   the clue tells not accepted is not a lost key
+ok   the clue keeps the unknown unknown
+ok   the clue points to the star lamps
+ok   the clue returns to the result
+ok   pass and clue write nothing
+ok   the either-key rune does not pass
+退回重刻
+事由：受理灯的术式
+值夜学徒：
+你的术式送到了。我们没有动你的原稿，照它另刻了一份副本，把四种岗位情形逐一送进去试讯，副本的回应都抄在试讯单上。
+有一种情形，副本的回应不合席规，试讯单上已用红笔圈出。席规没有错，是术式还差一点：对照那一行改一改，再送来。
+试讯单：
+岗位 A 未持钥印 · 岗位 B 未持钥印 → 席规：不受理 · 副本：不受理 ✓
+岗位 A 未持钥印 · 岗位 B 持钥印 → 席规：受理 · 副本：受理 ✓
+岗位 A 持钥印 · 岗位 B 未持钥印 → 席规：受理 · 副本：受理 ✓
+岗位 A 持钥印 · 岗位 B 持钥印 → 席规：不受理 · 副本：受理 ✗
+午夜光术学院 · 检验处
+〔退回重刻〕
+ok   result letter of the either-key rune uses no forbidden word
+ok   an unconnected seal does not pass
+退回重刻
+事由：受理灯的术式
+值夜学徒：
+你的术式送到了。我们没有动你的原稿，照它另刻了一份副本——可副本立不起来：许可印还没有接上讯线，一种情形也没能试。
+无讯不作否：没接上的地方，我们不会把它当成受理灯不受理。接上之后再送来。
+午夜光术学院 · 检验处
+〔退回重刻〕
+ok   result letter of the loose seal uses no forbidden word
+ok   silence is not told as not accepted
+ok   fixture xor_correct.dig unchanged
+ok   fixture or_wrong.dig unchanged
+ok   fixture unconnected.dig unchanged
+ok   story resource unchanged
+RESULT: 55 CHECKS PASSED

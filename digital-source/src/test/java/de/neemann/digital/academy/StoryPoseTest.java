@@ -59,8 +59,34 @@ public class StoryPoseTest extends TestCase {
             }
         }
         // the lamp chapters name a pose on every line of Fu and Luo: 10 in the first, 9 in the second,
-        // 9 at the registry desk, 10 at the star tower
-        assertEquals(38, keys);
+        // 9 at the registry desk, 10 at the star tower; Glimmer names one on all 27 of hers
+        assertEquals(38 + 27, keys);
+    }
+
+    /** Glimmer's eight poses are chosen by what she says, so none of her lines falls back to the order. */
+    public void testGlimmerNamesAPoseOnEveryLine() throws Exception {
+        int confused = AcademyCharacters.namedPose("微光", "困惑");
+        assertEquals("the worried face is the last cell of the second sheet", 7, confused);
+        for (LevelDefinition level : levels()) {
+            Investigation investigation = Investigation.load(level);
+            for (List<Investigation.Line> lines : java.util.Arrays.asList(investigation.getBriefing(), investigation.getClue()))
+                for (Investigation.Line line : lines)
+                    if ("微光".equals(line.getSpeaker()))
+                        assertNotNull(level.getId() + ": no pose for " + line.getText(), line.getPose());
+        }
+    }
+
+    /** The mouth opens once a character, rests at punctuation and is shut before and after the line. */
+    public void testMouthFollowsTheText() {
+        String text = "先别记。灯";
+        double syllable = 1 / 7.0;
+        assertEquals(0, AcademyCharacters.mouth(text, -.1), 0);
+        assertTrue(AcademyCharacters.mouth(text, syllable / 2) > .5);
+        assertEquals(0, AcademyCharacters.mouth(text, 3 * syllable + .2), 0);
+        assertTrue(AcademyCharacters.mouth(text, 3 * syllable + .42 + syllable / 2) > .5);
+        assertEquals(4 * syllable + .42, AcademyCharacters.speech(text), 1e-9);
+        assertEquals(0, AcademyCharacters.mouth(text, AcademyCharacters.speech(text) + .01), 0);
+        assertEquals(0, AcademyCharacters.mouth(null, 1), 0);
     }
 
     /**

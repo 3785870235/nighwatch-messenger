@@ -28,6 +28,7 @@ final class AcademyLesson extends JPanel {
     private final JLabel title = AcademyTheme.label("", AcademyTheme.script(38), AcademyTheme.IVORY);
     private final AcademyTheme.Text text = new AcademyTheme.Text("", AcademyTheme.font(Font.PLAIN, 20), AcademyTheme.IVORY, 620);
     private final JButton previous = AcademyTheme.button("← 上一步", AcademyTheme.Kind.QUIET);
+    private final JButton skip = AcademyTheme.button("跳过小课", AcademyTheme.Kind.QUIET);
     private final JButton next = AcademyTheme.button("下一步 →", AcademyTheme.Kind.PRIMARY);
     private final Diagram diagram = new Diagram();
     private int index;
@@ -48,7 +49,8 @@ final class AcademyLesson extends JPanel {
         add(center, BorderLayout.CENTER);
         JPanel controls = AcademyTheme.clear(new BorderLayout());
         controls.add(previous, BorderLayout.WEST);
-        JPanel right = AcademyTheme.clear(new FlowLayout(FlowLayout.RIGHT, 0, 0));
+        JPanel right = AcademyTheme.clear(new FlowLayout(FlowLayout.RIGHT, 8, 0));
+        right.add(skip);
         right.add(next);
         controls.add(right, BorderLayout.EAST);
         add(controls, BorderLayout.SOUTH);
@@ -65,6 +67,8 @@ final class AcademyLesson extends JPanel {
                     refresh();
                 });
         });
+        // the lesson can be read again from the menu, so leaving it early loses nothing
+        skip.addActionListener(e -> finished.run());
     }
 
     /**
@@ -134,7 +138,9 @@ final class AcademyLesson extends JPanel {
         title.setText(pages[index][0]);
         text.setText(pages[index][1]);
         previous.setEnabled(index > 0);
-        next.setText(index + 1 == pages.length ? "回到现场 →" : "下一步 →");
+        boolean last = index + 1 == pages.length;
+        next.setText(last ? "回到现场 →" : "下一步 →");
+        skip.setVisible(!last);
         diagram.repaint();
     }
 
@@ -144,6 +150,10 @@ final class AcademyLesson extends JPanel {
 
     JButton previousButton() {
         return previous;
+    }
+
+    JButton skipButton() {
+        return skip;
     }
 
     JButton nextButton() {
@@ -163,7 +173,8 @@ final class AcademyLesson extends JPanel {
             int x = getWidth() / 2;
             int y = getHeight() / 2;
             double seconds = System.nanoTime() / 1000000000.0;
-            AcademyCharacters.spirit(g, getWidth() - 65, y - 12, 130, seconds, false, AcademyPointer.local(this));
+            // 专注: Glimmer follows the lesson
+            AcademyCharacters.spirit(g, getWidth() - 65, y - 12, 130, seconds, 4, AcademyPointer.local(this));
             g.setColor(AcademyTheme.GOLD);
             g.setStroke(new BasicStroke(2));
             if (!repairing) {

@@ -1,0 +1,134 @@
+requested box: corner 150.0,100.0, height 600.0  (canvas 900x900)
+fu:
+     ok   fu frame 0: the sheet holds a figure
+     ok   fu frame 0: is drawn against a real sheet
+     ok   fu frame 1: the sheet holds a figure
+     ok   fu frame 1: is drawn against a real sheet
+     ok   fu frame 2: the sheet holds a figure
+     ok   fu frame 2: is drawn against a real sheet
+     ok   fu frame 3: the sheet holds a figure
+     ok   fu frame 3: is drawn against a real sheet
+     ok   fu frame 4: the sheet holds a figure
+     ok   fu frame 4: is drawn against a real sheet
+     ok   fu frame 5: the sheet holds a figure
+     ok   fu frame 5: is drawn against a real sheet
+     ok   fu frame 6: the sheet holds a figure
+     ok   fu frame 6: is drawn against a real sheet
+     ok   fu frame 7: the sheet holds a figure
+     ok   fu frame 7: is drawn against a real sheet
+  the first sheet in the requested box: figure 589.5 px, foot line 693.3, centre line 468.2
+     ok   fu frame 0: draws something
+     frame 0 (sheet first)  x 275-702  y 102-693  figure 592.0  scale 0.956   old: x 275.4-701.2  y 107.7-699.0
+     ok   fu frame 1: draws something
+     frame 1 (sheet first)  x 221-653  y 103-693  figure 591.0  scale 0.956   old: x 221.8-652.4  y 108.6-699.0
+     ok   fu frame 2: draws something
+     frame 2 (sheet first)  x 182-743  y 107-693  figure 587.0  scale 0.956   old: x 182.5-743.3  y 101.0-687.6
+     ok   fu frame 3: draws something
+     frame 3 (sheet first)  x 225-722  y 109-694  figure 586.0  scale 0.959   old: x 225.6-721.3  y 101.9-685.6
+     ok   fu frame 4: draws something
+     frame 4 (sheet second)  x 263-669  y 97-694  figure 598.0  scale 0.909
+     ok   fu frame 5: draws something
+     frame 5 (sheet second)  x 249-692  y 105-693  figure 589.0  scale 0.908
+     ok   fu frame 6: draws something
+     frame 6 (sheet second)  x 282-673  y 107-694  figure 588.0  scale 0.909
+     ok   fu frame 7: draws something
+     frame 7 (sheet second)  x 253-677  y 103-694  figure 592.0  scale 0.908
+     ok   fu frame 0: same place across as before (275-702 vs 275.4-701.2)
+     ok   fu frame 0: same size as before (592.0 vs 592.3)
+     ok   fu frame 0: moved down or up only by its own foot offset (-6.0 px)
+     ok   fu frame 1: same place across as before (221-653 vs 221.8-652.4)
+     ok   fu frame 1: same size as before (591.0 vs 591.4)
+     ok   fu frame 1: moved down or up only by its own foot offset (-6.0 px)
+     ok   fu frame 2: same place across as before (182-743 vs 182.5-743.3)
+     ok   fu frame 2: same size as before (587.0 vs 587.6)
+     ok   fu frame 2: moved down or up only by its own foot offset (5.4 px)
+     ok   fu frame 3: same place across as before (225-722 vs 225.6-721.3)
+     ok   fu frame 3: same size as before (586.0 vs 584.7)
+     ok   fu frame 3: moved down or up only by its own foot offset (8.4 px)
+     ok   fu frame 0: foot on the line (693.0 vs 693.3)
+     ok   fu frame 1: foot on the line (693.0 vs 693.3)
+     ok   fu frame 2: foot on the line (693.0 vs 693.3)
+     ok   fu frame 3: foot on the line (694.0 vs 693.3)
+     ok   fu frame 4: foot on the line (694.0 vs 693.3)
+     ok   fu frame 5: foot on the line (693.0 vs 693.3)
+     ok   fu frame 6: foot on the line (694.0 vs 693.3)
+     ok   fu frame 7: foot on the line (694.0 vs 693.3)
+     ok   fu sheet 1: one scale for all four poses (0.956-0.959)
+     ok   fu sheet 2: one scale for all four poses (0.908-0.909)
+     ok   fu: both sheets draw the figure the same size (589.0 vs 590.5)
+     ok   fu: the second sheet stands where the first does (median x 468.3 vs 468.0)
+     ok   fu frame 0: silhouette centre stays near the line (488.5 vs 468.2)
+     ok   fu frame 1: silhouette centre stays near the line (437.0 vs 468.2)
+     ok   fu frame 2: silhouette centre stays near the line (462.5 vs 468.2)
+     ok   fu frame 3: silhouette centre stays near the line (473.5 vs 468.2)
+     ok   fu frame 4: silhouette centre stays near the line (466.0 vs 468.2)
+     ok   fu frame 5: silhouette centre stays near the line (470.5 vs 468.2)
+     ok   fu frame 6: silhouette centre stays near the line (477.5 vs 468.2)
+     ok   fu frame 7: silhouette centre stays near the line (465.0 vs 468.2)
+luo:
+     ok   luo frame 0: the sheet holds a figure
+     ok   luo frame 0: is drawn against a real sheet
+     ok   luo frame 1: the sheet holds a figure
+     ok   luo frame 1: is drawn against a real sheet
+     ok   luo frame 2: the sheet holds a figure
+     ok   luo frame 2: is drawn against a real sheet
+     ok   luo frame 3: the sheet holds a figure
+     ok   luo frame 3: is drawn against a real sheet
+     ok   luo frame 4: the sheet holds a figure
+     ok   luo frame 4: is drawn against a real sheet
+     ok   luo frame 5: the sheet holds a figure
+     ok   luo frame 5: is drawn against a real sheet
+     ok   luo frame 6: the sheet holds a figure
+     ok   luo frame 6: is drawn against a real sheet
+     ok   luo frame 7: the sheet holds a figure
+     ok   luo frame 7: is drawn against a real sheet
+  the first sheet in the requested box: figure 587.6 px, foot line 692.3, centre line 458.4
+     ok   luo frame 0: draws something
+     frame 0 (sheet first)  x 358-648  y 104-693  figure 590.0  scale 0.958   old: x 358.6-648.6  y 106.7-695.2
+     ok   luo frame 1: draws something
+     frame 1 (sheet first)  x 282-596  y 105-692  figure 588.0  scale 0.958   old: x 282.1-595.9  y 109.6-696.2
+     ok   luo frame 2: draws something
+     frame 2 (sheet first)  x 319-637  y 111-693  figure 583.0  scale 0.959   old: x 318.4-637.1  y 104.8-685.6
+     ok   luo frame 3: draws something
+     frame 3 (sheet first)  x 286-581  y 105-693  figure 589.0  scale 0.959   old: x 285.9-580.6  y 102.9-689.5
+     ok   luo frame 4: draws something
+     frame 4 (sheet second)  x 269-604  y 111-693  figure 583.0  scale 1.078
+     ok   luo frame 5: draws something
+     frame 5 (sheet second)  x 293-647  y 94-693  figure 600.0  scale 1.077
+     ok   luo frame 6: draws something
+     frame 6 (sheet second)  x 218-675  y 123-693  figure 571.0  scale 1.077
+     ok   luo frame 7: draws something
+     frame 7 (sheet second)  x 286-657  y 100-693  figure 594.0  scale 1.078
+     ok   luo frame 0: same place across as before (358-648 vs 358.6-648.6)
+     ok   luo frame 0: same size as before (590.0 vs 589.5)
+     ok   luo frame 0: moved down or up only by its own foot offset (-2.2 px)
+     ok   luo frame 1: same place across as before (282-596 vs 282.1-595.9)
+     ok   luo frame 1: same size as before (588.0 vs 587.6)
+     ok   luo frame 1: moved down or up only by its own foot offset (-4.2 px)
+     ok   luo frame 2: same place across as before (319-637 vs 318.4-637.1)
+     ok   luo frame 2: same size as before (583.0 vs 581.8)
+     ok   luo frame 2: moved down or up only by its own foot offset (7.4 px)
+     ok   luo frame 3: same place across as before (286-581 vs 285.9-580.6)
+     ok   luo frame 3: same size as before (589.0 vs 587.6)
+     ok   luo frame 3: moved down or up only by its own foot offset (3.5 px)
+     ok   luo frame 0: foot on the line (693.0 vs 692.3)
+     ok   luo frame 1: foot on the line (692.0 vs 692.3)
+     ok   luo frame 2: foot on the line (693.0 vs 692.3)
+     ok   luo frame 3: foot on the line (693.0 vs 692.3)
+     ok   luo frame 4: foot on the line (693.0 vs 692.3)
+     ok   luo frame 5: foot on the line (693.0 vs 692.3)
+     ok   luo frame 6: foot on the line (693.0 vs 692.3)
+     ok   luo frame 7: foot on the line (693.0 vs 692.3)
+     ok   luo sheet 1: one scale for all four poses (0.958-0.959)
+     ok   luo sheet 2: one scale for all four poses (1.077-1.078)
+     ok   luo: both sheets draw the figure the same size (588.5 vs 588.5)
+     ok   luo: the second sheet stands where the first does (median x 458.3 vs 458.5)
+     ok   luo frame 0: silhouette centre stays near the line (503.0 vs 458.4)
+     ok   luo frame 1: silhouette centre stays near the line (439.0 vs 458.4)
+     ok   luo frame 2: silhouette centre stays near the line (478.0 vs 458.4)
+     ok   luo frame 3: silhouette centre stays near the line (433.5 vs 458.4)
+     ok   luo frame 4: silhouette centre stays near the line (436.5 vs 458.4)
+     ok   luo frame 5: silhouette centre stays near the line (470.0 vs 458.4)
+     ok   luo frame 6: silhouette centre stays near the line (446.5 vs 458.4)
+     ok   luo frame 7: silhouette centre stays near the line (471.5 vs 458.4)
+RESULT: 112 CHECKS PASSED

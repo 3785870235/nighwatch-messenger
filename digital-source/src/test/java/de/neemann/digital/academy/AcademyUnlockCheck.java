@@ -13,16 +13,20 @@ import de.neemann.digital.draw.library.ElementLibrary;
 import de.neemann.digital.draw.shapes.ShapeFactory;
 import de.neemann.digital.draw.graphics.Vector;
 
+import javax.swing.JButton;
 import javax.swing.SwingUtilities;
+import java.awt.Component;
+import java.awt.Container;
 import java.io.File;
 import java.nio.file.Files;
 import java.util.concurrent.Callable;
 
 /**
- * The chapter chain on the home screen. Two things are checked here: a chapter passed in a saved
- * progress file opens the next one at startup, and a chapter passed in a running session opens the
- * next one as soon as the level window closes — without saving and without a restart. The last
- * chapter offers no sixth chapter: its button leads back home.
+ * The chapter cards on the home screen. Every chapter is open from the start, so a fresh player
+ * can begin with any of them — the last one included. A pass, saved or in the running session, is
+ * marked on its card as soon as the level window closes, without saving and without a restart. A
+ * pass in the running session offers the next chapter on the result letter; the last chapter offers
+ * no sixth chapter: its button leads back home.
  * Run: java -cp target/test-classes;target/Digital.jar de.neemann.digital.academy.AcademyUnlockCheck &lt;project root&gt;
  * This is an automated check, not a manual playthrough.
  */
@@ -73,10 +77,28 @@ public final class AcademyUnlockCheck {
         File fourthFile = new File(root, "levels/04_registry_desk/level.properties");
         File fifthFile = new File(root, "levels/05_star_lamps/level.properties");
 
-        // --- a fresh player sees only chapter one ---
+        // --- a fresh player can enter every chapter, in any order ---
         File work = new File(dir, "work");
         AcademyHome home = edt(() -> new AcademyHome(levelFile, work, AcademySavePolicy.forProject(root)));
-        check("fresh progress opens only chapter one", "[true, false, false, false, false]".equals(edt(home::chapterStates)));
+        check("fresh progress opens every chapter", "[true, true, true, true, true]".equals(edt(home::chapterStates)));
+        check("no card says a chapter is closed", !edt(home::cardKickers).contains("尚未"));
+        check("a fresh player has no chapter marked passed", "[false, false, false, false, false]".equals(passed(home)));
+        edt(() -> { home.setVisible(true); home.showLevels(); return null; });
+        Thread.sleep(300);
+        shot(home, "fresh-levels");
+        String lastTitle = LevelDefinition.load(fifthFile).getTitle();
+        JButton lastCard = edt(() -> card(home.getContentPane(), lastTitle));
+        check("the last chapter's card can be clicked right away", lastCard != null && lastCard.isEnabled());
+        edt(() -> { lastCard.doClick(); return null; });
+        check("clicking it opens the last chapter directly", edt(() -> home.activeLevel() != null
+                && "05_star_lamps".equals(home.activeLevel().levelId())
+                && home.activeLevel().getMain().isDisplayable()));
+        AcademyPanel direct = edt(home::activeLevel);
+        edt(() -> { direct.getMain().dispose(); return null; });
+        Thread.sleep(400);
+        check("entering a chapter writes neither circuit nor progress", !new File(work, "05_star_lamps.dig").exists()
+                && !progressFile(work, fifthFile).isFile());
+        check("leaving it unpassed marks nothing", "[false, false, false, false, false]".equals(passed(home)));
 
         // --- pass chapter one, save it the way a player does, and close the window ---
         solve(levelFile, new File(work, "01_report_light.dig"));
@@ -91,11 +113,12 @@ public final class AcademyUnlockCheck {
         check("the chapter really passes", edt(() -> panel.lastResult() != null && panel.lastResult().isPassed()));
         check("passing alone writes no progress file", !progressFile(work, levelFile).isFile());
 
-        // --- closing the level window rebuilds the cards, without a save and without a restart ---
+        // --- closing the level window marks the pass on its card, without a save and without a restart ---
         edt(() -> { panel.getMain().dispose(); return null; });
         Thread.sleep(400);
-        check("closing the level window opens chapter two", "[true, true, false, false, false]".equals(edt(home::chapterStates)));
-        check("chapter three stays closed", !progressFile(work, thirdFile).isFile());
+        check("closing the level window marks chapter one passed", "[true, false, false, false, false]".equals(passed(home)));
+        check("every chapter stays open", "[true, true, true, true, true]".equals(edt(home::chapterStates)));
+        check("passing writes no progress for another chapter", !progressFile(work, thirdFile).isFile());
         check("closing still wrote no progress file", !progressFile(work, levelFile).isFile());
 
         // --- the player saves explicitly; the pass then survives a restart ---
@@ -105,7 +128,8 @@ public final class AcademyUnlockCheck {
         edt(() -> { panel.getMain().dispose(); return null; });
         Thread.sleep(400);
         AcademyHome restarted = edt(() -> new AcademyHome(levelFile, work, AcademySavePolicy.forProject(root)));
-        check("the saved pass opens chapter two after a restart", "[true, true, false, false, false]".equals(edt(restarted::chapterStates)));
+        check("the saved pass is still marked after a restart", "[true, false, false, false, false]".equals(passed(restarted))
+                && "[true, true, true, true, true]".equals(edt(restarted::chapterStates)));
 
         // --- the card titles come from the chapter files, not from a copy in the source ---
         check("card titles match the chapter files", edt(restarted::cardTitles).equals(
@@ -152,7 +176,7 @@ public final class AcademyUnlockCheck {
         edt(() -> { second.getMain().dispose(); return null; });
         Thread.sleep(400);
 
-        // --- chapter four hands over to chapter five; a pass in the session opens its card ---
+        // --- chapter four hands over to chapter five; a pass in the session is marked on its card ---
         Files.copy(new File(root, "levels/04_registry_desk/fixtures/xor_correct.dig").toPath(),
                 new File(work, "04_registry_desk.dig").toPath());
         AcademyPanel fourth = edt(() -> restarted.openLevel("04_registry_desk"));
@@ -163,7 +187,7 @@ public final class AcademyUnlockCheck {
                 && fourth.nextChapterButton().isVisible() && "下一章：星灯归位 →".equals(fourth.nextChapterButton().getText())));
         edt(() -> { fourth.getMain().dispose(); return null; });
         Thread.sleep(400);
-        check("passing chapter four opens chapter five", "[true, true, false, false, true]".equals(edt(restarted::chapterStates)));
+        check("passing chapter four marks it passed", "[true, false, false, true, false]".equals(passed(restarted)));
 
         // --- the last chapter ends the night: its clue is read, then the player is back home ---
         Files.copy(new File(root, "levels/05_star_lamps/fixtures/binary_correct.dig").toPath(),
@@ -186,10 +210,36 @@ public final class AcademyUnlockCheck {
         check("the last chapter window is closed", !edt(() -> last.getMain().isDisplayable()));
         check("no chapter opens after the last one", edt(() -> restarted.activeLevel() == null));
         check("the home window is shown again", edt(restarted::isVisible));
+        check("the last chapter is marked passed at home", "[true, false, false, true, true]".equals(passed(restarted)));
+        edt(() -> { restarted.showLevels(); return null; });
+        Thread.sleep(300);
         shot(restarted, "last-chapter-home");
 
         edt(() -> { home.dispose(); return null; });
         edt(() -> { restarted.dispose(); return null; });
+    }
+
+    /** Which cards say their chapter was passed, e.g. "[true, false, false, false, false]". */
+    private static String passed(AcademyHome home) throws Exception {
+        StringBuilder sb = new StringBuilder("[");
+        String[] lines = edt(home::cardKickers).split("\n");
+        for (int i = 0; i < lines.length; i++)
+            sb.append(i > 0 ? ", " : "").append(lines[i].endsWith(" · 已通过"));
+        return sb.append(']').toString();
+    }
+
+    /** The button with this text anywhere below the container, or null. */
+    private static JButton card(Container owner, String text) {
+        for (Component c : owner.getComponents()) {
+            if (c instanceof JButton && text.equals(((JButton) c).getText()))
+                return (JButton) c;
+            if (c instanceof Container) {
+                JButton found = card((Container) c, text);
+                if (found != null)
+                    return found;
+            }
+        }
+        return null;
     }
 
     private static void validate(AcademyPanel panel) throws Exception {

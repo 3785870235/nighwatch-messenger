@@ -1,0 +1,42 @@
+ok   opening destination creates no automatic circuit
+ok   first entrance has visible animated intro
+ok   handwriting title has Chinese glyphs
+ok   cinematic recording never creates a save
+ok   intro leads to doubt dialogue
+ok   doubt dialogue leads to candidates
+ok   intro leads to one-step tutorial
+ok   lesson change uses actual transition layer
+ok   transition finishes and restores glass
+ok   lesson advances only one step
+ok   previous lesson is rereadable
+ok   notebook returns to same tutorial page
+ok   the lesson offers a way to skip it
+ok   skipping the lesson returns to investigation
+ok   observation is unsaved state
+ok   observation writes neither progress nor circuit
+ok   cancel exit keeps unsaved observations and window
+ok   explicit native save writes both files
+ok   successful save clears all unsaved state
+ok   later observation does not replace manual save
+ok   discard closes without saving new observation
+ok   second entrance still has intro despite saved observations
+ok   only explicitly saved observations restore
+ok   saved observations avoid repeating basic tutorial
+ok   first repair automatically opens its five-step lesson
+ok   the repair lesson can be skipped too
+ok   skipping the repair lesson opens the repair scene
+ok   building page has actual canvas without embedded door
+ok   entering repair never autosaves progress
+ok   repair tutorial can be reopened
+ok   the last lesson page leaves by 回到现场, without a skip
+ok   repair lesson returns to its scene
+ok   inspection is separate from editor
+ok   closing scene stops polling
+ok   inspection starts real model
+ok   inspection switches drive real player output
+ok   trusted result passes on separate result page
+ok   passing is unsaved and does not replace save
+ok   native Save As stores chosen circuit with progress
+ok   re-entry opens manually chosen circuit instead of default template
+ok   failed companion save preserves window and unsaved state
+ok   reduce motion navigates immediately without animation

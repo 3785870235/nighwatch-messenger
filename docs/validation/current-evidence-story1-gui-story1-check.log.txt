@@ -1,0 +1,99 @@
+temp: <local-path>
+ok   story loaded with three candidates
+ok   fresh level is not briefed
+ok   doubt dialogue opens on first page
+ok   first page has a speaker and no previous
+ok   one click turns exactly one page
+ok   dialogue is reversible
+芙 · 巡夜信使：巡夜记录写着：零点时岗位 A、B 都是「否」——两人都已撤离，档案门整夜没开过。
+芙 · 巡夜信使：可岗位 B 托我送来一封手书：零点整，B 在岗，钥印在手。记录和手书，总有一边错了。
+微光 · 档案精灵：手书只是一个人的说法，记录也可能写错。先别急着判谁说了谎。
+洛 · 守档人：要判断，得先知道这扇门的规矩。《门规》被水浸了，我只找回三张互相矛盾的残页。
+洛 · 守档人：更糟的是，门的校准页不见了。没有它，锁纹天亮前就会熄灭——得照真正的规矩刻一道新术式。
+微光 · 档案精灵：旧门还会如实回应。我们一页一页看残页，再去门前试讯台求证。
+
+ok   dialogue has all three characters
+ok   dialogue reveals neither AND nor truth table
+ok   last page offers the candidates
+ok   dialogue ends on candidate page
+门前记录 0 / 4 组 · 预测 0 次
+翻到：残页甲 · 任一印
+一页一页看完，选出你认为说对的那张。选了，我才把证据念给你听。
+ok   no evidence before a choice
+ok   repair locked without evidence
+ok   pages are read one at a time, starting with the first
+ok   next turns exactly one page
+ok   last page cannot turn further
+ok   turning back reaches the first page
+ok   reading the dialogue writes nothing
+ok   choosing turns to the chosen page
+ok   choosing an explanation is unsaved state
+ok   choice writes nothing to disk
+ok   back returns to the door
+ok   door names what candidates say for 00
+ok   00 asks to compare and names no page
+ok   door shows that 11 separates
+ok   experiment line does not name the rule
+ok   11 lists the claims next to the response but does not judge
+门前记录 2 / 4 组 · 预测 0 次
+翻到：残页丙 · 单席印
+判断：残页丙 · 单席印 · 已被证据推翻
+反例 岗位 A 持钥印 · 岗位 B 持钥印时，门开了，它却说门不开
+「残页丙 · 单席印」已被你的记录反驳：岗位 A 持钥印 · 岗位 B 持钥印时，门开了，它却说门不开。
+已划掉 1 张。仍有 2 张与全部记录一致——去门前找一组它们说法不同的报告。
+ok   counterexample is concrete
+ok   refuted choice gets evidence feedback
+ok   two candidates survive
+ok   explicit save writes circuit and progress
+ok   save stores choice and briefing, not candidate states
+ok   10 lists the claims without naming the refuted page
+ok   last combination needs a prediction
+ok   wrong prediction is recorded as a new clue
+ok   complete records but refuted choice: no repair
+ok   rebuild button leads to candidates, not repair
+ok   wrong choice is told by evidence
+门前记录 4 / 4 组 · 预测 1 次
+翻到：残页乙 · 双印
+判断：残页乙 · 双印 · 未被推翻 · 与 4 组真实记录一致
+证据支持你的判断：「残页乙 · 双印」经得起全部四组真实记录。
+四组报告都已亲眼记录，只有一张残页经得起全部证据。
+双印符文：两条讯线都传来「是」，它才放行；只要有一条是「否」，门就不动。旧门的锁纹正是照这条规矩刻的——天亮前，照它刻一道新术式。
+ok   right choice unlocks knowledge and repair
+ok   observations and choices were not autosaved
+ok   discard leaves without saving
+ok   restore keeps only saved observations and choice
+ok   candidate states rebuilt from replayed observations
+ok   01 compares without naming the refuted page
+ok   correct prediction confirms
+ok   discovery in a different order
+ok   repair opens after discovery
+ok   no clue before validation
+ok   second save stores new choice and repair
+ok   legacy progress has no story keys
+ok   legacy save restores repair without tutorial or briefing
+ok   historical pass is not a current pass
+ok   clue cannot be opened from history
+ok   legacy discovery hides evidence and knowledge until a choice
+ok   case page returns to repair
+ok   current circuit truly passes
+ok   clue unlocked only by current pass
+ok   clue dialogue opens
+洛 · 守档人：新术式通过了。刻纹时，我在门框夹层里摸到一页撕下的纸——正是失踪的校准页。
+微光 · 档案精灵：校准页上，零点那一格烙着一道光痕：门在零点开过一次。
+微光 · 档案精灵：我们刚亲眼证实：两份报告都成立，门才会开。所以零点那一刻，A 和 B 都持有钥印。
+洛 · 守档人：可巡夜记录把两人都写成「否」。我翻了底稿——那两栏原本写的是「尚未收到报告」。
+芙 · 巡夜信使：通往记录台的讯线那晚一直没亮，B 才托我送信。报告不是不成立，是根本没送到。
+微光 · 档案精灵：没收到，不等于不成立。有人把「无讯」填成了「否」，记录看起来完整，却不诚实。
+洛 · 守档人：是谁填的、谁撕下校准页、讯线为什么不亮——现在都没有证据。已知和未知，我分开记下。
+芙 · 巡夜信使：还有一件事：登记台那晚，同一个席位登记了两个人。下一封信，我先送去那里。
+
+ok   clue reveals not-received is not false
+ok   clue leaves an open doubt
+ok   clue returns to the result
+ok   pass and clue write nothing
+ok   changing the circuit hides the clue
+ok   clue refused after circuit change
+ok   closing during validation stops timer and drops the result
+ok   failed save keeps window, choice and dirty state
+ok   fixture and story resources unchanged
+RESULT: 66 CHECKS PASSED

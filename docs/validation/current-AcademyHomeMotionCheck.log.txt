@@ -1,0 +1,14 @@
+ok   the menu art is there
+ok   without motion two times look the same
+ok   the big lamp reaches a flare
+ok   the big lamp gutters
+lamp luma: art 125.3, flare 145.5, gutter 62.1
+ok   a flare is clearly brighter than a gutter
+ok   a gutter is darker than the painted lamp
+star luma: peak 91.9, dim 45.7
+ok   a star at its peak is clearly brighter than at its dimmest
+ok   no star falls at 8.6 s
+ok   a star falls at 9.4 s
+falling star head luma: before 45.4, falling 175.7
+ok   the falling star is clearly visible
+RESULT: 10 CHECKS PASSED

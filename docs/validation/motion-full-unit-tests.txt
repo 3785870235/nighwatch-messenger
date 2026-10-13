@@ -1,0 +1,2593 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< de.neemann.digital:digital >---------------------
+[INFO] Building Digital 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.0:check (validate) @ digital ---
+[INFO] �?始检查�?��??
+�?查完成�??
+[INFO] 
+[INFO] --- jacoco:0.8.4:prepare-agent (default-prepare-agent) @ digital ---
+[INFO] argLine set to -javaagent:<local-path>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ digital ---
+[INFO] Copying 146 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- enforcer:3.0.0-M2:enforce (enforce-property) @ digital ---
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ digital ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 878 source files to <local-path>
+[WARNING] /<local-path> ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+[WARNING] /<local-path> �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[WARNING] /<local-path> ĳЩ�����ļ�ʹ����δ�����򲻰�ȫ�Ĳ�����
+[WARNING] /<local-path> �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ digital ---
+[INFO] Copying 573 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ digital ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.0.0-M1:test (default-test) @ digital ---
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running de.neemann.digital.academy.AcademyP2Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.062 s - in de.neemann.digital.academy.AcademyP2Test
+[INFO] Running de.neemann.digital.academy.ArchiveGateTest
+unconnected: �޷���ɲ��ԣ���� 'Out (PERMIT)' ������˿� 'in' û�����ӵ��κεط�
+missing_port: �ṹ���⣺ȱ������˿� PERMIT���ſ���
+�޷���ɲ��ԣ���·���Ҳ��������ź� PERMIT��
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 s - in de.neemann.digital.academy.ArchiveGateTest
+[INFO] Running de.neemann.digital.academy.InvestigationTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.253 s - in de.neemann.digital.academy.InvestigationTest
+[INFO] Running de.neemann.digital.academy.LevelResourcesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in de.neemann.digital.academy.LevelResourcesTest
+[INFO] Running de.neemann.digital.academy.ResultLetterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s - in de.neemann.digital.academy.ResultLetterTest
+[INFO] Running de.neemann.digital.academy.StarLampsTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in de.neemann.digital.academy.StarLampsTest
+[INFO] Running de.neemann.digital.academy.StoryPoseTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 s - in de.neemann.digital.academy.StoryPoseTest
+[INFO] Running de.neemann.digital.analyse.BoolTableExpandedTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in de.neemann.digital.analyse.BoolTableExpandedTest
+[INFO] Running de.neemann.digital.analyse.CSVImporterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in de.neemann.digital.analyse.CSVImporterTest
+[INFO] Running de.neemann.digital.analyse.CycleDetectorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.779 s - in de.neemann.digital.analyse.CycleDetectorTest
+[INFO] Running de.neemann.digital.analyse.DependencyAnalyserTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.578 s - in de.neemann.digital.analyse.DependencyAnalyserTest
+[INFO] Running de.neemann.digital.analyse.DetermineJKStateMachineTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in de.neemann.digital.analyse.DetermineJKStateMachineTest
+[INFO] Running de.neemann.digital.analyse.expression.BitSetterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in de.neemann.digital.analyse.expression.BitSetterTest
+[INFO] Running de.neemann.digital.analyse.expression.CopyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.expression.CopyTest
+[INFO] Running de.neemann.digital.analyse.expression.EqualsTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in de.neemann.digital.analyse.expression.EqualsTest
+[INFO] Running de.neemann.digital.analyse.expression.ExpressionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.expression.ExpressionTest
+[INFO] Running de.neemann.digital.analyse.expression.format.FormatToExpressionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 s - in de.neemann.digital.analyse.expression.format.FormatToExpressionTest
+[INFO] Running de.neemann.digital.analyse.expression.NotTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.expression.NotTest
+[INFO] Running de.neemann.digital.analyse.expression.OperationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.expression.OperationTest
+[INFO] Running de.neemann.digital.analyse.expression.ToStringTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.expression.ToStringTest
+[INFO] Running de.neemann.digital.analyse.expression.VariableTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.expression.VariableTest
+[INFO] Running de.neemann.digital.analyse.format.TruthTableFormatterCSVTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in de.neemann.digital.analyse.format.TruthTableFormatterCSVTest
+[INFO] Running de.neemann.digital.analyse.format.TruthTableFormatterHexTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in de.neemann.digital.analyse.format.TruthTableFormatterHexTest
+[INFO] Running de.neemann.digital.analyse.format.TruthTableFormatterLaTeXTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in de.neemann.digital.analyse.format.TruthTableFormatterLaTeXTest
+[INFO] Running de.neemann.digital.analyse.format.TruthTableFormatterTestCaseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in de.neemann.digital.analyse.format.TruthTableFormatterTestCaseTest
+[INFO] Running de.neemann.digital.analyse.LabelNumberingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.LabelNumberingTest
+[INFO] Running de.neemann.digital.analyse.ModelAnalyserTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in de.neemann.digital.analyse.ModelAnalyserTest
+[INFO] Running de.neemann.digital.analyse.parser.ParserTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in de.neemann.digital.analyse.parser.ParserTest
+[INFO] Running de.neemann.digital.analyse.quinemc.IndependentCheckerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.quinemc.IndependentCheckerTest
+[INFO] Running de.neemann.digital.analyse.quinemc.MinimizerRegressionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.74 s - in de.neemann.digital.analyse.quinemc.MinimizerRegressionTest
+[INFO] Running de.neemann.digital.analyse.quinemc.primeselector.BruteForceGetAllTest
+2410241/43046721
+4820723/43046721
+7231205/43046721
+9641687/43046721
+12052169/43046721
+14462651/43046721
+16873133/43046721
+19283615/43046721
+21694097/43046721
+24104579/43046721
+26515061/43046721
+28925543/43046721
+31336025/43046721
+33746507/43046721
+36156989/43046721
+38567471/43046721
+40977953/43046721
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.274 s - in de.neemann.digital.analyse.quinemc.primeselector.BruteForceGetAllTest
+[INFO] Running de.neemann.digital.analyse.quinemc.QuineMcCluskeyExactCoverTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.quinemc.QuineMcCluskeyExactCoverTest
+[INFO] Running de.neemann.digital.analyse.quinemc.QuineMcCluskeyExamTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.quinemc.QuineMcCluskeyExamTest
+[INFO] Running de.neemann.digital.analyse.quinemc.QuineMcCluskeyRegressionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in de.neemann.digital.analyse.quinemc.QuineMcCluskeyRegressionTest
+[INFO] Running de.neemann.digital.analyse.quinemc.QuineMcCluskeyRowTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.quinemc.QuineMcCluskeyRowTest
+[INFO] Running de.neemann.digital.analyse.quinemc.QuineMcCluskeyTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 s - in de.neemann.digital.analyse.quinemc.QuineMcCluskeyTest
+[INFO] Running de.neemann.digital.analyse.quinemc.SimplifyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.quinemc.SimplifyTest
+[INFO] Running de.neemann.digital.analyse.quinemc.TableReducerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.quinemc.TableReducerTest
+[INFO] Running de.neemann.digital.analyse.SplitPinStringTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.SplitPinStringTest
+[INFO] Running de.neemann.digital.analyse.SubstituteLibraryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.SubstituteLibraryTest
+[INFO] Running de.neemann.digital.analyse.TruthTableTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.analyse.TruthTableTest
+[INFO] Running de.neemann.digital.builder.ATF150x.ATF1502CuplExporterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in de.neemann.digital.builder.ATF150x.ATF1502CuplExporterTest
+[INFO] Running de.neemann.digital.builder.circuit.CircuitBuilderTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 s - in de.neemann.digital.builder.circuit.CircuitBuilderTest
+[INFO] Running de.neemann.digital.builder.circuit.FragmentExpressionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in de.neemann.digital.builder.circuit.FragmentExpressionTest
+[INFO] Running de.neemann.digital.builder.circuit.FragmentVisualElementTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.builder.circuit.FragmentVisualElementTest
+[INFO] Running de.neemann.digital.builder.CleanNameBuilderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.builder.CleanNameBuilderTest
+[INFO] Running de.neemann.digital.builder.Gal16v8.Gal16V8CuplExporterTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in de.neemann.digital.builder.Gal16v8.Gal16V8CuplExporterTest
+[INFO] Running de.neemann.digital.builder.Gal16v8.Gal16V8JEDECExporterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in de.neemann.digital.builder.Gal16v8.Gal16V8JEDECExporterTest
+[INFO] Running de.neemann.digital.builder.Gal22v10.Gal22V10CuplExporterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in de.neemann.digital.builder.Gal22v10.Gal22V10CuplExporterTest
+[INFO] Running de.neemann.digital.builder.Gal22v10.Gal22v10JEDECExporterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in de.neemann.digital.builder.Gal22v10.Gal22v10JEDECExporterTest
+[INFO] Running de.neemann.digital.builder.jedec.FuseMapFillerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.builder.jedec.FuseMapFillerTest
+[INFO] Running de.neemann.digital.builder.jedec.FuseMapTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.builder.jedec.FuseMapTest
+[INFO] Running de.neemann.digital.builder.jedec.JedecWriterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.builder.jedec.JedecWriterTest
+[INFO] Running de.neemann.digital.builder.PinMapTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.builder.PinMapTest
+[INFO] Running de.neemann.digital.builder.tt2.RotationByteArrayOutputStreamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in de.neemann.digital.builder.tt2.RotationByteArrayOutputStreamTest
+[INFO] Running de.neemann.digital.builder.tt2.TT2ExporterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in de.neemann.digital.builder.tt2.TT2ExporterTest
+[INFO] Running de.neemann.digital.cli.ArgumentTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in de.neemann.digital.cli.ArgumentTest
+[INFO] Running de.neemann.digital.cli.BasicCommandTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in de.neemann.digital.cli.BasicCommandTest
+[INFO] Running de.neemann.digital.cli.CommandLineTesterTest
+unnamed: failed (5%)
+unnamed: failed (5%)
+A (A0000): passed
+A OR B (A0001): passed
+A OR !B (A0010): passed
+"minus 1" (A0011): passed
+A plus (A AND !B) (A0100): passed
+(A OR B) plus (A AND !B) (A0101): passed
+A minus B minus 1 (A0110): passed
+(A AND !B) minus 1 (A0111): passed
+A plus (A AND B) (A1000): passed
+A plus B (A1001): passed
+(A OR !B) plus (A AND B) (A1010): passed
+(A AND B) minus 1 (A1011): passed
+A plus A (A1100): passed
+(A OR B) plus A (A1101): passed
+(A OR !B) plus A (A1110): passed
+A minus 1 (A1111): passed
+!A (L0000): passed
+!A AND !B (L0001): passed
+!A AND B (L0010): passed
+"logic 0" (L0011): passed
+!(A AND B) (L0100): passed
+!B (L0101): passed
+A XOR B (L0110): passed
+A AND !B (L0111): passed
+!A OR B (L1000): passed
+!(A XOR B) (L1001): passed
+B (L1010): passed
+A AND B (L1011): passed
+"logic 1" (L1100): passed
+A OR !B (L1101): passed
+A OR B (L1110): passed
+A (L1111): passed
+unnamed: passed
+unnamed: passed
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 s - in de.neemann.digital.cli.CommandLineTesterTest
+[INFO] Running de.neemann.digital.cli.MuxerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in de.neemann.digital.cli.MuxerTest
+[INFO] Running de.neemann.digital.cli.StatsExportTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in de.neemann.digital.cli.StatsExportTest
+[INFO] Running de.neemann.digital.core.arithmetic.AddTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.arithmetic.AddTest
+[INFO] Running de.neemann.digital.core.arithmetic.BarrelShifterTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in de.neemann.digital.core.arithmetic.BarrelShifterTest
+[INFO] Running de.neemann.digital.core.arithmetic.BitCountTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.arithmetic.BitCountTest
+[INFO] Running de.neemann.digital.core.arithmetic.BitExtenderTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.arithmetic.BitExtenderTest
+[INFO] Running de.neemann.digital.core.arithmetic.ComparatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.arithmetic.ComparatorTest
+[INFO] Running de.neemann.digital.core.arithmetic.DivTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in de.neemann.digital.core.arithmetic.DivTest
+[INFO] Running de.neemann.digital.core.arithmetic.MulTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.arithmetic.MulTest
+[INFO] Running de.neemann.digital.core.arithmetic.NegTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.arithmetic.NegTest
+[INFO] Running de.neemann.digital.core.arithmetic.SubTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.arithmetic.SubTest
+[INFO] Running de.neemann.digital.core.basic.AndTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.basic.AndTest
+[INFO] Running de.neemann.digital.core.basic.DelayTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.basic.DelayTest
+[INFO] Running de.neemann.digital.core.basic.NAndTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.basic.NAndTest
+[INFO] Running de.neemann.digital.core.basic.NOrTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.basic.NOrTest
+[INFO] Running de.neemann.digital.core.basic.NotTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.basic.NotTest
+[INFO] Running de.neemann.digital.core.basic.OrTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.basic.OrTest
+[INFO] Running de.neemann.digital.core.basic.XNOrTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.basic.XNOrTest
+[INFO] Running de.neemann.digital.core.basic.XOrTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.basic.XOrTest
+[INFO] Running de.neemann.digital.core.BitsTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.BitsTest
+[INFO] Running de.neemann.digital.core.element.ElementAttributesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in de.neemann.digital.core.element.ElementAttributesTest
+[INFO] Running de.neemann.digital.core.extern.ApplicationVerilogStdIOTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in de.neemann.digital.core.extern.ApplicationVerilogStdIOTest
+[INFO] Running de.neemann.digital.core.extern.ApplicationVHDLStdIOTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in de.neemann.digital.core.extern.ApplicationVHDLStdIOTest
+[INFO] Running de.neemann.digital.core.extern.handler.ProcessStarterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in de.neemann.digital.core.extern.handler.ProcessStarterTest
+[INFO] Running de.neemann.digital.core.extern.OptionsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.extern.OptionsTest
+[INFO] Running de.neemann.digital.core.extern.VHDLTokenizerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.extern.VHDLTokenizerTest
+[INFO] Running de.neemann.digital.core.flipflops.FlipflopDAsyncTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.flipflops.FlipflopDAsyncTest
+[INFO] Running de.neemann.digital.core.flipflops.FlipflopDTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.flipflops.FlipflopDTest
+[INFO] Running de.neemann.digital.core.flipflops.FlipflopJKAsyncTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.flipflops.FlipflopJKAsyncTest
+[INFO] Running de.neemann.digital.core.flipflops.FlipflopJKTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.flipflops.FlipflopJKTest
+[INFO] Running de.neemann.digital.core.flipflops.FlipflopRSAsyncTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.flipflops.FlipflopRSAsyncTest
+[INFO] Running de.neemann.digital.core.flipflops.FlipflopRSTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.flipflops.FlipflopRSTest
+[INFO] Running de.neemann.digital.core.flipflops.FlipflopTTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.flipflops.FlipflopTTest
+[INFO] Running de.neemann.digital.core.IntFormatTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in de.neemann.digital.core.IntFormatTest
+[INFO] Running de.neemann.digital.core.io.ProbeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in de.neemann.digital.core.io.ProbeTest
+[INFO] Running de.neemann.digital.core.io.StepperMotorUnipolarTest
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+{0,0,2,1,0,0,0,0,-2,-1,0,0,0,0,0,0},
+{0,-2,0,-1,2,0,1,0,0,0,0,0,0,0,0,0},
+{0,-1,1,0,0,0,2,0,0,-2,0,0,0,0,0,0},
+{0,0,-2,0,0,0,-1,0,2,0,0,0,1,0,0,0},
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+{0,0,-1,-2,1,0,0,0,0,0,0,0,2,0,0,0},
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+{0,2,0,0,-2,0,0,0,0,1,0,0,-1,0,0,0},
+{0,1,0,2,0,0,0,0,-1,0,0,0,-2,0,0,0},
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+{0,0,0,0,-1,0,-2,0,1,2,0,0,0,0,0,0},
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in de.neemann.digital.core.io.StepperMotorUnipolarTest
+[INFO] Running de.neemann.digital.core.memory.CounterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.memory.CounterTest
+[INFO] Running de.neemann.digital.core.memory.DataFieldConverterTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in de.neemann.digital.core.memory.DataFieldConverterTest
+[INFO] Running de.neemann.digital.core.memory.DataFieldTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in de.neemann.digital.core.memory.DataFieldTest
+[INFO] Running de.neemann.digital.core.memory.importer.ByteArrayFromValueArrayTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in de.neemann.digital.core.memory.importer.ByteArrayFromValueArrayTest
+[INFO] Running de.neemann.digital.core.memory.importer.IntegrationTest
+[main] INFO de.neemann.digital.core.memory.importer.Importer - <local-path> could not read native hex, try intel hex
+[main] INFO de.neemann.digital.core.memory.importer.Importer - <local-path> could not read native hex, try intel hex
+[main] INFO de.neemann.digital.core.memory.importer.Importer - <local-path> could not read native hex, try intel hex
+[main] INFO de.neemann.digital.core.memory.importer.Importer - <local-path> could not read native hex, try intel hex
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in de.neemann.digital.core.memory.importer.IntegrationTest
+[INFO] Running de.neemann.digital.core.memory.importer.IntelHexReaderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.memory.importer.IntelHexReaderTest
+[INFO] Running de.neemann.digital.core.memory.importer.LogisimReaderTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in de.neemann.digital.core.memory.importer.LogisimReaderTest
+[INFO] Running de.neemann.digital.core.memory.importer.MultiValueArrayTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.memory.importer.MultiValueArrayTest
+[INFO] Running de.neemann.digital.core.memory.LUTTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.memory.LUTTest
+[INFO] Running de.neemann.digital.core.memory.RAMDualPortTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.memory.RAMDualPortTest
+[INFO] Running de.neemann.digital.core.memory.RAMSinglePortTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.memory.RAMSinglePortTest
+[INFO] Running de.neemann.digital.core.memory.RegisterFileTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.memory.RegisterFileTest
+[INFO] Running de.neemann.digital.core.memory.RegisterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.memory.RegisterTest
+[INFO] Running de.neemann.digital.core.memory.ROMTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.memory.ROMTest
+[INFO] Running de.neemann.digital.core.ObservableValueTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.ObservableValueTest
+[INFO] Running de.neemann.digital.core.pld.DiodeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.pld.DiodeTest
+[INFO] Running de.neemann.digital.core.ValueTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.ValueTest
+[INFO] Running de.neemann.digital.core.wiring.BitSelectorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.BitSelectorTest
+[INFO] Running de.neemann.digital.core.wiring.bus.ConnectedBusHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.bus.ConnectedBusHandlerTest
+[INFO] Running de.neemann.digital.core.wiring.BusSplitterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.BusSplitterTest
+[INFO] Running de.neemann.digital.core.wiring.DataBusTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.DataBusTest
+[INFO] Running de.neemann.digital.core.wiring.DecoderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.DecoderTest
+[INFO] Running de.neemann.digital.core.wiring.DemultiplexerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.DemultiplexerTest
+[INFO] Running de.neemann.digital.core.wiring.DriverTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.DriverTest
+[INFO] Running de.neemann.digital.core.wiring.MultiplexerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.MultiplexerTest
+[INFO] Running de.neemann.digital.core.wiring.PortsTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.PortsTest
+[INFO] Running de.neemann.digital.core.wiring.PriorityEncoderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in de.neemann.digital.core.wiring.PriorityEncoderTest
+[INFO] Running de.neemann.digital.core.wiring.Splitter1Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.Splitter1Test
+[INFO] Running de.neemann.digital.core.wiring.Splitter2Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.Splitter2Test
+[INFO] Running de.neemann.digital.core.wiring.Splitter64BitTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.Splitter64BitTest
+[INFO] Running de.neemann.digital.core.wiring.SplitterHighZTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.core.wiring.SplitterHighZTest
+[INFO] Running de.neemann.digital.core.wiring.SplitterMixTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in de.neemann.digital.core.wiring.SplitterMixTest
+[INFO] Running de.neemann.digital.data.ValueTableTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in de.neemann.digital.data.ValueTableTest
+[INFO] Running de.neemann.digital.docu.DocuTest
+10�� 13, 2026 9:41:44 ���� org.apache.fop.apps.FopConfParser configure
+��Ϣ: Default page-height set to: 11.00in
+10�� 13, 2026 9:41:44 ���� org.apache.fop.apps.FopConfParser configure
+��Ϣ: Default page-width set to: 8.50in
+10�� 13, 2026 9:41:46 ���� org.apache.fop.events.LoggingEventListener processEvent
+����: Font "ZapfDingbats,italic,400" not found. Substituting with "ZapfDingbats,normal,400".
+10�� 13, 2026 9:41:46 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #1.
+10�� 13, 2026 9:41:46 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #2.
+10�� 13, 2026 9:41:46 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #3.
+10�� 13, 2026 9:41:46 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #4.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #5.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #6.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #7.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #8.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #9.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #10.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #11.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #12.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #13.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #14.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #15.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #16.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #17.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #18.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #19.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #20.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #21.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #22.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #23.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #24.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #25.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #26.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #27.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #28.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #29.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #30.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #31.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #32.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #33.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #34.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #35.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #36.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #37.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #38.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #39.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #40.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #41.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #42.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #43.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #44.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #45.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #46.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #47.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #48.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #49.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #50.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #51.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #52.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #53.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #54.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #55.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #56.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #57.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #58.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #59.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #60.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #61.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #62.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #63.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #64.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #65.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #66.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #67.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #68.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #69.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #70.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #71.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #72.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #73.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #74.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #75.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #76.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #77.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #78.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #79.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #80.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #81.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #82.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #83.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #84.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #85.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #86.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #87.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #88.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #89.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #90.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #91.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #92.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #93.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #94.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #95.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #96.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #97.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #98.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #99.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #100.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #101.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #102.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #103.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #104.
+10�� 13, 2026 9:41:47 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #105.
+10�� 13, 2026 9:41:48 ���� org.apache.fop.events.LoggingEventListener processEvent
+����: Font "ZapfDingbats,italic,400" not found. Substituting with "ZapfDingbats,normal,400".
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #1.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #2.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #3.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #4.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #5.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #6.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #7.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #8.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #9.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #10.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #11.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #12.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #13.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #14.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #15.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #16.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #17.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #18.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #19.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #20.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #21.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #22.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #23.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #24.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #25.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #26.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #27.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #28.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #29.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #30.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #31.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #32.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #33.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #34.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #35.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #36.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #37.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #38.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #39.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #40.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #41.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #42.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #43.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #44.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #45.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #46.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #47.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #48.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #49.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #50.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #51.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #52.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #53.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #54.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #55.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #56.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #57.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #58.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #59.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #60.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #61.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #62.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #63.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #64.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #65.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #66.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #67.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #68.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #69.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #70.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #71.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #72.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #73.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #74.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #75.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #76.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #77.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #78.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #79.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #80.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #81.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #82.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #83.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #84.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #85.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #86.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #87.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #88.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #89.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #90.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #91.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #92.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #93.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #94.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #95.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #96.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #97.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #98.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #99.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #100.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #101.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #102.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #103.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #104.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #105.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #106.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #107.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #108.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #109.
+10�� 13, 2026 9:41:49 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #110.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+����: Font "ZapfDingbats,italic,400" not found. Substituting with "ZapfDingbats,normal,400".
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #1.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #2.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #3.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #4.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #5.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #6.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #7.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #8.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #9.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #10.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #11.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #12.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #13.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #14.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #15.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #16.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #17.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #18.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #19.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #20.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #21.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #22.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #23.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #24.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #25.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #26.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #27.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #28.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #29.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #30.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #31.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #32.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #33.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #34.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #35.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #36.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #37.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #38.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #39.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #40.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #41.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #42.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #43.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #44.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #45.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #46.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #47.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #48.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #49.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #50.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #51.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #52.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #53.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #54.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #55.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #56.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #57.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #58.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #59.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #60.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #61.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #62.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #63.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #64.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #65.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #66.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #67.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #68.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #69.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #70.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #71.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #72.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #73.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #74.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #75.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #76.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #77.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #78.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #79.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #80.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #81.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #82.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #83.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #84.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #85.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #86.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #87.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #88.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #89.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #90.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #91.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #92.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #93.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #94.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #95.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #96.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #97.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #98.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #99.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #100.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #101.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #102.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #103.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #104.
+10�� 13, 2026 9:41:50 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #105.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+����: Font "ZapfDingbats,italic,400" not found. Substituting with "ZapfDingbats,normal,400".
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #1.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #2.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #3.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #4.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #5.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #6.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #7.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #8.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #9.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #10.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #11.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #12.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #13.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #14.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #15.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #16.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #17.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #18.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #19.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #20.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #21.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #22.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #23.
+10�� 13, 2026 9:41:51 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #24.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #25.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #26.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #27.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #28.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #29.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #30.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #31.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #32.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #33.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #34.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #35.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #36.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #37.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #38.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #39.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #40.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #41.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #42.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #43.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #44.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #45.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #46.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #47.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #48.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #49.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #50.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #51.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #52.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #53.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #54.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #55.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #56.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #57.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #58.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #59.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #60.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #61.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #62.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #63.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #64.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #65.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #66.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #67.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #68.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #69.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #70.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #71.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #72.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #73.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #74.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #75.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #76.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #77.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #78.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #79.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #80.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #81.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #82.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #83.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #84.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #85.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #86.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #87.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #88.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #89.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #90.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #91.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #92.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #93.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #94.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #95.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #96.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #97.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #98.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #99.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #100.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #101.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #102.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #103.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #104.
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+����: Font "ZapfDingbats,italic,400" not found. Substituting with "ZapfDingbats,normal,400".
+10�� 13, 2026 9:41:52 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #1.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #2.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #3.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #4.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #5.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #6.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #7.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #8.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #9.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #10.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #11.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #12.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #13.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #14.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #15.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #16.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #17.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #18.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #19.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #20.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #21.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #22.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #23.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #24.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #25.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #26.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #27.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #28.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #29.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #30.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #31.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #32.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #33.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #34.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #35.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #36.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #37.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #38.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #39.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #40.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #41.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #42.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #43.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #44.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #45.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #46.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #47.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #48.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #49.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #50.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #51.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #52.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #53.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #54.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #55.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #56.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #57.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #58.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #59.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #60.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #61.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #62.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #63.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #64.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #65.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #66.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #67.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #68.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #69.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #70.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #71.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #72.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #73.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #74.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #75.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #76.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #77.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #78.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #79.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #80.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #81.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #82.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #83.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #84.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #85.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #86.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #87.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #88.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #89.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #90.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #91.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #92.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #93.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #94.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #95.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #96.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #97.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #98.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #99.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #100.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #101.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #102.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #103.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #104.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #105.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #106.
+10�� 13, 2026 9:41:53 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #107.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+����: Font "ZapfDingbats,italic,400" not found. Substituting with "ZapfDingbats,normal,400".
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #1.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #2.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #3.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #4.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #5.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #6.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #7.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #8.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #9.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #10.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #11.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #12.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #13.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #14.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #15.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #16.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #17.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #18.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #19.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #20.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #21.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #22.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #23.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #24.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #25.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #26.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #27.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #28.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #29.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #30.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #31.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #32.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #33.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #34.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #35.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #36.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #37.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #38.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #39.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #40.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #41.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #42.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #43.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #44.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #45.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #46.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #47.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #48.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #49.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #50.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #51.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #52.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #53.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #54.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #55.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #56.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #57.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #58.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #59.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #60.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #61.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #62.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #63.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #64.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #65.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #66.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #67.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #68.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #69.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #70.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #71.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #72.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #73.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #74.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #75.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #76.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #77.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #78.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #79.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #80.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #81.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #82.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #83.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #84.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #85.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #86.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #87.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #88.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #89.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #90.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #91.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #92.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #93.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #94.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #95.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #96.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #97.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #98.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #99.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #100.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #101.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #102.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #103.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #104.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #105.
+10�� 13, 2026 9:41:54 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #106.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+����: Font "SimSun,normal,700" not found. Substituting with "SimSun,normal,400".
+10�� 13, 2026 9:41:55 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: This is a TrueType collection file with 2 fonts
+10�� 13, 2026 9:41:55 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: Containing the following fonts: 
+10�� 13, 2026 9:41:55 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: SimSun <-- selected
+10�� 13, 2026 9:41:55 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: NSimSun
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+����: Hyphenation pattern not found. URI: zh.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #1.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #2.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #3.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #4.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #5.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #6.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #7.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #8.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #9.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #10.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #11.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #12.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #13.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #14.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #15.
+10�� 13, 2026 9:41:55 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #16.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #17.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #18.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #19.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #20.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #21.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #22.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #23.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #24.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #25.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #26.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #27.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #28.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #29.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #30.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #31.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #32.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #33.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #34.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #35.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #36.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #37.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #38.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #39.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #40.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #41.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #42.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: This is a TrueType collection file with 2 fonts
+10�� 13, 2026 9:41:56 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: Containing the following fonts: 
+10�� 13, 2026 9:41:56 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: Microsoft JhengHei
+10�� 13, 2026 9:41:56 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: Microsoft JhengHei UI <-- selected
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #43.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #44.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #45.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #46.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #47.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #48.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #49.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #50.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #51.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #52.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #53.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #54.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #55.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #56.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #57.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #58.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #59.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #60.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #61.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #62.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #63.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #64.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #65.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #66.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #67.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #68.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #69.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #70.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #71.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #72.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #73.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #74.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #75.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #76.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #77.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #78.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #79.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #80.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #81.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #82.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #83.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #84.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #85.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #86.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #87.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #88.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #89.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #90.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #91.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #92.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #93.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #94.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #95.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #96.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #97.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #98.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.events.LoggingEventListener processEvent
+��Ϣ: Rendered page #99.
+10�� 13, 2026 9:41:56 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: This is a TrueType collection file with 2 fonts
+10�� 13, 2026 9:41:56 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: Containing the following fonts: 
+10�� 13, 2026 9:41:56 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: SimSun <-- selected
+10�� 13, 2026 9:41:56 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: NSimSun
+10�� 13, 2026 9:41:56 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: This is a TrueType collection file with 2 fonts
+10�� 13, 2026 9:41:56 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: Containing the following fonts: 
+10�� 13, 2026 9:41:56 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: Microsoft JhengHei
+10�� 13, 2026 9:41:56 ���� org.apache.fop.fonts.truetype.OpenFont checkTTC
+��Ϣ: Microsoft JhengHei UI <-- selected
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.999 s - in de.neemann.digital.docu.DocuTest
+[INFO] Running de.neemann.digital.draw.elements.CircuitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in de.neemann.digital.draw.elements.CircuitTest
+[INFO] Running de.neemann.digital.draw.elements.StatsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in de.neemann.digital.draw.elements.StatsTest
+[INFO] Running de.neemann.digital.draw.elements.WireConsistencyCheckerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.elements.WireConsistencyCheckerTest
+[INFO] Running de.neemann.digital.draw.elements.WireContainsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.elements.WireContainsTest
+[INFO] Running de.neemann.digital.draw.elements.WireMergerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.elements.WireMergerTest
+[INFO] Running de.neemann.digital.draw.elements.WireTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.elements.WireTest
+[INFO] Running de.neemann.digital.draw.graphics.ColorSchemeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.graphics.ColorSchemeTest
+[INFO] Running de.neemann.digital.draw.graphics.GraphicSVGIndexTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.graphics.GraphicSVGIndexTest
+[INFO] Running de.neemann.digital.draw.graphics.GraphicSVGLaTeXTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in de.neemann.digital.draw.graphics.GraphicSVGLaTeXTest
+[INFO] Running de.neemann.digital.draw.graphics.GraphicSVGTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.graphics.GraphicSVGTest
+[INFO] Running de.neemann.digital.draw.graphics.linemerger.GraphicLineCollectorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in de.neemann.digital.draw.graphics.linemerger.GraphicLineCollectorTest
+[INFO] Running de.neemann.digital.draw.graphics.PolygonTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in de.neemann.digital.draw.graphics.PolygonTest
+[INFO] Running de.neemann.digital.draw.graphics.SVGExportTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in de.neemann.digital.draw.graphics.SVGExportTest
+[INFO] Running de.neemann.digital.draw.graphics.SVGTokenizerTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.graphics.SVGTokenizerTest
+[INFO] Running de.neemann.digital.draw.graphics.text.formatter.GraphicsFormatterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in de.neemann.digital.draw.graphics.text.formatter.GraphicsFormatterTest
+[INFO] Running de.neemann.digital.draw.graphics.text.formatter.LaTeXFormatterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.graphics.text.formatter.LaTeXFormatterTest
+[INFO] Running de.neemann.digital.draw.graphics.text.formatter.PlainTextFormatterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.graphics.text.formatter.PlainTextFormatterTest
+[INFO] Running de.neemann.digital.draw.graphics.text.ParserTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.graphics.text.ParserTest
+[INFO] Running de.neemann.digital.draw.graphics.TransformMatrixTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in de.neemann.digital.draw.graphics.TransformMatrixTest
+[INFO] Running de.neemann.digital.draw.library.JarComponentManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in de.neemann.digital.draw.library.JarComponentManagerTest
+[INFO] Running de.neemann.digital.draw.library.NumStringComparatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.library.NumStringComparatorTest
+[INFO] Running de.neemann.digital.draw.library.ResolveGenericsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.library.ResolveGenericsTest
+[INFO] Running de.neemann.digital.draw.model.NetListTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in de.neemann.digital.draw.model.NetListTest
+[INFO] Running de.neemann.digital.draw.shapes.custom.CustomShapeDescriptionTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in de.neemann.digital.draw.shapes.custom.CustomShapeDescriptionTest
+[INFO] Running de.neemann.digital.draw.shapes.custom.svg.ContextTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.shapes.custom.svg.ContextTest
+[INFO] Running de.neemann.digital.draw.shapes.custom.svg.TransformParserTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.draw.shapes.custom.svg.TransformParserTest
+[INFO] Running de.neemann.digital.draw.shapes.custom.SvgImporterTest
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in de.neemann.digital.draw.shapes.custom.SvgImporterTest
+[INFO] Running de.neemann.digital.draw.shapes.SevenSegShapeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in de.neemann.digital.draw.shapes.SevenSegShapeTest
+[INFO] Running de.neemann.digital.FlipFlopsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.FlipFlopsTest
+[INFO] Running de.neemann.digital.fsm.IntegrationTest
+counter10.fsm, rotDecoderMealy.fsm, rotDecoderMoore.fsm, SevenSegCounter.fsm, 
+stepperHalfStep.fsm, stepperSimple.fsm, trafficLightBlink.fsm, 
+trafficLightMedwedew.fsm, trafficLightMoore.fsm, 
+-- tested 9 examples
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in de.neemann.digital.fsm.IntegrationTest
+[INFO] Running de.neemann.digital.fsm.OptimizerTest
+[main] INFO de.neemann.digital.fsm.Optimizer - optimizing time complexity: 6720
+[main] INFO de.neemann.digital.fsm.Optimizer - start complexity 14
+[main] INFO de.neemann.digital.fsm.Optimizer - optimizing time complexity: 6720
+[main] INFO de.neemann.digital.fsm.Optimizer - start complexity 14
+[main] INFO de.neemann.digital.fsm.Optimizer - optimizing time complexity: 24
+[main] INFO de.neemann.digital.fsm.Optimizer - start complexity 28
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.906 s - in de.neemann.digital.fsm.OptimizerTest
+[INFO] Running de.neemann.digital.fsm.PermuteTest
+[0, 1, 2, 3]
+[0, 1, 3, 2]
+[0, 2, 1, 3]
+[0, 2, 3, 1]
+[0, 3, 2, 1]
+[0, 3, 1, 2]
+[1, 0, 2, 3]
+[1, 0, 3, 2]
+[1, 2, 0, 3]
+[1, 2, 3, 0]
+[1, 3, 2, 0]
+[1, 3, 0, 2]
+[2, 1, 0, 3]
+[2, 1, 3, 0]
+[2, 0, 1, 3]
+[2, 0, 3, 1]
+[2, 3, 0, 1]
+[2, 3, 1, 0]
+[3, 1, 2, 0]
+[3, 1, 0, 2]
+[3, 2, 1, 0]
+[3, 2, 0, 1]
+[3, 0, 2, 1]
+[3, 0, 1, 2]
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in de.neemann.digital.fsm.PermuteTest
+[INFO] Running de.neemann.digital.fsm.StateTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.fsm.StateTest
+[INFO] Running de.neemann.digital.fsm.TransitionTableCreatorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.fsm.TransitionTableCreatorTest
+[INFO] Running de.neemann.digital.fsm.TransitionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.fsm.TransitionTest
+[INFO] Running de.neemann.digital.fsm.ValueParserTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.fsm.ValueParserTest
+[INFO] Running de.neemann.digital.gui.components.CircuitModifierTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in de.neemann.digital.gui.components.CircuitModifierTest
+[INFO] Running de.neemann.digital.gui.components.CopiedElementLabelRenamerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in de.neemann.digital.gui.components.CopiedElementLabelRenamerTest
+[INFO] Running de.neemann.digital.gui.components.data.ValueTableObserverTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in de.neemann.digital.gui.components.data.ValueTableObserverTest
+[INFO] Running de.neemann.digital.gui.components.EditorFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.gui.components.EditorFactoryTest
+[INFO] Running de.neemann.digital.gui.components.graphics.VGATest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.gui.components.graphics.VGATest
+[INFO] Running de.neemann.digital.gui.components.karnaugh.KarnaughMapTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in de.neemann.digital.gui.components.karnaugh.KarnaughMapTest
+[INFO] Running de.neemann.digital.gui.components.LabelGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in de.neemann.digital.gui.components.LabelGeneratorTest
+[INFO] Running de.neemann.digital.gui.components.OrderMergerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.gui.components.OrderMergerTest
+[INFO] Running de.neemann.digital.gui.components.table.BuilderExpressionCreatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in de.neemann.digital.gui.components.table.BuilderExpressionCreatorTest
+[INFO] Running de.neemann.digital.gui.components.table.ExpressionListenerCSVCondensedTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.gui.components.table.ExpressionListenerCSVCondensedTest
+[INFO] Running de.neemann.digital.gui.components.table.ExpressionListenerJKTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.gui.components.table.ExpressionListenerJKTest
+[INFO] Running de.neemann.digital.gui.components.table.ExpressionListenerOptimizeJKTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in de.neemann.digital.gui.components.table.ExpressionListenerOptimizeJKTest
+[INFO] Running de.neemann.digital.gui.components.table.LaTeXExpressionListenerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in de.neemann.digital.gui.components.table.LaTeXExpressionListenerTest
+[INFO] Running de.neemann.digital.gui.components.table.TestReorderInputs
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in de.neemann.digital.gui.components.table.TestReorderInputs
+[INFO] Running de.neemann.digital.gui.components.table.TestReorderOutputs
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in de.neemann.digital.gui.components.table.TestReorderOutputs
+[INFO] Running de.neemann.digital.gui.components.terminal.CharDeleterTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in de.neemann.digital.gui.components.terminal.CharDeleterTest
+[INFO] Running de.neemann.digital.gui.ProgramMemoryLoaderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in de.neemann.digital.gui.ProgramMemoryLoaderTest
+[INFO] Running de.neemann.digital.gui.SaveAsHelperTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in de.neemann.digital.gui.SaveAsHelperTest
+[INFO] Running de.neemann.digital.hdl.hgs.ParserTest
+DIG_Add.tem, DIG_BitExtender.tem, DIG_BitSelector.tem, 
+DIG_BlockRAMDualPort.tem, DIG_Comparator.tem, DIG_Counter.tem, 
+DIG_CounterPreset.tem, DIG_DCM_SP.tem, DIG_Decoder.tem, DIG_Demultiplexer.tem, 
+DIG_Driver.tem, DIG_DriverInvSel.tem, DIG_D_FF.tem, DIG_D_FF_AS.tem, 
+DIG_External.tem, DIG_ExternalFile.tem, DIG_JK_FF.tem, DIG_JK_FF_AS.tem, 
+DIG_LookUpTable.tem, DIG_MMCME2_BASE.tem, DIG_Mul.tem, DIG_Multiplexer.tem, 
+DIG_Neg.tem, DIG_PinControl.tem, DIG_PriorityEncoder.tem, DIG_RAMAsync.tem, 
+DIG_RAMDualAccess.tem, DIG_RAMDualPort.tem, DIG_Register.tem, 
+DIG_RegisterFile.tem, DIG_Reset.tem, DIG_ROM.tem, DIG_simpleClockDivider.tem, 
+DIG_Sub.tem, VHDLStdIOTemplate.tem, 
+-- tested 35 examples
+DIG_Add.v, DIG_BitExtender.v, DIG_BitSelector.v, DIG_BlockRAMDualPort.v, 
+DIG_Comparator.v, DIG_Counter.v, DIG_CounterPreset.v, DIG_DCM_SP.v, 
+DIG_Decoder.v, DIG_Demultiplexer.v, DIG_Driver.v, DIG_DriverInvSel.v, 
+DIG_D_FF.v, DIG_D_FF_AS.v, DIG_External.v, DIG_ExternalFile.v, DIG_JK_FF.v, 
+DIG_JK_FF_AS.v, DIG_LookUpTable.v, DIG_Mul.v, DIG_Multiplexer.v, DIG_Neg.v, 
+DIG_PinControl.v, DIG_PriorityEncoder.v, DIG_RAMAsync.v, DIG_RAMDualAccess.v, 
+DIG_RAMDualPort.v, DIG_Register.v, DIG_RegisterFile.v, DIG_Reset.v, DIG_ROM.v, 
+DIG_simpleClockDivider.v, DIG_Sub.v, 
+-- tested 33 examples
+[INFO] Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s - in de.neemann.digital.hdl.hgs.ParserTest
+[INFO] Running de.neemann.digital.hdl.hgs.ValueTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.hdl.hgs.ValueTest
+[INFO] Running de.neemann.digital.hdl.model2.HDLModelTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 s - in de.neemann.digital.hdl.model2.HDLModelTest
+[INFO] Running de.neemann.digital.hdl.printer.CodePrinterStrTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in de.neemann.digital.hdl.printer.CodePrinterStrTest
+[INFO] Running de.neemann.digital.hdl.TestHDLExportFlag
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in de.neemann.digital.hdl.TestHDLExportFlag
+[INFO] Running de.neemann.digital.hdl.verilog2.DescriptionTest
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export naming
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in de.neemann.digital.hdl.verilog2.DescriptionTest
+[INFO] Running de.neemann.digital.hdl.verilog2.VerilogGeneratorTest
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export a_b
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export main
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export comb
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export skipOuter
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export splitter2
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export splitter2
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export splitter3
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in de.neemann.digital.hdl.verilog2.VerilogGeneratorTest
+[INFO] Running de.neemann.digital.hdl.verilog2.VerilogRenamingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.hdl.verilog2.VerilogRenamingTest
+[INFO] Running de.neemann.digital.hdl.verilog2.VerilogSimulatorTest
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export adder4b_dig
+all tests are skipped: iverilog (https://github.com/steveicarus/iverilog) is not installed! Add iverilog binary to the system path or set system property 'iverilog' to iverilog binary
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export BASYS3_lightchase_dig
+all tests are skipped: iverilog (https://github.com/steveicarus/iverilog) is not installed! Add iverilog binary to the system path or set system property 'iverilog' to iverilog binary
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export adder_dig
+all tests are skipped: iverilog (https://github.com/steveicarus/iverilog) is not installed! Add iverilog binary to the system path or set system property 'iverilog' to iverilog binary
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export SignExt
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export Control
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ImReg
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export WDmuxCtrl
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export Branch
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export Flags
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export PC_HDL
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ASR
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export SWAP
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export SWAPN
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export LSL
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export LSR
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ALU
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export Register
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ProcessorHDL
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export GPI_HDL
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export GPO
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export HDLExample_dig
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export simple_dig
+all tests are skipped: iverilog (https://github.com/steveicarus/iverilog) is not installed! Add iverilog binary to the system path or set system property 'iverilog' to iverilog binary
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export Multiply8Bit_dig
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 s - in de.neemann.digital.hdl.verilog2.VerilogSimulatorTest
+[INFO] Running de.neemann.digital.hdl.vhdl2.ClockTest
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in de.neemann.digital.hdl.vhdl2.ClockTest
+[INFO] Running de.neemann.digital.hdl.vhdl2.DescriptionTest
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in de.neemann.digital.hdl.vhdl2.DescriptionTest
+[INFO] Running de.neemann.digital.hdl.vhdl2.SeparatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.hdl.vhdl2.SeparatorTest
+[INFO] Running de.neemann.digital.hdl.vhdl2.VHDLGeneratorTest
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export a b.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in de.neemann.digital.hdl.vhdl2.VHDLGeneratorTest
+[INFO] Running de.neemann.digital.hdl.vhdl2.VHDLRenamingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.hdl.vhdl2.VHDLRenamingTest
+[INFO] Running de.neemann.digital.hdl.vhdl2.VHDLSimulatorTest
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+all tests are skipped: ghdl (https://github.com/tgingold/ghdl) is not installed! Add ghdl binary to the system path or set system property 'ghdl' to ghdl binary
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+all tests are skipped: ghdl (https://github.com/tgingold/ghdl) is not installed! Add ghdl binary to the system path or set system property 'ghdl' to ghdl binary
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+all tests are skipped: ghdl (https://github.com/tgingold/ghdl) is not installed! Add ghdl binary to the system path or set system property 'ghdl' to ghdl binary
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export SignExt.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export Control.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export ImReg.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export WDmuxCtrl.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export Branch.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export Flags.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export PC_HDL.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export ASR.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export SWAP.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export SWAPN.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export LSL.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export LSR.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export ALU.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export Register.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export ProcessorHDL.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export GPI_HDL.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export GPO.dig
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+all tests are skipped: ghdl (https://github.com/tgingold/ghdl) is not installed! Add ghdl binary to the system path or set system property 'ghdl' to ghdl binary
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 s - in de.neemann.digital.hdl.vhdl2.VHDLSimulatorTest
+[INFO] Running de.neemann.digital.integration.TestAnd
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in de.neemann.digital.integration.TestAnd
+[INFO] Running de.neemann.digital.integration.TestCaseDescription
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in de.neemann.digital.integration.TestCaseDescription
+[INFO] Running de.neemann.digital.integration.TestErrorOrigin
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in de.neemann.digital.integration.TestErrorOrigin
+[INFO] Running de.neemann.digital.integration.TestExampleNamesUnique
+-- tested 34 examples
+-- tested 9 examples
+-- tested 31 examples
+-- tested 46 examples
+-- tested 4 examples
+-- tested 6 examples
+-- tested 19 examples
+-- tested 7 examples
+-- tested 9 examples
+-- tested 22 examples
+-- tested 5 examples
+-- tested 2 examples
+-- tested 1 examples
+-- tested 0 examples
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in de.neemann.digital.integration.TestExampleNamesUnique
+[INFO] Running de.neemann.digital.integration.TestExamples
+[main] INFO de.neemann.digital.core.memory.rom.ROMManagerFile - convert old rom manager
+74xx_xor.dig, counter.dig, CrazySmallCPU.dig0002
+0003
+0005
+0008
+0013
+0021
+0034
+0055
+0089
+0144
+0233
+0377
+0610
+0987
+1597
+2584
+4181
+6765, decimalCounter.dig, 
+hexCounter.dig, trafic.dig, traficDiode.dig, traficDiodeInv.dig, 
+traficInv.dig, and.dig, CAS_RAS.dig, d-tg-ff.dig, d-tg-ff2.dig, dec.dig, 
+eprom.dig, inverter.dig, nand.dig, nand3.dig, nor.dig, nor3.dig, 
+openDrainBus.dig, or.dig, prom.dig, rom.dig, sram.dig, sram_simple.dig, 
+tristateOut.dig, xor.dig, Adder8bit.dig, Bus.dig, Comp.dig, Comp7485.dig, 
+Comp7485Parall.dig, CompEN.dig, CompRC.dig, Dadda-inc.dig, 
+DaddaMultiplier.dig, demux.dig, DemuxCas.dig, FullAdder.dig, FullAdderCLA.dig, 
+FullAdderNaive.dig, FullAdderRC.dig, FullAdderRCSig.dig, FullAdderRC_CLA.dig, 
+FullAddSub_RC.dig, FullSub.dig, FullSub2.dig, FullSubNaive.dig, FullSubRC.dig, 
+HalfAdder.dig, HalfSub.dig, LUT.dig, Multiply.dig, Multiply16Bit.dig, 
+Multiply8Bit.dig, Multiply8BitTable.dig, MultiplyTest.dig, mux.dig, Xor1.dig, 
+Xor2.dig, Xor3.dig, barrelShifter.dig, barrelShifter2.dig, 
+shift-fixed-arith-right-inc.dig, shift-fixed-left-inc.dig, 
+shift-fixed-right-inc.dig, shift-inc.dig, TestBarrelShifter.dig, 
+TestBarrelShifter2.dig, GrayCounter.dig, GrayFinal-inc.dig, GrayNode-inc.dig, 
+TestGray.dig, discrete.dig, genCell.dig, GenericConway.dig, lut.dig, 
+genAllBitsSet.dig, genAllBitsSetTest.dig, genAnd.dig, genAndTest.dig, 
+genReg.dig, genRegTest.dig, col1.dig, col2.dig, col3.dig, calc.dig, 
+coorGen.dig, iterate.dig, mandelbrot.dig, mulFixed.dig, offset.dig, 
+Hazard.dig, HazardA.dig, HazardB.dig, Oscillation.dig, BASYS3_lightchase.dig, 
+TinyFPGA_BX_SOS.dig, 74147.dig, 74148.dig, 74181.dig, 74182.dig, 74198.dig, 
+74280.dig, 74283.dig, 74381.dig, 74382.dig, 74682.dig, 74688.dig, 7480.dig, 
+7482.dig, 7483.dig, 7483Real.dig, 7485.dig, 7400.dig, 7401.dig, 7402.dig, 
+7403.dig, 7404.dig, 7405.dig, 7408.dig, 7409.dig, 7410.dig, 7411.dig, 
+7412.dig, 7413.dig, 74133.dig, 7414.dig, 7415.dig, 7420.dig, 7421.dig, 
+7425.dig, 74260.dig, 74266.dig, 7427.dig, 7428.dig, 7430.dig, 7432.dig, 
+7434.dig, 7440.dig, 744002.dig, 744075.dig, 7451.dig, 7454.dig, 7455.dig, 
+7458.dig, 747266.dig, 74804.dig, 74805.dig, 74808.dig, 74832.dig, 7486.dig, 
+74160.dig, 74161.dig, 74162.dig, 74162Real.dig, 74163.dig, 74190.dig, 
+74191.dig, 74193.dig, 744017.dig, 74590.dig, 74779-inc.dig, 74779.dig, 
+7490.dig, 7493.dig, 74247.dig, 74248.dig, 7447.dig, 7448.dig, 7406.dig, 
+7407.dig, 74125.dig, 74126.dig, 7416.dig, 7417.dig, 74244.dig, 74245.dig, 
+74540.dig, 74541.dig, 74107.dig, 74109.dig, 74112.dig, 74116.dig, 74173.dig, 
+74174.dig, 74175.dig, 74273.dig, 74373-D-inc.dig, 74373.dig, 74374.dig, 
+74377.dig, 74573.dig, 74574.dig, 7474.dig, 7476.dig, 74189.dig, 7440105.dig, 
+74670-D-inc.dig, 74670.dig, 7489.dig, 74138.dig, 74139.dig, 74150.dig, 
+74151.dig, 74153.dig, 74154.dig, 74157.dig, 74238.dig, 74253.dig, 74257.dig, 
+7442.dig, 74164.dig, 74165.dig, 74166.dig, 74194.dig, 74194real.dig, 
+74299.dig, 74595.dig, 27c801.dig, 28c010.dig, 28c16.dig, 28c256.dig, 
+28c512.dig, 28c64.dig, A623308A.dig, outDataGen-inc.dig, RAM32Bit.dig, 
+strDataGen-inc.dig, strGen-inc.dig, BillieJean.dig, DebugExample.dig, 
+MIDIexample.dig, Telnet.dig, TextFormatExample.dig, andNmos.dig, 
+inverterNmos.dig, nandNmos.dig, norNmos.dig, orNmos.dig, xnor.dig, 
+xorNmos.dig, GAL2v3.dig, PAL.dig, PAL2v3.dig, PLA.dig, WiredAnd.dig, 
+WiredOr.dig, ALU.dig, ASR.dig, LSL.dig, LSR.dig, SWAP.dig, SWAPN.dig, 
+Branch.dig, ClockDiv.dig, Control.dig, Flags.dig, FlagsRW.dig, ImReg.dig, 
+Interrupt.dig, Memory.dig, PC-HDL.dig, PC.dig, PCintr.dig, Register.dig, 
+RegisterOpt.dig, RSpSet.dig, SignExt.dig, WDmuxCtrl.dig, HDLExample.dig, 
+IntrExample.dig, GPI.dig, GPI_HDL.dig, GPO.dig, Graphics.dig, Keyboard.dig, 
+LedMatrix.dig, readSelect.dig, Terminal.dig, TestIO.dig, Processor.dig, 
+ProcessorHDL.dig, ProcessorHDLTest.dig, ProcessorIntr.dig, ProcessorTest.dig, 
+ProcessorVonNeumann.dig, core.dig, JKen.dig, Palette.dig, sync.dig, 
+textMode.dig, VGA.dig, VGAExample.dig, muller-c.dig, muller-pipeline.dig, 
+oscillator.dig, cell.dig, cellLUT.dig, Conway.dig, descrete.dig, 
+Counter-D.dig, Counter-JK.dig, Counter-T.dig, D-MS.dig, D-T.dig, D-T2.dig, 
+D-TransmissionGate.dig, D.dig, D_NAND.dig, JK-MS.dig, JK-T.dig, 
+multip_D_notWorking.dig, multip_D_working.dig, multip_D_working_detail.dig, 
+multip_D_working_T.dig, Prescaler.dig, RS-C.dig, RS-MS-Simp.dig, RS-MS.dig, 
+RS-T.dig, RS.dig, SPI.dig, T-MS.dig, T.dig, CounterWithTest.dig, 
+TafficLight1.dig, TafficLight2.dig, TafficLight3.dig, 
+-- tested 330 examples
+74181-74182.dig, FullSub.dig, FullSubRC.dig, HalfAdder.dig, HalfSub.dig, 
+subTest.dig, d_async.dig, jk_async.dig, burnError.dig, cascadeCounter.dig, 
+overflow.dig, delay.dig, inner.dig, outer.dig, splitter.dig, fullAdder.dig, 
+halfAdder.dig, rcAdder.dig, eeprom.dig, burn_Error.dig, cmos10TFullAdder.dig, 
+cmosGDIFullAdder.dig, cmosMirrorFullAdder.dig, cmosSERFFullAdder.dig, 
+d-ff.dig, d-sram-ff.dig, multiBit.dig, nand.dig, nchan.dig, pchan.dig, 
+switchTest.dig, xor.dig, count.dig, countSplitter.dig, inverterConfig.dig, 
+main.dig, mainNest.dig, mainSplitter.dig, nest.dig, highz.dig, 
+inAsOutTest.dig, invClock.dig, simpleTest1.dig, simpleTest2.dig, monoflop.dig, 
+chaining.dig, inner.dig, innerError.dig, main.dig, mainError.dig, inner.dig, 
+[main] INFO de.neemann.digital.core.memory.rom.ROMManagerFile - convert old rom manager
+main.dig, inner.dig, main.dig, simple.dig, uniTest.dig, DiodeBackward.dig, 
+DiodeForeward.dig, GAL2v2.dig, PullDown.dig, PullDown2.dig, PullUp.dig, 
+PullUp2.dig, PullUpAndDownError.dig, power.dig, power1Error.dig, 
+power2Error.dig, prng.dig, programTestData.dig, programTestSignal.dig, 
+[main] INFO de.neemann.digital.core.memory.rom.ROMManagerFile - convert old rom manager
+ram.dig, rndReset.dig, rom-1-inc.dig, rom-2-inc.dig, rom.dig, 4BitAdder.dig, 
+Adder.dig, BusSplitterHighZ.dig, BusSplitterHighZ2.dig, BusSplitterHighZ3.dig, 
+splitter1.dig, splitter1Error.dig, splitter2.dig, splitter2Error.dig, 
+splitter3.dig, splitter3Error.dig, splitter4.dig, burn2Error.dig, 
+burnError.dig, const.dig, const2.dig, const3.dig, DmitryVyal1.dig, 
+DmitryVyal2.dig, DmitryVyal3.dig, DmitryVyal_bug480.dig, FGNFETs.dig, 
+FGPFETs.dig, GAL2v3.dig, Heintz_A.dig, Heintz_A_DT.dig, Heintz_B.dig, 
+highZ-DT.dig, highZ-DT2.dig, highZ-DT3.dig, highZ-DT4.dig, highZ.dig, 
+inverter.dig, no_net.dig, no_net2.dig, no_net_Error.dig, relayFullAdder.dig, 
+relayFullAdder2.dig, selbsthaltung.dig, switch1.dig, switch2.dig, 
+switchAsInput.dig, switch_highZ.dig, switch_pull.dig, switch_simple.dig, 
+switch_xor.dig, switch_xor2.dig, switch_xor3.dig, transGate.dig, 
+TestCaseInitialState.dig, TestCaseInitialState2.dig, cross.dig, crossE.dig, 
+crossTest.dig, crossTestError.dig, double.dig, doubleTest.dig, pull.dig, 
+pulltest.dig, pulltest2.dig, trans.dig, trans2.dig, trans3.dig, transtest.dig, 
+transtest2.dig, transtest3.dig, transtestLabel.dig, TwoTestCases.dig, 
+adder.dig, barrelShifter.dig, shift-fixed-arith-right-inc.dig, 
+shift-fixed-left-inc.dig, shift-fixed-right-inc.dig, shift-inc.dig, 
+TestLeft32.dig, TestLeft8.dig, TestRight8.dig, TestRightArith16.dig, 
+bitExtend.dig, bitExtend2.dig, BitSelect.dig, BitSelect2.dig, comp.dig, 
+compSig.dig, counter.dig, counterPre.dig, counterPre2.dig, counterPre3.dig, 
+D-Default.dig, D-DefaultBus.dig, debounce.dig, driver1.dig, driver1inv.dig, 
+driver2.dig, driver2inv.dig, dualPortRam.dig, d_async.dig, FullAdderCLA.dig, 
+mainMem.dig, mainMem2.dig, memLeaf.dig, memLeaf2.dig, memNode.dig, 
+memNode2.dig, genAllBitsSet.dig, genAllBitsSetTest.dig, genAnd.dig, 
+genAndTest.dig, genReg.dig, genRegTest.dig, Ram32BitTest.dig, JK-Default.dig, 
+jk_async.dig, lightChase.dig, lut.dig, lut2.dig, lut3.dig, multiply.dig, 
+multiplySigned.dig, multiPort.dig, naming-inc.dig, naming-main.dig, neg.dig, 
+not.dig, priorityEncoder.dig, blockRAM.dig, blockRAM8.dig, RAMAsync.dig, 
+registerFile.dig, reset.dig, rom.dig, rom2.dig, rom3.dig, lut.dig, 
+lutTest.dig, simpleANDNAND.dig, subtr.dig, xorMulitInput.dig, 
+virtualTestSignal.dig, w1.dig, weak.dig, 
+-- tested 216 examples
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.393 s - in de.neemann.digital.integration.TestExamples
+[INFO] Running de.neemann.digital.integration.TestExport
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 s - in de.neemann.digital.integration.TestExport
+[INFO] Running de.neemann.digital.integration.TestLib
+74147.dig, 74148.dig, 74181.dig, 74182.dig, 74198.dig, 74280.dig, 74283.dig, 
+74381.dig, 74382.dig, 74682.dig, 74688.dig, 7480.dig, 7482.dig, 7483.dig, 
+7483Real.dig, 7485.dig, 7400.dig, 7401.dig, 7402.dig, 7403.dig, 7404.dig, 
+7405.dig, 7408.dig, 7409.dig, 7410.dig, 7411.dig, 7412.dig, 7413.dig, 
+74133.dig, 7414.dig, 7415.dig, 7420.dig, 7421.dig, 7425.dig, 74260.dig, 
+74266.dig, 7427.dig, 7428.dig, 7430.dig, 7432.dig, 7434.dig, 7440.dig, 
+744002.dig, 744075.dig, 7451.dig, 7454.dig, 7455.dig, 7458.dig, 747266.dig, 
+74804.dig, 74805.dig, 74808.dig, 74832.dig, 7486.dig, 74160.dig, 74161.dig, 
+74162.dig, 74162Real.dig, 74163.dig, 74190.dig, 74191.dig, 74193.dig, 
+744017.dig, 74590.dig, 74779-inc.dig, 74779.dig, 7490.dig, 7493.dig, 
+74247.dig, 74248.dig, 7447.dig, 7448.dig, 7406.dig, 7407.dig, 74125.dig, 
+74126.dig, 7416.dig, 7417.dig, 74244.dig, 74245.dig, 74540.dig, 74541.dig, 
+74107.dig, 74109.dig, 74112.dig, 74116.dig, 74173.dig, 74174.dig, 74175.dig, 
+74273.dig, 74373-D-inc.dig, 74373.dig, 74374.dig, 74377.dig, 74573.dig, 
+74574.dig, 7474.dig, 7476.dig, 74189.dig, 7440105.dig, 74670-D-inc.dig, 
+74670.dig, 7489.dig, 74138.dig, 74139.dig, 74150.dig, 74151.dig, 74153.dig, 
+74154.dig, 74157.dig, 74238.dig, 74253.dig, 74257.dig, 7442.dig, 74164.dig, 
+74165.dig, 74166.dig, 74194.dig, 74194real.dig, 74299.dig, 74595.dig, 
+27c801.dig, 28c010.dig, 28c16.dig, 28c256.dig, 28c512.dig, 28c64.dig, 
+A623308A.dig, outDataGen-inc.dig, RAM32Bit.dig, strDataGen-inc.dig, 
+strGen-inc.dig, 
+-- tested 132 examples
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.365 s - in de.neemann.digital.integration.TestLib
+[INFO] Running de.neemann.digital.integration.TestLicenseNotice
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in de.neemann.digital.integration.TestLicenseNotice
+[INFO] Running de.neemann.digital.integration.TestNesting
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in de.neemann.digital.integration.TestNesting
+[INFO] Running de.neemann.digital.integration.TestProcessor
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.447 s - in de.neemann.digital.integration.TestProcessor
+[INFO] Running de.neemann.digital.integration.TestRunToBreak
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in de.neemann.digital.integration.TestRunToBreak
+[INFO] Running de.neemann.digital.integration.TestSelect
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in de.neemann.digital.integration.TestSelect
+[INFO] Running de.neemann.digital.integration.TestShapes
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 s - in de.neemann.digital.integration.TestShapes
+[INFO] Running de.neemann.digital.integration.TestTrans
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in de.neemann.digital.integration.TestTrans
+[INFO] Running de.neemann.digital.integration.UnitTestTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 s - in de.neemann.digital.integration.UnitTestTest
+[INFO] Running de.neemann.digital.lang.TestDuplicates
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in de.neemann.digital.lang.TestDuplicates
+[INFO] Running de.neemann.digital.lang.TestElemConsistence
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in de.neemann.digital.lang.TestElemConsistence
+[INFO] Running de.neemann.digital.lang.TestExamplesLanguage
+74xx_xor.dig, counter.dig, CrazySmallCPU.dig, decimalCounter.dig, 
+hexCounter.dig, trafic.dig, traficDiode.dig, traficDiodeInv.dig, 
+traficInv.dig, and.dig, CAS_RAS.dig, d-tg-ff.dig, d-tg-ff2.dig, dec.dig, 
+eprom.dig, inverter.dig, nand.dig, nand3.dig, nor.dig, nor3.dig, 
+openDrainBus.dig, or.dig, prom.dig, rom.dig, sram.dig, sram_simple.dig, 
+tristateOut.dig, xor.dig, Adder8bit.dig, Bus.dig, Comp.dig, Comp7485.dig, 
+Comp7485Parall.dig, CompEN.dig, CompRC.dig, Dadda-inc.dig, 
+DaddaMultiplier.dig, demux.dig, DemuxCas.dig, FullAdder.dig, FullAdderCLA.dig, 
+FullAdderNaive.dig, FullAdderRC.dig, FullAdderRCSig.dig, FullAdderRC_CLA.dig, 
+FullAddSub_RC.dig, FullSub.dig, FullSub2.dig, FullSubNaive.dig, FullSubRC.dig, 
+HalfAdder.dig, HalfSub.dig, LUT.dig, Multiply.dig, Multiply16Bit.dig, 
+Multiply8Bit.dig, Multiply8BitTable.dig, MultiplyTest.dig, mux.dig, Xor1.dig, 
+Xor2.dig, Xor3.dig, barrelShifter.dig, barrelShifter2.dig, 
+shift-fixed-arith-right-inc.dig, shift-fixed-left-inc.dig, 
+shift-fixed-right-inc.dig, shift-inc.dig, TestBarrelShifter.dig, 
+TestBarrelShifter2.dig, GrayCounter.dig, GrayFinal-inc.dig, GrayNode-inc.dig, 
+TestGray.dig, discrete.dig, genCell.dig, GenericConway.dig, lut.dig, 
+genAllBitsSet.dig, genAllBitsSetTest.dig, genAnd.dig, genAndTest.dig, 
+genReg.dig, genRegTest.dig, col1.dig, col2.dig, col3.dig, calc.dig, 
+coorGen.dig, iterate.dig, mandelbrot.dig, mulFixed.dig, offset.dig, 
+Hazard.dig, HazardA.dig, HazardB.dig, Oscillation.dig, BASYS3_lightchase.dig, 
+TinyFPGA_BX_SOS.dig, 74147.dig, 74148.dig, 74181.dig, 74182.dig, 74198.dig, 
+74280.dig, 74283.dig, 74381.dig, 74382.dig, 74682.dig, 74688.dig, 7480.dig, 
+7482.dig, 7483.dig, 7483Real.dig, 7485.dig, 7400.dig, 7401.dig, 7402.dig, 
+7403.dig, 7404.dig, 7405.dig, 7408.dig, 7409.dig, 7410.dig, 7411.dig, 
+7412.dig, 7413.dig, 74133.dig, 7414.dig, 7415.dig, 7420.dig, 7421.dig, 
+7425.dig, 74260.dig, 74266.dig, 7427.dig, 7428.dig, 7430.dig, 7432.dig, 
+7434.dig, 7440.dig, 744002.dig, 744075.dig, 7451.dig, 7454.dig, 7455.dig, 
+7458.dig, 747266.dig, 74804.dig, 74805.dig, 74808.dig, 74832.dig, 7486.dig, 
+74160.dig, 74161.dig, 74162.dig, 74162Real.dig, 74163.dig, 74190.dig, 
+74191.dig, 74193.dig, 744017.dig, 74590.dig, 74779-inc.dig, 74779.dig, 
+7490.dig, 7493.dig, 74247.dig, 74248.dig, 7447.dig, 7448.dig, 7406.dig, 
+7407.dig, 74125.dig, 74126.dig, 7416.dig, 7417.dig, 74244.dig, 74245.dig, 
+74540.dig, 74541.dig, 74107.dig, 74109.dig, 74112.dig, 74116.dig, 74173.dig, 
+74174.dig, 74175.dig, 74273.dig, 74373-D-inc.dig, 74373.dig, 74374.dig, 
+74377.dig, 74573.dig, 74574.dig, 7474.dig, 7476.dig, 74189.dig, 7440105.dig, 
+74670-D-inc.dig, 74670.dig, 7489.dig, 74138.dig, 74139.dig, 74150.dig, 
+74151.dig, 74153.dig, 74154.dig, 74157.dig, 74238.dig, 74253.dig, 74257.dig, 
+7442.dig, 74164.dig, 74165.dig, 74166.dig, 74194.dig, 74194real.dig, 
+74299.dig, 74595.dig, 27c801.dig, 28c010.dig, 28c16.dig, 28c256.dig, 
+28c512.dig, 28c64.dig, A623308A.dig, outDataGen-inc.dig, RAM32Bit.dig, 
+strDataGen-inc.dig, strGen-inc.dig, BillieJean.dig, DebugExample.dig, 
+MIDIexample.dig, Telnet.dig, TextFormatExample.dig, andNmos.dig, 
+inverterNmos.dig, nandNmos.dig, norNmos.dig, orNmos.dig, xnor.dig, 
+xorNmos.dig, GAL2v3.dig, PAL.dig, PAL2v3.dig, PLA.dig, WiredAnd.dig, 
+WiredOr.dig, ALU.dig, ASR.dig, LSL.dig, LSR.dig, SWAP.dig, SWAPN.dig, 
+Branch.dig, ClockDiv.dig, Control.dig, Flags.dig, FlagsRW.dig, ImReg.dig, 
+Interrupt.dig, Memory.dig, PC-HDL.dig, PC.dig, PCintr.dig, Register.dig, 
+RegisterOpt.dig, RSpSet.dig, SignExt.dig, WDmuxCtrl.dig, HDLExample.dig, 
+IntrExample.dig, GPI.dig, GPI_HDL.dig, GPO.dig, Graphics.dig, Keyboard.dig, 
+LedMatrix.dig, readSelect.dig, Terminal.dig, TestIO.dig, Processor.dig, 
+ProcessorHDL.dig, ProcessorHDLTest.dig, ProcessorIntr.dig, ProcessorTest.dig, 
+ProcessorVonNeumann.dig, core.dig, JKen.dig, Palette.dig, sync.dig, 
+textMode.dig, VGA.dig, VGAExample.dig, muller-c.dig, muller-pipeline.dig, 
+oscillator.dig, cell.dig, cellLUT.dig, Conway.dig, descrete.dig, 
+Counter-D.dig, Counter-JK.dig, Counter-T.dig, D-MS.dig, D-T.dig, D-T2.dig, 
+D-TransmissionGate.dig, D.dig, D_NAND.dig, JK-MS.dig, JK-T.dig, 
+multip_D_notWorking.dig, multip_D_working.dig, multip_D_working_detail.dig, 
+multip_D_working_T.dig, Prescaler.dig, RS-C.dig, RS-MS-Simp.dig, RS-MS.dig, 
+RS-T.dig, RS.dig, SPI.dig, T-MS.dig, T.dig, CounterWithTest.dig, 
+TafficLight1.dig, TafficLight2.dig, TafficLight3.dig, 
+-- tested 330 examples
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.91 s - in de.neemann.digital.lang.TestExamplesLanguage
+[INFO] Running de.neemann.digital.lang.TestKeyConsistence
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.lang.TestKeyConsistence
+[INFO] Running de.neemann.digital.lang.TestLang
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 s - in de.neemann.digital.lang.TestLang
+[INFO] Running de.neemann.digital.lang.TestMultiligual
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.lang.TestMultiligual
+[INFO] Running de.neemann.digital.lang.TestSyntax
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in de.neemann.digital.lang.TestSyntax
+[INFO] Running de.neemann.digital.testing.FolderTestRunnerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in de.neemann.digital.testing.FolderTestRunnerTest
+[INFO] Running de.neemann.digital.testing.parser.functions.RandomTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.testing.parser.functions.RandomTest
+[INFO] Running de.neemann.digital.testing.parser.ModelInitializerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.testing.parser.ModelInitializerTest
+[INFO] Running de.neemann.digital.testing.parser.ParserExpressionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.testing.parser.ParserExpressionTest
+[INFO] Running de.neemann.digital.testing.parser.ParserLetTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.testing.parser.ParserLetTest
+[INFO] Running de.neemann.digital.testing.parser.ParserLoopTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.testing.parser.ParserLoopTest
+[INFO] Running de.neemann.digital.testing.parser.ParserTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in de.neemann.digital.testing.parser.ParserTest
+[INFO] Running de.neemann.digital.testing.TestDataTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.testing.TestDataTest
+[INFO] Running de.neemann.digital.testing.TestExecutorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.298 s - in de.neemann.digital.testing.TestExecutorTest
+[INFO] Running de.neemann.digital.testing.TestResultTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in de.neemann.digital.testing.TestResultTest
+[INFO] Running de.neemann.digital.testing.TransitionsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in de.neemann.digital.testing.TransitionsTest
+[INFO] Running de.neemann.digital.testing.ValueTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in de.neemann.digital.testing.ValueTest
+[INFO] Running de.neemann.digital.toolchain.BASYS3Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.663 s - in de.neemann.digital.toolchain.BASYS3Test
+[INFO] Running de.neemann.digital.toolchain.ConfigurationTest
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export negSimple
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export negSimple
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export negSimple
+[Thread-35] INFO de.neemann.digital.toolchain.Configuration - create file z\file1
+[Thread-35] INFO de.neemann.digital.toolchain.Configuration - create file z\file2
+[Thread-35] INFO de.neemann.digital.toolchain.Configuration - create file z\test.z
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in de.neemann.digital.toolchain.ConfigurationTest
+[INFO] Running de.neemann.digital.toolchain.ReferenceTest
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[Thread-36] INFO de.neemann.digital.toolchain.ConfigCache - load config <local-path>
+[Thread-36] INFO de.neemann.digital.toolchain.Configuration - create file z\test1.txt
+[Thread-36] INFO de.neemann.digital.toolchain.ConfigCache - load config <local-path>
+[Thread-36] INFO de.neemann.digital.toolchain.Configuration - create file z\test2.txt
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in de.neemann.digital.toolchain.ReferenceTest
+[INFO] Running de.neemann.digital.toolchain.RegressionTest
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[Thread-37] INFO de.neemann.digital.toolchain.Configuration - create file z\clockGenerator.vhdl
+[Thread-37] INFO de.neemann.digital.hdl.hgs.Context - counter: 2500000
+[Thread-37] INFO de.neemann.digital.toolchain.Configuration - create file z\test_constraints.xdc
+[Thread-37] INFO de.neemann.digital.toolchain.Configuration - create file z\vivado\test.xpr
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[Thread-38] INFO de.neemann.digital.toolchain.Configuration - create file z\clockGenerator.vhdl
+[Thread-38] INFO de.neemann.digital.hdl.hgs.Context - counter: 2500000
+[Thread-38] INFO de.neemann.digital.toolchain.Configuration - create file z\test_constraints.xdc
+[Thread-38] INFO de.neemann.digital.toolchain.Configuration - create file z\vivado\test.xpr
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ff
+[Thread-39] INFO de.neemann.digital.toolchain.Configuration - create file z\clockGenerator.v
+[Thread-39] INFO de.neemann.digital.hdl.hgs.Context - counter: 2500000
+[Thread-39] INFO de.neemann.digital.toolchain.Configuration - create file z\test_constraints.xdc
+[Thread-39] INFO de.neemann.digital.toolchain.Configuration - create file z\vivado\test.xpr
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ff
+[Thread-40] INFO de.neemann.digital.toolchain.Configuration - create file z\clockGenerator.v
+[Thread-40] INFO de.neemann.digital.hdl.hgs.Context - counter: 2500000
+[Thread-40] INFO de.neemann.digital.toolchain.Configuration - create file z\test_constraints.xdc
+[Thread-40] INFO de.neemann.digital.toolchain.Configuration - create file z\vivado\test.xpr
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[Thread-41] INFO de.neemann.digital.toolchain.Configuration - create file z\clockGenerator.vhdl
+[Thread-41] INFO de.neemann.digital.hdl.hgs.Context - D_min=1
+[Thread-41] INFO de.neemann.digital.hdl.hgs.Context - D_max=10
+[Thread-41] INFO de.neemann.digital.hdl.hgs.Context - M_min=6
+[Thread-41] INFO de.neemann.digital.hdl.hgs.Context - M_max=64
+[Thread-41] INFO de.neemann.digital.hdl.hgs.Context - M_ideal=12.00
+[Thread-41] INFO de.neemann.digital.hdl.hgs.Context - M=12.000
+[Thread-41] INFO de.neemann.digital.hdl.hgs.Context - D=1
+[Thread-41] INFO de.neemann.digital.hdl.hgs.Context - DIV=120.000000
+[Thread-41] INFO de.neemann.digital.hdl.hgs.Context - F_VCO=1200.00
+[Thread-41] INFO de.neemann.digital.hdl.hgs.Context - F_OUT    =10.000000
+[Thread-41] INFO de.neemann.digital.hdl.hgs.Context - F_Desired=10.000000
+[Thread-41] INFO de.neemann.digital.toolchain.Configuration - create file z\test_constraints.xdc
+[Thread-41] INFO de.neemann.digital.toolchain.Configuration - create file z\vivado\test.xpr
+[main] INFO de.neemann.digital.hdl.vhdl2.VHDLCreator - export main
+[Thread-42] INFO de.neemann.digital.toolchain.Configuration - create file z\clockGenerator.vhdl
+[Thread-42] INFO de.neemann.digital.hdl.hgs.Context - D_min=1
+[Thread-42] INFO de.neemann.digital.hdl.hgs.Context - D_max=10
+[Thread-42] INFO de.neemann.digital.hdl.hgs.Context - M_min=6
+[Thread-42] INFO de.neemann.digital.hdl.hgs.Context - M_max=64
+[Thread-42] INFO de.neemann.digital.hdl.hgs.Context - M_ideal=12.00
+[Thread-42] INFO de.neemann.digital.hdl.hgs.Context - M=12.000
+[Thread-42] INFO de.neemann.digital.hdl.hgs.Context - D=1
+[Thread-42] INFO de.neemann.digital.hdl.hgs.Context - DIV=120.000000
+[Thread-42] INFO de.neemann.digital.hdl.hgs.Context - F_VCO=1200.00
+[Thread-42] INFO de.neemann.digital.hdl.hgs.Context - F_OUT    =10.000000
+[Thread-42] INFO de.neemann.digital.hdl.hgs.Context - F_Desired=10.000000
+[Thread-42] INFO de.neemann.digital.toolchain.Configuration - create file z\test_constraints.xdc
+[Thread-42] INFO de.neemann.digital.toolchain.Configuration - create file z\vivado\test.xpr
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ff
+[Thread-43] INFO de.neemann.digital.toolchain.Configuration - create file z\clockGenerator.v
+[Thread-43] INFO de.neemann.digital.hdl.hgs.Context - D_min=1
+[Thread-43] INFO de.neemann.digital.hdl.hgs.Context - D_max=10
+[Thread-43] INFO de.neemann.digital.hdl.hgs.Context - M_min=6
+[Thread-43] INFO de.neemann.digital.hdl.hgs.Context - M_max=64
+[Thread-43] INFO de.neemann.digital.hdl.hgs.Context - M_ideal=12.00
+[Thread-43] INFO de.neemann.digital.hdl.hgs.Context - M=12.000
+[Thread-43] INFO de.neemann.digital.hdl.hgs.Context - D=1
+[Thread-43] INFO de.neemann.digital.hdl.hgs.Context - DIV=120.000000
+[Thread-43] INFO de.neemann.digital.hdl.hgs.Context - F_VCO=1200.00
+[Thread-43] INFO de.neemann.digital.hdl.hgs.Context - F_OUT    =10.000000
+[Thread-43] INFO de.neemann.digital.hdl.hgs.Context - F_Desired=10.000000
+[Thread-43] INFO de.neemann.digital.toolchain.Configuration - create file z\test_constraints.xdc
+[Thread-43] INFO de.neemann.digital.toolchain.Configuration - create file z\vivado\test.xpr
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ff
+[Thread-44] INFO de.neemann.digital.toolchain.Configuration - create file z\clockGenerator.v
+[Thread-44] INFO de.neemann.digital.hdl.hgs.Context - D_min=1
+[Thread-44] INFO de.neemann.digital.hdl.hgs.Context - D_max=10
+[Thread-44] INFO de.neemann.digital.hdl.hgs.Context - M_min=6
+[Thread-44] INFO de.neemann.digital.hdl.hgs.Context - M_max=64
+[Thread-44] INFO de.neemann.digital.hdl.hgs.Context - M_ideal=12.00
+[Thread-44] INFO de.neemann.digital.hdl.hgs.Context - M=12.000
+[Thread-44] INFO de.neemann.digital.hdl.hgs.Context - D=1
+[Thread-44] INFO de.neemann.digital.hdl.hgs.Context - DIV=120.000000
+[Thread-44] INFO de.neemann.digital.hdl.hgs.Context - F_VCO=1200.00
+[Thread-44] INFO de.neemann.digital.hdl.hgs.Context - F_OUT    =10.000000
+[Thread-44] INFO de.neemann.digital.hdl.hgs.Context - F_Desired=10.000000
+[Thread-44] INFO de.neemann.digital.toolchain.Configuration - create file z\test_constraints.xdc
+[Thread-44] INFO de.neemann.digital.toolchain.Configuration - create file z\vivado\test.xpr
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ff
+[Thread-45] INFO de.neemann.digital.toolchain.Configuration - create file z\Makefile
+[Thread-45] INFO de.neemann.digital.toolchain.Configuration - create file z\pins.pcf
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ff
+[Thread-46] INFO de.neemann.digital.toolchain.Configuration - create file z\Makefile
+[Thread-46] INFO de.neemann.digital.toolchain.Configuration - create file z\pins.pcf
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ff
+[Thread-47] INFO de.neemann.digital.toolchain.Configuration - create file z\Makefile
+[Thread-47] INFO de.neemann.digital.toolchain.Configuration - create file z\pins.pcf
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ff
+[Thread-48] INFO de.neemann.digital.toolchain.Configuration - create file z\Makefile
+[Thread-48] INFO de.neemann.digital.toolchain.Configuration - create file z\pins.pcf
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ff
+[Thread-49] INFO de.neemann.digital.toolchain.Configuration - create file z\clockGenerator.v
+[Thread-49] INFO de.neemann.digital.toolchain.ConfigCache - load config <local-path>
+[Thread-49] INFO de.neemann.digital.toolchain.Configuration - create file z\vivado\test.xpr
+[main] INFO de.neemann.digital.hdl.verilog2.VerilogCreator - export ff
+[Thread-50] INFO de.neemann.digital.toolchain.Configuration - create file z\clockGenerator.v
+[Thread-50] INFO de.neemann.digital.toolchain.ConfigCache - load config <local-path>
+[Thread-50] INFO de.neemann.digital.toolchain.Configuration - create file z\vivado\test.xpr
+BASYS3.config, TinyFPGA_BX.config, VerilogClockExample.config, 
+-- tested 3 examples
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in de.neemann.digital.toolchain.RegressionTest
+[INFO] Running de.neemann.digital.undo.UndoManagerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in de.neemann.digital.undo.UndoManagerTest
+[INFO] Running de.neemann.gui.language.ResourcesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in de.neemann.gui.language.ResourcesTest
+[INFO] Running de.neemann.gui.LineBreakerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in de.neemann.gui.LineBreakerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 880, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  59.719 s
+[INFO] Finished at: 2026-10-13T09:42:13+08:00
+[INFO] ------------------------------------------------------------------------
